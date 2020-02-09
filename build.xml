@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project TURender with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR file Export Wizard-->
+    <!--ANT 1.7 is required-->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="D:/de.neuwirthinformatik.Alexander/Development/eclipse"/>
+    <property name="dir.jarfile" value="${dir.buildfile}/build"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/TUR.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="de.neuwirthinformatik.Alexander.TU.TURender.Main"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ darcula.jar iconloader.jar jdom-2.0.6.jar json-20170516.jar lombok-1.18.0.jar TU.jar yamlbeans-1.08.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="${dir.buildfile}/bin"/>
+            <zipfileset dir="${dir.buildfile}/libs" includes="darcula.jar"/>
+            <zipfileset dir="${dir.buildfile}/libs" includes="iconloader.jar"/>
+            <zipfileset dir="${dir.buildfile}/libs" includes="jdom-2.0.6.jar"/>
+            <zipfileset dir="${dir.buildfile}/libs" includes="json-20170516.jar"/>
+            <zipfileset dir="${dir.buildfile}/libs" includes="lombok-1.18.0.jar"/>
+            <zipfileset dir="${dir.buildfile}/libs" includes="TU.jar"/>
+            <zipfileset dir="${dir.buildfile}/libs" includes="yamlbeans-1.08.jar"/>
+        </jar>
+    </target>
+</project>

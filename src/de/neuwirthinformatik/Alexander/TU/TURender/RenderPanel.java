@@ -188,6 +188,7 @@ public class RenderPanel extends JPanel{
 		tmp.add(load = GUI.textEdit("load card name or id"));
 		tmp.add(GUI.buttonSync("Load", () -> loadIMG()));
 		tmp.add(GUI.buttonSync("updateXML", () -> updateXML()));
+		tmp.add(GUI.buttonSync("reloadXML", () -> GlobalData.init()));
 		panel.add(tmp);
 
 		JPanel datapanel = new JPanel();

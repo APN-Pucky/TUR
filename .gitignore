@@ -1,5 +1,4 @@
 dist/
-build/
 cardpack*
 unitypuck.spec
 __pycache__/

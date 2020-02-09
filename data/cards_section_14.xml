@@ -4057,53 +4057,53 @@
 		<asset_bundle>290</asset_bundle>
 		<fusion_level>2</fusion_level>
 		<attack>0</attack>
-		<health>108</health>
+		<health>120</health>
 		<cost>4</cost>
 		<rarity>4</rarity>
 		<skill id="revenge" x="6"/>
-		<skill id="stasis" x="15"/>
-		<skill id="heal" x="19" all="1" trigger="attacked"/>
+		<skill id="stasis" x="65"/>
+		<skill id="heal" x="45" all="1" trigger="attacked"/>
 		<type>3</type>
 		<set>2500</set>
 		<upgrade>
 			<card_id>56295</card_id>
 			<level>2</level>
-			<health>111</health>
+			<health>140</health>
 			<skill id="revenge" x="7"/>
-			<skill id="stasis" x="15"/>
-			<skill id="heal" x="20" all="1" trigger="attacked"/>
+			<skill id="stasis" x="70"/>
+			<skill id="heal" x="50" all="1" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56296</card_id>
 			<level>3</level>
-			<health>115</health>
+			<health>160</health>
 			<skill id="revenge" x="7"/>
-			<skill id="stasis" x="16"/>
-			<skill id="heal" x="21" all="1" trigger="attacked"/>
+			<skill id="stasis" x="75"/>
+			<skill id="heal" x="65" all="1" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56297</card_id>
 			<level>4</level>
-			<health>118</health>
+			<health>180</health>
 			<skill id="revenge" x="8"/>
-			<skill id="stasis" x="17"/>
-			<skill id="heal" x="23" all="1" trigger="attacked"/>
+			<skill id="stasis" x="80"/>
+			<skill id="heal" x="70" all="1" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56298</card_id>
 			<level>5</level>
-			<health>122</health>
+			<health>200</health>
 			<skill id="revenge" x="8"/>
-			<skill id="stasis" x="18"/>
-			<skill id="heal" x="24" all="1" trigger="attacked"/>
+			<skill id="stasis" x="85"/>
+			<skill id="heal" x="80" all="1" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56299</card_id>
 			<level>6</level>
-			<health>126</health>
+			<health>220</health>
 			<skill id="revenge" x="9"/>
-			<skill id="stasis" x="19"/>
-			<skill id="heal" x="26" all="1" trigger="attacked"/>
+			<skill id="stasis" x="90"/>
+			<skill id="heal" x="100" all="1" trigger="attacked"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -5862,51 +5862,51 @@
 		<name>Roto-bot</name>
 		<picture>rightswivel_lv1</picture>
 		<asset_bundle>288</asset_bundle>
-		<attack>6</attack>
-		<health>74</health>
+		<attack>50</attack>
+		<health>150</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
-		<skill id="revenge" x="2"/>
-		<skill id="besiege" x="10" all="1" trigger="attacked"/>
-		<skill id="counter" x="20"/>
+		<skill id="revenge" x="4"/>
+		<skill id="besiege" x="40" all="1" trigger="attacked"/>
+		<skill id="counter" x="60"/>
 		<type>5</type>
 		<set>3001</set>
 		<upgrade>
 			<card_id>56421</card_id>
 			<level>2</level>
-			<health>75</health>
-			<attack>7</attack>
+			<health>160</health>
+			<attack>60</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>56422</card_id>
 			<level>3</level>
-			<health>76</health>
-			<skill id="revenge" x="2"/>
-			<skill id="besiege" x="11" all="1" trigger="attacked"/>
-			<skill id="counter" x="21"/>
+			<health>170</health>
+			<skill id="revenge" x="4"/>
+			<skill id="besiege" x="50" all="1" trigger="attacked"/>
+			<skill id="counter" x="70"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56423</card_id>
 			<level>4</level>
-			<health>77</health>
-			<attack>8</attack>
+			<health>180</health>
+			<attack>65</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>56424</card_id>
 			<level>5</level>
-			<health>78</health>
-			<skill id="revenge" x="3"/>
-			<skill id="besiege" x="12" all="1" trigger="attacked"/>
-			<skill id="counter" x="21"/>
+			<health>180</health>
+			<skill id="revenge" x="5"/>
+			<skill id="besiege" x="55" all="1" trigger="attacked"/>
+			<skill id="counter" x="80"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56425</card_id>
 			<level>6</level>
-			<health>80</health>
-			<attack>9</attack>
-			<skill id="revenge" x="3"/>
-			<skill id="besiege" x="12" all="1" trigger="attacked"/>
-			<skill id="counter" x="22"/>
+			<health>190</health>
+			<attack>70</attack>
+			<skill id="revenge" x="5"/>
+			<skill id="besiege" x="60" all="1" trigger="attacked"/>
+			<skill id="counter" x="90"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -5915,54 +5915,54 @@
 		<picture>rightswivel_lv1</picture>
 		<asset_bundle>288</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>9</attack>
-		<health>81</health>
+		<attack>70</attack>
+		<health>200</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
-		<skill id="revenge" x="3"/>
-		<skill id="besiege" x="13" all="1" trigger="attacked"/>
-		<skill id="counter" x="22"/>
+		<skill id="revenge" x="5"/>
+		<skill id="besiege" x="60" all="1" trigger="attacked"/>
+		<skill id="counter" x="100"/>
 		<type>5</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>56427</card_id>
 			<level>2</level>
-			<health>82</health>
-			<attack>10</attack>
-			<skill id="revenge" x="3"/>
-			<skill id="besiege" x="13" all="1" trigger="attacked"/>
-			<skill id="counter" x="23"/>
+			<health>210</health>
+			<attack>75</attack>
+			<skill id="revenge" x="6"/>
+			<skill id="besiege" x="65" all="1" trigger="attacked"/>
+			<skill id="counter" x="105"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56428</card_id>
 			<level>3</level>
-			<health>83</health>
-			<skill id="revenge" x="4"/>
-			<skill id="besiege" x="14" all="1" trigger="attacked"/>
-			<skill id="counter" x="23"/>
+			<health>210</health>
+			<skill id="revenge" x="6"/>
+			<skill id="besiege" x="70" all="1" trigger="attacked"/>
+			<skill id="counter" x="110"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56429</card_id>
 			<level>4</level>
-			<health>85</health>
-			<attack>11</attack>
+			<health>220</health>
+			<attack>75</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>56430</card_id>
 			<level>5</level>
-			<health>86</health>
-			<skill id="revenge" x="4"/>
-			<skill id="besiege" x="15" all="1" trigger="attacked"/>
-			<skill id="counter" x="24"/>
+			<health>230</health>
+			<skill id="revenge" x="6"/>
+			<skill id="besiege" x="70" all="1" trigger="attacked"/>
+			<skill id="counter" x="115"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56431</card_id>
 			<level>6</level>
-			<health>87</health>
-			<attack>12</attack>
-			<skill id="revenge" x="5"/>
-			<skill id="besiege" x="15" all="1" trigger="attacked"/>
-			<skill id="counter" x="24"/>
+			<health>240</health>
+			<attack>80</attack>
+			<skill id="revenge" x="7"/>
+			<skill id="besiege" x="75" all="1" trigger="attacked"/>
+			<skill id="counter" x="120"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -5971,54 +5971,54 @@
 		<picture>rightswivel_lv3</picture>
 		<asset_bundle>288</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>12</attack>
-		<health>88</health>
+		<attack>85</attack>
+		<health>250</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
-		<skill id="revenge" x="5"/>
-		<skill id="besiege" x="16" all="1" trigger="attacked"/>
-		<skill id="counter" x="24"/>
+		<skill id="revenge" x="7"/>
+		<skill id="besiege" x="80" all="1" trigger="attacked"/>
+		<skill id="counter" x="130"/>
 		<type>5</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>56433</card_id>
 			<level>2</level>
-			<health>90</health>
-			<attack>13</attack>
-			<skill id="revenge" x="5"/>
-			<skill id="besiege" x="16" all="1" trigger="attacked"/>
-			<skill id="counter" x="25"/>
+			<health>260</health>
+			<attack>90</attack>
+			<skill id="revenge" x="8"/>
+			<skill id="besiege" x="85" all="1" trigger="attacked"/>
+			<skill id="counter" x="135"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56434</card_id>
 			<level>3</level>
-			<health>91</health>
-			<skill id="revenge" x="5"/>
-			<skill id="besiege" x="17" all="1" trigger="attacked"/>
-			<skill id="counter" x="26"/>
+			<health>270</health>
+			<skill id="revenge" x="8"/>
+			<skill id="besiege" x="90" all="1" trigger="attacked"/>
+			<skill id="counter" x="140"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56435</card_id>
 			<level>4</level>
-			<health>92</health>
-			<attack>14</attack>
+			<health>280</health>
+			<attack>95</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>56436</card_id>
 			<level>5</level>
-			<health>93</health>
-			<attack>15</attack>
-			<skill id="revenge" x="6"/>
-			<skill id="besiege" x="17" all="1" trigger="attacked"/>
-			<skill id="counter" x="26"/>
+			<health>290</health>
+			<attack>100</attack>
+			<skill id="revenge" x="8"/>
+			<skill id="besiege" x="95" all="1" trigger="attacked"/>
+			<skill id="counter" x="145"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56437</card_id>
 			<level>6</level>
-			<health>95</health>
-			<skill id="revenge" x="6"/>
-			<skill id="besiege" x="18" all="1" trigger="attacked"/>
-			<skill id="counter" x="27"/>
+			<health>300</health>
+			<skill id="revenge" x="9"/>
+			<skill id="besiege" x="100" all="1" trigger="attacked"/>
+			<skill id="counter" x="150"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -10183,54 +10183,55 @@
 		<picture>bigfella_lv1</picture>
 		<asset_bundle>287</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>4</attack>
-		<health>96</health>
+		<attack>30</attack>
+		<health>240</health>
 		<cost>4</cost>
 		<rarity>5</rarity>
 		<skill id="summon" card_id="55942" trigger="play"/>
-		<skill id="armored" x="24"/>
-		<skill id="avenge" x="21"/>
+		<skill id="armored" x="50"/>
+		<skill id="avenge" x="40"/>
 		<type>2</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55929</card_id>
 			<level>2</level>
-			<health>97</health>
+			<health>245</health>
 			<skill id="summon" card_id="55942" trigger="play"/>
-			<skill id="armored" x="24"/>
-			<skill id="avenge" x="22"/>
+			<skill id="armored" x="55"/>
+			<skill id="avenge" x="45"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55930</card_id>
 			<level>3</level>
-			<health>99</health>
+			<health>250</health>
 			<skill id="summon" card_id="55942" trigger="play"/>
-			<skill id="armored" x="25"/>
-			<skill id="avenge" x="22"/>
+			<skill id="armored" x="60"/>
+			<skill id="avenge" x="50"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55931</card_id>
 			<level>4</level>
-			<health>100</health>
+			<health>255</health>
 			<skill id="summon" card_id="55943" trigger="play"/>
-			<skill id="armored" x="25"/>
-			<skill id="avenge" x="23"/>
+			<skill id="armored" x="65"/>
+			<skill id="avenge" x="55"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55932</card_id>
 			<level>5</level>
-			<health>102</health>
+			<health>260</health>
 			<skill id="summon" card_id="55943" trigger="play"/>
-			<skill id="armored" x="26"/>
-			<skill id="avenge" x="23"/>
+			<skill id="armored" x="75"/>
+			<skill id="avenge" x="60"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55933</card_id>
 			<level>6</level>
-			<health>103</health>
+			<attack>35</attack>
+			<health>265</health>
 			<skill id="summon" card_id="55943" trigger="play"/>
-			<skill id="armored" x="26"/>
-			<skill id="avenge" x="24"/>
+			<skill id="armored" x="80"/>
+			<skill id="avenge" x="65"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -10239,54 +10240,57 @@
 		<picture>bigfella_lv3</picture>
 		<asset_bundle>287</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>4</attack>
-		<health>104</health>
+		<attack>35</attack>
+		<health>270</health>
 		<cost>4</cost>
 		<rarity>5</rarity>
 		<skill id="summon" card_id="55944" trigger="play"/>
-		<skill id="armored" x="27"/>
-		<skill id="avenge" x="25"/>
+		<skill id="armored" x="90"/>
+		<skill id="avenge" x="70"/>
 		<type>2</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55935</card_id>
 			<level>2</level>
-			<health>106</health>
+			<health>275</health>
 			<skill id="summon" card_id="55944" trigger="play"/>
-			<skill id="armored" x="28"/>
-			<skill id="avenge" x="25"/>
+			<skill id="armored" x="95"/>
+			<skill id="avenge" x="75"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55936</card_id>
 			<level>3</level>
-			<health>107</health>
+			<attack>40</attack>
+			<health>280</health>
 			<skill id="summon" card_id="55944" trigger="play"/>
-			<skill id="armored" x="28"/>
-			<skill id="avenge" x="26"/>
+			<skill id="armored" x="100"/>
+			<skill id="avenge" x="80"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55937</card_id>
 			<level>4</level>
-			<health>109</health>
+			<attack>45</attack>
+			<health>290</health>
 			<skill id="summon" card_id="55945" trigger="play"/>
-			<skill id="armored" x="29"/>
-			<skill id="avenge" x="26"/>
+			<skill id="armored" x="110"/>
+			<skill id="avenge" x="90"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55938</card_id>
 			<level>5</level>
-			<health>110</health>
+			<health>295</health>
 			<skill id="summon" card_id="55945" trigger="play"/>
-			<skill id="armored" x="29"/>
-			<skill id="avenge" x="27"/>
+			<skill id="armored" x="115"/>
+			<skill id="avenge" x="95"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55939</card_id>
 			<level>6</level>
-			<health>112</health>
+			<attack>50</attack>
+			<health>300</health>
 			<skill id="summon" card_id="55945" trigger="play"/>
-			<skill id="armored" x="30"/>
-			<skill id="avenge" x="28"/>
+			<skill id="armored" x="120"/>
+			<skill id="avenge" x="100"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -10294,56 +10298,59 @@
 		<name>Henchman</name>
 		<picture>trooper</picture>
 		<asset_bundle>153</asset_bundle>
-		<attack>3</attack>
-		<health>22</health>
+		<attack>5</attack>
+		<health>75</health>
 		<cost>1</cost>
 		<rarity>3</rarity>
-		<skill id="allegiance" x="2"/>
-		<skill id="legion" x="8"/>
-		<skill id="heal" x="50" y="2" trigger="death"/>
+		<skill id="allegiance" x="15"/>
+		<skill id="legion" x="15"/>
+		<skill id="heal" x="150" y="2" trigger="death"/>
 		<type>2</type>
 		<set>9500</set>
 		<upgrade>
 			<card_id>55941</card_id>
 			<level>2</level>
-			<health>25</health>
-			<skill id="allegiance" x="3"/>
-			<skill id="legion" x="9"/>
-			<skill id="heal" x="55" y="2" trigger="death"/>
+			<health>76</health>
+			<attack>6</attack>
+			<skill id="allegiance" x="16"/>
+			<skill id="legion" x="16"/>
+			<skill id="heal" x="169" y="2" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55942</card_id>
 			<level>3</level>
-			<health>29</health>
-			<attack>4</attack>
-			<skill id="allegiance" x="3"/>
-			<skill id="legion" x="10"/>
-			<skill id="heal" x="60" y="2" trigger="death"/>
+			<health>77</health>
+			<attack>7</attack>
+			<skill id="allegiance" x="17"/>
+			<skill id="legion" x="17"/>
+			<skill id="heal" x="170" y="2" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55943</card_id>
 			<level>4</level>
-			<health>32</health>
-			<skill id="allegiance" x="4"/>
-			<skill id="legion" x="12"/>
-			<skill id="heal" x="65" y="2" trigger="death"/>
+			<health>78</health>
+			<attack>8</attack>
+			<skill id="allegiance" x="18"/>
+			<skill id="legion" x="18"/>
+			<skill id="heal" x="180" y="2" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55944</card_id>
 			<level>5</level>
-			<health>36</health>
-			<attack>5</attack>
-			<skill id="allegiance" x="4"/>
-			<skill id="legion" x="13"/>
-			<skill id="heal" x="70" y="2" trigger="death"/>
+			<health>79</health>
+			<attack>9</attack>
+			<skill id="allegiance" x="19"/>
+			<skill id="legion" x="19"/>
+			<skill id="heal" x="190" y="2" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55945</card_id>
 			<level>6</level>
-			<health>40</health>
-			<skill id="allegiance" x="5"/>
-			<skill id="legion" x="15"/>
-			<skill id="heal" x="75" y="2" trigger="death"/>
+			<health>75</health>
+			<attack>10</attack>
+			<skill id="allegiance" x="20"/>
+			<skill id="legion" x="20"/>
+			<skill id="heal" x="200" y="2" trigger="death"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -13133,54 +13140,54 @@
 		<name>Reviving Rudgah</name>
 		<picture>btgoodgood_lv1</picture>
 		<asset_bundle>282</asset_bundle>
-		<attack>7</attack>
-		<health>50</health>
+		<attack>35</attack>
+		<health>30</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
 		<skill id="evade" x="1"/>
-		<skill id="counter" x="7"/>
+		<skill id="counter" x="25"/>
 		<type>3</type>
 		<set>3000</set>
 		<upgrade>
 			<card_id>55575</card_id>
 			<level>2</level>
-			<health>52</health>
+			<health>35</health>
 			<skill id="evade" x="1"/>
-			<skill id="counter" x="8"/>
+			<skill id="counter" x="5"/>
 			<skill id="summon" card_id="55574" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55576</card_id>
 			<level>3</level>
-			<health>55</health>
-			<attack>8</attack>
-			<skill id="evade" x="1"/>
-			<skill id="counter" x="9"/>
+			<health>40</health>
+			<attack>40</attack>
+			<skill id="evade" x="2"/>
+			<skill id="counter" x="8"/>
 			<skill id="summon" card_id="55574" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55577</card_id>
 			<level>4</level>
-			<health>57</health>
-			<skill id="evade" x="2"/>
-			<skill id="counter" x="10"/>
+			<health>150</health>
+			<skill id="evade" x="3"/>
+			<skill id="counter" x="40"/>
 			<skill id="summon" card_id="55574" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55578</card_id>
 			<level>5</level>
-			<health>60</health>
-			<skill id="evade" x="2"/>
-			<skill id="counter" x="11"/>
+			<health>160</health>
+			<skill id="evade" x="4"/>
+			<skill id="counter" x="45"/>
 			<skill id="summon" card_id="55574" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55579</card_id>
 			<level>6</level>
-			<health>62</health>
-			<attack>9</attack>
-			<skill id="evade" x="3"/>
-			<skill id="counter" x="12"/>
+			<health>170</health>
+			<attack>50</attack>
+			<skill id="evade" x="5"/>
+			<skill id="counter" x="50"/>
 			<skill id="summon" card_id="55574" trigger="death"/>
 		</upgrade>
 	</unit>
@@ -13190,55 +13197,55 @@
 		<picture>btgoodgood_lv1</picture>
 		<asset_bundle>282</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>9</attack>
-		<health>65</health>
+		<attack>60</attack>
+		<health>175</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
-		<skill id="evade" x="3"/>
-		<skill id="counter" x="14"/>
+		<skill id="evade" x="5"/>
+		<skill id="counter" x="55"/>
 		<skill id="summon" card_id="55574" trigger="death"/>
 		<type>3</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55581</card_id>
 			<level>2</level>
-			<health>67</health>
-			<skill id="evade" x="3"/>
-			<skill id="counter" x="15"/>
+			<health>180</health>
+			<skill id="evade" x="5"/>
+			<skill id="counter" x="60"/>
 			<skill id="summon" card_id="55575" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55582</card_id>
 			<level>3</level>
-			<health>70</health>
-			<attack>10</attack>
-			<skill id="evade" x="4"/>
-			<skill id="counter" x="16"/>
+			<health>185</health>
+			<attack>80</attack>
+			<skill id="evade" x="5"/>
+			<skill id="counter" x="65"/>
 			<skill id="summon" card_id="55576" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55583</card_id>
 			<level>4</level>
-			<health>72</health>
-			<skill id="evade" x="4"/>
-			<skill id="counter" x="17"/>
+			<health>190</health>
+			<skill id="evade" x="6"/>
+			<skill id="counter" x="70"/>
 			<skill id="summon" card_id="55577" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55584</card_id>
 			<level>5</level>
-			<health>75</health>
-			<attack>11</attack>
-			<skill id="evade" x="4"/>
-			<skill id="counter" x="18"/>
+			<health>195</health>
+			<attack>90</attack>
+			<skill id="evade" x="6"/>
+			<skill id="counter" x="75"/>
 			<skill id="summon" card_id="55578" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55585</card_id>
 			<level>6</level>
-			<health>77</health>
-			<skill id="evade" x="5"/>
-			<skill id="counter" x="19"/>
+			<health>200</health>
+			<skill id="evade" x="7"/>
+			<skill id="counter" x="80"/>
 			<skill id="summon" card_id="55579" trigger="death"/>
 		</upgrade>
 	</unit>
@@ -13248,55 +13255,54 @@
 		<picture>btgoodgood_lv3</picture>
 		<asset_bundle>282</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>11</attack>
-		<health>80</health>
+		<attack>100</attack>
+		<health>200</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
-		<skill id="evade" x="5"/>
-		<skill id="counter" x="21"/>
+		<skill id="evade" x="8"/>
+		<skill id="counter" x="80"/>
 		<skill id="summon" card_id="55580" trigger="death"/>
 		<type>3</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55587</card_id>
 			<level>2</level>
-			<health>82</health>
-			<attack>12</attack>
-			<skill id="evade" x="5"/>
-			<skill id="counter" x="22"/>
+			<health>200</health>
+			<skill id="evade" x="8"/>
+			<skill id="counter" x="85"/>
 			<skill id="summon" card_id="55581" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55588</card_id>
 			<level>3</level>
-			<health>85</health>
-			<skill id="evade" x="6"/>
-			<skill id="counter" x="23"/>
+			<health>205</health>
+			<skill id="evade" x="8"/>
+			<skill id="counter" x="90"/>
 			<skill id="summon" card_id="55582" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55589</card_id>
 			<level>4</level>
-			<health>87</health>
-			<attack>13</attack>
-			<skill id="evade" x="6"/>
-			<skill id="counter" x="24"/>
+			<health>210</health>
+			<attack>110</attack>
+			<skill id="evade" x="8"/>
+			<skill id="counter" x="95"/>
 			<skill id="summon" card_id="55583" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55590</card_id>
 			<level>5</level>
-			<health>90</health>
-			<skill id="evade" x="6"/>
-			<skill id="counter" x="25"/>
+			<health>215</health>
+			<skill id="evade" x="8"/>
+			<skill id="counter" x="100"/>
 			<skill id="summon" card_id="55584" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55591</card_id>
 			<level>6</level>
-			<health>93</health>
-			<skill id="evade" x="7"/>
-			<skill id="counter" x="27"/>
+			<health>220</health>
+			<skill id="evade" x="9"/>
+			<skill id="counter" x="110"/>
 			<skill id="summon" card_id="55585" trigger="death"/>
 		</upgrade>
 	</unit>
@@ -15235,60 +15241,59 @@
 			<skill id="flurry" c="3"/>
 		</upgrade>
 	</unit>
-	<unit>
+		<unit>
 		<id>49658</id>
 		<name>Lazarus</name>
 		<picture>progencinna_lv1</picture>
 		<asset_bundle>274</asset_bundle>
-		<attack>12</attack>
-		<health>50</health>
+		<attack>50</attack>
+		<health>130</health>
 		<cost>2</cost>
 		<rarity>5</rarity>
-		<skill id="subdue" x="16"/>
-		<skill id="heal" x="16" all="1"/>
+		<skill id="subdue" x="100"/>
+		<skill id="heal" x="50" all="1" trigger="play"/>
 		<skill id="summon" card_id="49676" trigger="death"/>
 		<type>6</type>
-		<set>4750</set>
+		<set>4500</set>
 		<upgrade>
 			<card_id>49659</card_id>
 			<level>2</level>
-			<health>52</health>
-			<skill id="subdue" x="17"/>
-			<skill id="heal" x="17" all="1"/>
+			<health>130</health>
+			<skill id="subdue" x="100"/>
+			<skill id="heal" x="50" all="1" trigger="play"/>
 			<skill id="summon" card_id="49676" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49660</card_id>
 			<level>3</level>
-			<health>54</health>
-			<attack>13</attack>
-			<skill id="subdue" x="18"/>
-			<skill id="heal" x="17" all="1"/>
+			<health>130</health>
+			<skill id="subdue" x="100"/>
+			<skill id="heal" x="60" all="1" trigger="play"/>
 			<skill id="summon" card_id="49676" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49661</card_id>
 			<level>4</level>
-			<health>57</health>
-			<skill id="subdue" x="19"/>
-			<skill id="heal" x="18" all="1"/>
+			<attack>60</attack>
+			<health>130</health>
+			<skill id="subdue" x="100"/>
+			<skill id="heal" x="60" all="1" trigger="play"/>
 			<skill id="summon" card_id="49677" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49662</card_id>
 			<level>5</level>
-			<health>59</health>
-			<attack>14</attack>
-			<skill id="subdue" x="19"/>
-			<skill id="heal" x="19" all="1"/>
+			<health>130</health>
+			<skill id="subdue" x="100"/>
+			<skill id="heal" x="60" all="1" trigger="play"/>
 			<skill id="summon" card_id="49677" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49663</card_id>
 			<level>6</level>
-			<health>61</health>
-			<skill id="subdue" x="20"/>
-			<skill id="heal" x="20" all="1"/>
+			<health>130</health>
+			<skill id="subdue" x="100"/>
+			<skill id="heal" x="70" all="1" trigger="play"/>
 			<skill id="summon" card_id="49677" trigger="death"/>
 		</upgrade>
 	</unit>
@@ -15298,55 +15303,54 @@
 		<picture>progencinna_lv1</picture>
 		<asset_bundle>274</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>15</attack>
-		<health>64</health>
+		<attack>70</attack>
+		<health>140</health>
 		<cost>2</cost>
 		<rarity>5</rarity>
-		<skill id="subdue" x="21"/>
-		<skill id="heal" x="20" all="1"/>
+		<skill id="subdue" x="100"/>
+		<skill id="heal" x="80" all="1" trigger="play"/>
 		<skill id="summon" card_id="49678" trigger="death"/>
 		<type>6</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>49665</card_id>
 			<level>2</level>
-			<health>66</health>
-			<skill id="subdue" x="22"/>
-			<skill id="heal" x="21" all="1"/>
+			<attack>80</attack>			
+			<health>140</health>
+			<skill id="subdue" x="100"/>
+			<skill id="heal" x="80" all="1" trigger="play"/>
 			<skill id="summon" card_id="49678" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49666</card_id>
 			<level>3</level>
-			<health>68</health>
-			<attack>16</attack>
-			<skill id="subdue" x="22"/>
-			<skill id="heal" x="22" all="1"/>
+			<health>140</health>
+			<skill id="subdue" x="120"/>
+			<skill id="heal" x="80" all="1" trigger="play"/>
 			<skill id="summon" card_id="49678" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49667</card_id>
 			<level>4</level>
-			<health>71</health>
-			<attack>17</attack>
-			<skill id="subdue" x="23"/>
-			<skill id="heal" x="23" all="1"/>
+			<health>140</health>
+			<skill id="subdue" x="120"/>
+			<skill id="heal" x="90" all="1" trigger="play"/>
 			<skill id="summon" card_id="49679" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49668</card_id>
 			<level>5</level>
-			<health>73</health>
-			<skill id="subdue" x="24"/>
-			<skill id="heal" x="24" all="1"/>
+			<health>140</health>
+			<skill id="subdue" x="140"/>
+			<skill id="heal" x="90" all="1" trigger="play"/>
 			<skill id="summon" card_id="49679" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49669</card_id>
 			<level>6</level>
-			<health>75</health>
-			<skill id="subdue" x="25"/>
-			<skill id="heal" x="25" all="1"/>
+			<health>140</health>
+			<skill id="subdue" x="140"/>
+			<skill id="heal" x="100" all="1" trigger="play"/>
 			<skill id="summon" card_id="49679" trigger="death"/>
 		</upgrade>
 	</unit>
@@ -15356,55 +15360,55 @@
 		<picture>progencinna_lv3</picture>
 		<asset_bundle>274</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>18</attack>
-		<health>78</health>
+		<attack>90</attack>
+		<health>150</health>
 		<cost>2</cost>
 		<rarity>5</rarity>
-		<skill id="subdue" x="26"/>
-		<skill id="heal" x="25" all="1"/>
+		<skill id="subdue" x="160"/>
+		<skill id="heal" x="120" all="1" trigger="play"/>
 		<skill id="summon" card_id="49680" trigger="death"/>
 		<type>6</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>49671</card_id>
 			<level>2</level>
-			<health>80</health>
-			<skill id="subdue" x="27"/>
-			<skill id="heal" x="26" all="1"/>
+			<health>150</health>
+			<skill id="subdue" x="160"/>
+			<skill id="heal" x="130" all="1" trigger="play"/>
 			<skill id="summon" card_id="49680" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49672</card_id>
 			<level>3</level>
-			<health>82</health>
-			<attack>19</attack>
-			<skill id="subdue" x="27"/>
-			<skill id="heal" x="27" all="1"/>
+			<health>150</health>
+			<attack>100</attack>
+			<skill id="subdue" x="160"/>
+			<skill id="heal" x="140" all="1" trigger="play"/>
 			<skill id="summon" card_id="49680" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49673</card_id>
 			<level>4</level>
-			<health>85</health>
-			<skill id="subdue" x="28"/>
-			<skill id="heal" x="28" all="1"/>
+			<health>150</health>
+			<skill id="subdue" x="160"/>
+			<skill id="heal" x="140" all="1" trigger="play"/>
 			<skill id="summon" card_id="49681" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49674</card_id>
 			<level>5</level>
-			<health>87</health>
-			<skill id="subdue" x="29"/>
-			<skill id="heal" x="29" all="1"/>
+			<health>150</health>
+			<skill id="subdue" x="180"/>
+			<skill id="heal" x="140" all="1" trigger="play"/>
 			<skill id="summon" card_id="49681" trigger="death"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49675</card_id>
 			<level>6</level>
-			<attack>20</attack>
-			<health>90</health>
-			<skill id="subdue" x="30"/>
-			<skill id="heal" x="30" all="1"/>
+			<attack>120</attack>
+			<health>150</health>
+			<skill id="subdue" x="180"/>
+			<skill id="heal" x="150" all="1" trigger="play"/>
 			<skill id="summon" card_id="49681" trigger="death"/>
 		</upgrade>
 	</unit>
@@ -15414,59 +15418,60 @@
 		<name>Lazarus Reborn</name>
 		<picture>progencinna_lv1</picture>
 		<asset_bundle>274</asset_bundle>
+		<attack>70</attack>
 		<health>50</health>
-		<cost>2</cost>
+		<cost>1</cost>
 		<rarity>5</rarity>
-		<skill id="subdue" x="16"/>
-		<skill id="heal" x="16" all="1"/>
-		<skill id="refresh" x="16"/>
+		<skill id="subdue" x="80"/>
+		<skill id="heal" x="50" all="1"/>
+		<skill id="refresh" x="50"/>
 		<type>6</type>
 		<set>9500</set>
 		<upgrade>
 			<card_id>49677</card_id>
 			<level>2</level>
-			<attack>13</attack>
-			<health>58</health>
-			<skill id="subdue" x="18"/>
-			<skill id="heal" x="18" all="1"/>
-			<skill id="refresh" x="18"/>
+			<attack>80</attack>
+			<health>60</health>
+			<skill id="subdue" x="100"/>
+			<skill id="heal" x="60" all="1"/>
+			<skill id="refresh" x="60"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49678</card_id>
 			<level>3</level>
-			<attack>15</attack>
-			<health>66</health>
-			<skill id="subdue" x="21"/>
-			<skill id="heal" x="21" all="1"/>
-			<skill id="refresh" x="21"/>
+			<attack>90</attack>
+			<health>70</health>
+			<skill id="subdue" x="120"/>
+			<skill id="heal" x="70" all="1"/>
+			<skill id="refresh" x="70"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49679</card_id>
 			<level>4</level>
-			<attack>16</attack>
-			<health>74</health>
-			<skill id="subdue" x="24"/>
-			<skill id="heal" x="24" all="1"/>
-			<skill id="refresh" x="24"/>
+			<attack>100</attack>
+			<health>80</health>
+			<skill id="subdue" x="140"/>
+			<skill id="heal" x="80" all="1"/>
+			<skill id="refresh" x="80"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49680</card_id>
 			<level>5</level>
 			<picture>progencinna_lv3</picture>
-			<attack>18</attack>
-			<health>82</health>
-			<skill id="subdue" x="27"/>
-			<skill id="heal" x="27" all="1"/>
-			<skill id="refresh" x="27"/>
+			<attack>110</attack>
+			<health>90</health>
+			<skill id="subdue" x="160"/>
+			<skill id="heal" x="90" all="1"/>
+			<skill id="refresh" x="90"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49681</card_id>
 			<level>6</level>
-			<attack>20</attack>
-			<health>90</health>
-			<skill id="subdue" x="30"/>
-			<skill id="heal" x="30" all="1"/>
-			<skill id="refresh" x="30"/>
+			<attack>120</attack>
+			<health>100</health>
+			<skill id="subdue" x="180"/>
+			<skill id="heal" x="100" all="1"/>
+			<skill id="refresh" x="100"/>
 		</upgrade>
 	</unit>
 	
@@ -16315,57 +16320,57 @@
 		<name>Massive Titan</name>
 		<picture>impvignette_lv9</picture>
 		<asset_bundle>279</asset_bundle>
-		<attack>20</attack>
-		<health>90</health>
+		<attack>60</attack>
+		<health>150</health>
 		<cost>4</cost>
 		<rarity>5</rarity>
-		<skill id="stasis" x="10"/>
+		<skill id="stasis" x="15"/>
 		<skill id="overload" n="1" y="1"/>
-		<skill id="besiege" x="20" all="1"/>
+		<skill id="besiege" x="40" all="1"/>
 		<type>1</type>
 		<set>3001</set>
 		<upgrade>
 			<card_id>55011</card_id>
 			<level>2</level>
-			<health>91</health>
-			<attack>21</attack>
-			<skill id="stasis" x="10"/>
+			<health>160</health>
+			<attack>70</attack>
+			<skill id="stasis" x="20"/>
 			<skill id="overload" n="1" y="1"/>
-			<skill id="besiege" x="21" all="1"/>
+			<skill id="besiege" x="50" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55012</card_id>
 			<level>3</level>
-			<health>93</health>
-			<skill id="stasis" x="11"/>
-			<skill id="overload" n="1" y="1"/>
-			<skill id="besiege" x="22" all="1"/>
+			<health>170</health>
+			<skill id="stasis" x="25"/>
+			<skill id="overload" n="2" y="1"/>
+			<skill id="besiege" x="60" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55013</card_id>
 			<level>4</level>
-			<health>95</health>
-			<attack>22</attack>
-			<skill id="stasis" x="12"/>
-			<skill id="overload" n="1" y="1"/>
-			<skill id="besiege" x="23" all="1"/>
+			<health>180</health>
+			<attack>80</attack>
+			<skill id="stasis" x="30"/>
+			<skill id="overload" n="2" y="1"/>
+			<skill id="besiege" x="70" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55014</card_id>
 			<level>5</level>
-			<health>97</health>
-			<skill id="stasis" x="13"/>
-			<skill id="overload" n="1" y="1"/>
-			<skill id="besiege" x="24" all="1"/>
+			<health>180</health>
+			<skill id="stasis" x="35"/>
+			<skill id="overload" n="2" y="1"/>
+			<skill id="besiege" x="80" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55015</card_id>
 			<level>6</level>
-			<health>99</health>
-			<attack>23</attack>
-			<skill id="stasis" x="13"/>
-			<skill id="overload" n="2" y="1"/>
-			<skill id="besiege" x="26" all="1"/>
+			<health>190</health>
+			<attack>80</attack>
+			<skill id="stasis" x="40"/>
+			<skill id="overload" n="3" y="1"/>
+			<skill id="besiege" x="90" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -16374,57 +16379,56 @@
 		<picture>impvignette_lv9</picture>
 		<asset_bundle>279</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>24</attack>
-		<health>100</health>
+		<attack>90</attack>
+		<health>200</health>
 		<cost>4</cost>
 		<rarity>5</rarity>
-		<skill id="stasis" x="13"/>
-		<skill id="overload" n="2" y="1"/>
-		<skill id="besiege" x="27" all="1"/>
+		<skill id="stasis" x="50"/>
+		<skill id="overload" n="3" y="1"/>
+		<skill id="besiege" x="100" all="1"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55017</card_id>
 			<level>2</level>
-			<health>102</health>
-			<attack>25</attack>
-			<skill id="stasis" x="14"/>
-			<skill id="overload" n="2" y="1"/>
-			<skill id="besiege" x="28" all="1"/>
+			<health>205</health>
+			<skill id="stasis" x="60"/>
+			<skill id="overload" n="3" y="1"/>
+			<skill id="besiege" x="110" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55018</card_id>
 			<level>3</level>
-			<health>104</health>
-			<skill id="stasis" x="15"/>
-			<skill id="overload" n="2" y="1"/>
-			<skill id="besiege" x="29" all="1"/>
+			<health>210</health>
+			<skill id="stasis" x="60"/>
+			<skill id="overload" n="3" y="1"/>
+			<skill id="besiege" x="120" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55019</card_id>
 			<level>4</level>
-			<health>106</health>
-			<skill id="stasis" x="16"/>
+			<health>220</health>
+			<skill id="stasis" x="70"/>
 			<skill id="overload" n="3" y="1"/>
-			<skill id="besiege" x="31" all="1"/>
+			<skill id="besiege" x="130" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55020</card_id>
 			<level>5</level>
-			<health>108</health>
-			<attack>26</attack>
-			<skill id="stasis" x="16"/>
+			<health>230</health>
+			<attack>95</attack>
+			<skill id="stasis" x="80"/>
 			<skill id="overload" n="3" y="1"/>
-			<skill id="besiege" x="32" all="1"/>
+			<skill id="besiege" x="140" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55021</card_id>
 			<level>6</level>
-			<health>110</health>
-			<attack>27</attack>
-			<skill id="stasis" x="17"/>
-			<skill id="overload" n="3" y="1"/>
-			<skill id="besiege" x="33" all="1"/>
+			<health>240</health>
+			<attack>100</attack>
+			<skill id="stasis" x="90"/>
+			<skill id="overload" n="4" y="1"/>
+			<skill id="besiege" x="150" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -16433,57 +16437,57 @@
 		<picture>impvignette_lv12</picture>
 		<asset_bundle>279</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>27</attack>
-		<health>111</health>
+		<attack>105</attack>
+		<health>250</health>
 		<cost>4</cost>
 		<rarity>5</rarity>
-		<skill id="stasis" x="18"/>
-		<skill id="overload" n="3" y="1"/>
-		<skill id="besiege" x="34" all="1"/>
+		<skill id="stasis" x="100"/>
+		<skill id="overload" n="4" y="1"/>
+		<skill id="besiege" x="160" all="1"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55023</card_id>
 			<level>2</level>
-			<health>113</health>
-			<attack>28</attack>
-			<skill id="stasis" x="18"/>
+			<health>260</health>
+			<attack>110</attack>
+			<skill id="stasis" x="100"/>
 			<skill id="overload" n="4" y="1"/>
-			<skill id="besiege" x="36" all="1"/>
+			<skill id="besiege" x="170" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55024</card_id>
 			<level>3</level>
-			<health>115</health>
-			<skill id="stasis" x="19"/>
+			<health>270</health>
+			<skill id="stasis" x="105"/>
 			<skill id="overload" n="4" y="1"/>
-			<skill id="besiege" x="37" all="1"/>
+			<skill id="besiege" x="180" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55025</card_id>
 			<level>4</level>
-			<health>117</health>
-			<attack>29</attack>
-			<skill id="stasis" x="20"/>
-			<skill id="overload" n="4" y="1"/>
-			<skill id="besiege" x="38" all="1"/>
+			<health>280</health>
+			<attack>115</attack>
+			<skill id="stasis" x="110"/>
+			<skill id="overload" n="5" y="1"/>
+			<skill id="besiege" x="190" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55026</card_id>
 			<level>5</level>
-			<health>119</health>
-			<attack>30</attack>
-			<skill id="stasis" x="20"/>
-			<skill id="overload" n="4" y="1"/>
-			<skill id="besiege" x="39" all="1"/>
+			<health>290</health>
+			<attack>120</attack>
+			<skill id="stasis" x="115"/>
+			<skill id="overload" n="5" y="1"/>
+			<skill id="besiege" x="195" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55027</card_id>
 			<level>6</level>
-			<health>121</health>
-			<skill id="stasis" x="21"/>
+			<health>300</health>
+			<skill id="stasis" x="120"/>
 			<skill id="overload" all="1" y="1"/>
-			<skill id="besiege" x="41" all="1"/>
+			<skill id="besiege" x="200" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -17094,7 +17098,7 @@
 		<upgrade>
 			<card_id>55093</card_id>
 			<level>6</level>
-			<health>77</health>
+			<health>100</health>
 			<attack>15</attack>
 		</upgrade>
 	</unit>
@@ -17105,7 +17109,7 @@
 		<asset_bundle>279</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>15</attack>
-		<health>78</health>
+		<health>120</health>
 		<cost>3</cost>
 		<rarity>5</rarity>
 		<skill id="evade" x="6"/>
@@ -17116,7 +17120,7 @@
 		<upgrade>
 			<card_id>55095</card_id>
 			<level>2</level>
-			<health>80</health>
+			<health>126</health>
 			<skill id="evade" x="6"/>
 			<skill id="summon" card_id="18332"/>
 			<skill id="flurry" c="4"/>
@@ -17124,30 +17128,30 @@
 		<upgrade>
 			<card_id>55096</card_id>
 			<level>3</level>
-			<health>81</health>
+			<health>136</health>
 			<attack>16</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>55097</card_id>
 			<level>4</level>
-			<health>83</health>
-			<skill id="evade" x="7"/>
-			<skill id="summon" card_id="18333"/>
-			<skill id="flurry" c="4"/>
-		</upgrade>
-		<upgrade>
-			<card_id>55098</card_id>
-			<level>5</level>
-			<health>84</health>
+			<health>140</health>
 			<skill id="evade" x="7"/>
 			<skill id="summon" card_id="18333"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
+			<card_id>55098</card_id>
+			<level>5</level>
+			<health>150</health>
+			<skill id="evade" x="7"/>
+			<skill id="summon" card_id="18333"/>
+			<skill id="flurry" c="2"/>
+		</upgrade>
+		<upgrade>
 			<card_id>55099</card_id>
 			<level>6</level>
-			<health>86</health>
-			<attack>17</attack>
+			<health>160</health>
+			<attack>18</attack>
 		</upgrade>
 	</unit>
 	<unit>
@@ -17156,19 +17160,19 @@
 		<picture>hopemason_lv12</picture>
 		<asset_bundle>279</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>17</attack>
-		<health>87</health>
+		<attack>20</attack>
+		<health>180</health>
 		<cost>3</cost>
 		<rarity>5</rarity>
 		<skill id="evade" x="8"/>
 		<skill id="summon" card_id="18334"/>
-		<skill id="flurry" c="3"/>
+		<skill id="flurry" c="2"/>
 		<type>5</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55101</card_id>
 			<level>2</level>
-			<health>89</health>
+			<health>200</health>
 			<skill id="evade" x="8"/>
 			<skill id="summon" card_id="18334"/>
 			<skill id="flurry" c="2"/>
@@ -17176,14 +17180,14 @@
 		<upgrade>
 			<card_id>55102</card_id>
 			<level>3</level>
-			<health>90</health>
-			<attack>18</attack>
+			<health>200</health>
+			<attack>25</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>55103</card_id>
 			<level>4</level>
-			<health>92</health>
-			<attack>19</attack>
+			<health>210</health>
+			<attack>30</attack>
 			<skill id="evade" x="9"/>
 			<skill id="summon" card_id="18335"/>
 			<skill id="flurry" x="2" c="2"/>
@@ -17191,13 +17195,14 @@
 		<upgrade>
 			<card_id>55104</card_id>
 			<level>5</level>
-			<health>93</health>
+			<health>230</health>
 		</upgrade>
 		<upgrade>
 			<card_id>55105</card_id>
 			<level>6</level>
-			<health>95</health>
-			<skill id="evade" x="9"/>
+			<health>240</health>
+			<attack>35</attack>
+			<skill id="evade" x="10"/>
 			<skill id="summon" card_id="18335"/>
 			<skill id="flurry" x="2" c="2"/>
 		</upgrade>
@@ -17206,53 +17211,53 @@
 		<id>18330</id>
 		<name>Sign of Hope</name>
 		<picture>rightpumperstructure</picture>
-		<health>20</health>
+		<health>250</health>
 		<cost>0</cost>
 		<rarity>5</rarity>
-		<skill id="heal" x="8" y="5"/>
-		<skill id="rally" x="4" y="5"/>
-		<skill id="enrage" x="2" y="5"/>
+		<skill id="heal" x="100" y="5"/>
+		<skill id="rally" x="50" y="5"/>
+		<skill id="enrage" x="25" y="5"/>
 		<type>5</type>
 		<set>9500</set>
 		<upgrade>
 			<card_id>18331</card_id>
 			<level>2</level>
-			<health>24</health>
-			<skill id="heal" x="9" y="5"/>
-			<skill id="rally" x="5" y="5"/>
-			<skill id="enrage" x="2" y="5"/>
+			<health>300</health>
+			<skill id="heal" x="102" y="5"/>
+			<skill id="rally" x="56" y="5"/>
+			<skill id="enrage" x="28" y="5"/>
 		</upgrade>
 		<upgrade>
 			<card_id>18332</card_id>
 			<level>3</level>
-			<health>28</health>
-			<skill id="heal" x="11" y="5"/>
-			<skill id="rally" x="6" y="5"/>
-			<skill id="enrage" x="2" y="5"/>
+			<health>320</health>
+			<skill id="heal" x="110" y="5"/>
+			<skill id="rally" x="60" y="5"/>
+			<skill id="enrage" x="30" y="5"/>
 		</upgrade>
 		<upgrade>
 			<card_id>18333</card_id>
 			<level>4</level>
-			<health>32</health>
-			<skill id="heal" x="12" y="5"/>
-			<skill id="rally" x="6" y="5"/>
-			<skill id="enrage" x="3" y="5"/>
+			<health>322</health>
+			<skill id="heal" x="122" y="5"/>
+			<skill id="rally" x="62" y="5"/>
+			<skill id="enrage" x="32" y="5"/>
 		</upgrade>
 		<upgrade>
 			<card_id>18334</card_id>
 			<level>5</level>
-			<health>36</health>
-			<skill id="heal" x="14" y="5"/>
-			<skill id="rally" x="7" y="5"/>
-			<skill id="enrage" x="3" y="5"/>
+			<health>333</health>
+			<skill id="heal" x="123" y="5"/>
+			<skill id="rally" x="63" y="5"/>
+			<skill id="enrage" x="33" y="5"/>
 		</upgrade>
 		<upgrade>
 			<card_id>18335</card_id>
 			<level>6</level>
-			<health>40</health>
-			<skill id="heal" x="16" y="5"/>
-			<skill id="rally" x="8" y="5"/>
-			<skill id="enrage" x="4" y="5"/>
+			<health>335</health>
+			<skill id="heal" x="125" y="5"/>
+			<skill id="rally" x="65" y="5"/>
+			<skill id="enrage" x="35" y="5"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -17722,52 +17727,52 @@
 		<asset_bundle>276</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>0</attack>
-		<health>40</health>
+		<health>60</health>
 		<cost>0</cost>
 		<rarity>5</rarity>
-		<skill id="enfeeble" x="4" all="1" trigger="play"/>
-		<skill id="strike" x="3" all="1"/>
+		<skill id="enfeeble" x="30" all="1" trigger="play"/>
+		<skill id="strike" x="30" all="1"/>
 		<skill id="flurry" c="4"/>
 		<type>3</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>49713</card_id>
 			<level>2</level>
-			<health>42</health>
-			<skill id="enfeeble" x="5" all="1" trigger="play"/>
-			<skill id="strike" x="3" all="1"/>
+			<health>70</health>
+			<skill id="enfeeble" x="35" all="1" trigger="play"/>
+			<skill id="strike" x="35" all="1"/>
 			<skill id="flurry" c="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49714</card_id>
 			<level>3</level>
-			<health>44</health>
-			<skill id="enfeeble" x="6" all="1" trigger="play"/>
-			<skill id="strike" x="3" all="1"/>
+			<health>80</health>
+			<skill id="enfeeble" x="40" all="1" trigger="play"/>
+			<skill id="strike" x="40" all="1"/>
 			<skill id="flurry" c="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49715</card_id>
 			<level>4</level>
-			<health>45</health>
-			<skill id="enfeeble" x="6" all="1" trigger="play"/>
-			<skill id="strike" x="4" all="1"/>
+			<health>90</health>
+			<skill id="enfeeble" x="45" all="1" trigger="play"/>
+			<skill id="strike" x="45" all="1"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49716</card_id>
 			<level>5</level>
-			<health>47</health>
-			<skill id="enfeeble" x="7" all="1" trigger="play"/>
-			<skill id="strike" x="4" all="1"/>
+			<health>100</health>
+			<skill id="enfeeble" x="50" all="1" trigger="play"/>
+			<skill id="strike" x="50" all="1"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49717</card_id>
 			<level>6</level>
-			<health>49</health>
-			<skill id="enfeeble" x="7" all="1" trigger="play"/>
-			<skill id="strike" x="5" all="1"/>
+			<health>110</health>
+			<skill id="enfeeble" x="55" all="1" trigger="play"/>
+			<skill id="strike" x="55" all="1"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 	</unit>
@@ -17778,52 +17783,52 @@
 		<asset_bundle>276</asset_bundle>
 		<fusion_level>2</fusion_level>
 		<attack>0</attack>
-		<health>51</health>
+		<health>120</health>
 		<cost>0</cost>
 		<rarity>5</rarity>
-		<skill id="enfeeble" x="8" all="1" trigger="play"/>
-		<skill id="strike" x="5" all="1"/>
+		<skill id="enfeeble" x="60" all="1" trigger="play"/>
+		<skill id="strike" x="60" all="1"/>
 		<skill id="flurry" c="3"/>
 		<type>3</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>49719</card_id>
 			<level>2</level>
-			<health>52</health>
-			<skill id="enfeeble" x="8" all="1" trigger="play"/>
-			<skill id="strike" x="5" all="1"/>
+			<health>130</health>
+			<skill id="enfeeble" x="65" all="1" trigger="play"/>
+			<skill id="strike" x="65" all="1"/>
 			<skill id="flurry" c="2"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49720</card_id>
 			<level>3</level>
-			<health>54</health>
-			<skill id="enfeeble" x="9" all="1" trigger="play"/>
-			<skill id="strike" x="5" all="1"/>
+			<health>140</health>
+			<skill id="enfeeble" x="70" all="1" trigger="play"/>
+			<skill id="strike" x="70" all="1"/>
 			<skill id="flurry" c="2"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49721</card_id>
 			<level>4</level>
-			<health>56</health>
-			<skill id="enfeeble" x="9" all="1" trigger="play"/>
-			<skill id="strike" x="6" all="1"/>
+			<health>150</health>
+			<skill id="enfeeble" x="75" all="1" trigger="play"/>
+			<skill id="strike" x="75" all="1"/>
 			<skill id="flurry" c="2"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49722</card_id>
 			<level>5</level>
-			<health>58</health>
-			<skill id="enfeeble" x="9" all="1" trigger="play"/>
-			<skill id="strike" x="6" all="1"/>
+			<health>160</health>
+			<skill id="enfeeble" x="80" all="1" trigger="play"/>
+			<skill id="strike" x="80" all="1"/>
 			<skill id="flurry" c="2"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49723</card_id>
 			<level>6</level>
-			<health>60</health>
-			<skill id="enfeeble" x="10" all="1" trigger="play"/>
-			<skill id="strike" x="7" all="1"/>
+			<health>170</health>
+			<skill id="enfeeble" x="85" all="1" trigger="play"/>
+			<skill id="strike" x="85" all="1"/>
 			<skill id="flurry" c="2"/>
 		</upgrade>
 	</unit>
@@ -19542,54 +19547,54 @@
 		<cost>2</cost>
 		<rarity>3</rarity>
 		<skill id="revenge" x="3"/>
-		<skill trigger="play" id="rally" x="50" all="1" y="1"/>
+		<skill trigger="play" id="rally" x="90" all="1" y="1"/>
 		<skill id="legion" x="25"/>
 		<type>1</type>
 		<set>3000</set>
 		<upgrade>
 			<card_id>55257</card_id>
 			<level>2</level>
-			<health>102</health>
+			<health>115</health>
 			<attack>26</attack>
 			<skill id="revenge" x="3"/>
-			<skill trigger="play" id="rally" x="52" all="1" y="1"/>
+			<skill trigger="play" id="rally" x="100" all="1" y="1"/>
 			<skill id="legion" x="25"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55258</card_id>
 			<level>3</level>
-			<health>104</health>
+			<health>130</health>
 			<attack>27</attack>
-			<skill id="revenge" x="3"/>
-			<skill trigger="play" id="rally" x="55" all="1" y="1"/>
+			<skill id="revenge" x="4"/>
+			<skill trigger="play" id="rally" x="110" all="1" y="1"/>
 			<skill id="legion" x="26"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55259</card_id>
 			<level>4</level>
-			<health>107</health>
+			<health>130</health>
 			<attack>28</attack>
-			<skill id="revenge" x="3"/>
-			<skill trigger="play" id="rally" x="58" all="1" y="1"/>
+			<skill id="revenge" x="4"/>
+			<skill trigger="play" id="rally" x="120" all="1" y="1"/>
 			<skill id="legion" x="27"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55260</card_id>
 			<level>5</level>
-			<health>109</health>
+			<health>140</health>
 			<attack>29</attack>
-			<skill id="revenge" x="3"/>
-			<skill trigger="play" id="rally" x="61" all="1" y="1"/>
+			<skill id="revenge" x="4"/>
+			<skill trigger="play" id="rally" x="130" all="1" y="1"/>
 			<skill id="legion" x="28"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55261</card_id>
 			<level>6</level>
-			<health>111</health>
+			<health>150</health>
 			<attack>30</attack>
-			<skill id="revenge" x="3"/>
-			<skill trigger="play" id="rally" x="64" all="1" y="1"/>
-			<skill id="legion" x="29"/>
+			<skill id="revenge" x="5"/>
+			<skill trigger="play" id="rally" x="140" all="1" y="1"/>
+			<skill id="legion" x="30"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -19599,58 +19604,58 @@
 		<asset_bundle>280</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>30</attack>
-		<health>114</health>
+		<health>160</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="revenge" x="4"/>
-		<skill trigger="play" id="rally" x="67" all="1" y="1"/>
+		<skill id="revenge" x="5"/>
+		<skill trigger="play" id="rally" x="150" all="1" y="1"/>
 		<skill id="legion" x="30"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55263</card_id>
 			<level>2</level>
-			<attack>31</attack>
-			<health>116</health>
-			<skill id="revenge" x="4"/>
-			<skill trigger="play" id="rally" x="70" all="1" y="1"/>
+			<attack>30</attack>
+			<health>170</health>
+			<skill id="revenge" x="5"/>
+			<skill trigger="play" id="rally" x="150" all="1" y="1"/>
 			<skill id="legion" x="31"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55264</card_id>
 			<level>3</level>
-			<attack>32</attack>
-			<health>118</health>
-			<skill id="revenge" x="4"/>
-			<skill trigger="play" id="rally" x="73" all="1" y="1"/>
-			<skill id="legion" x="32"/>
+			<attack>35</attack>
+			<health>170</health>
+			<skill id="revenge" x="6"/>
+			<skill trigger="play" id="rally" x="150" all="1" y="1"/>
+			<skill id="legion" x="33"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55265</card_id>
 			<level>4</level>
-			<health>121</health>
-			<attack>33</attack>
-			<skill id="revenge" x="4"/>
-			<skill trigger="play" id="rally" x="76" all="1" y="1"/>
-			<skill id="legion" x="33"/>
+			<health>180</health>
+			<attack>40</attack>
+			<skill id="revenge" x="6"/>
+			<skill trigger="play" id="rally" x="160" all="1" y="1"/>
+			<skill id="legion" x="35"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55266</card_id>
 			<level>5</level>
-			<health>123</health>
-			<attack>34</attack>
-			<skill id="revenge" x="4"/>
-			<skill trigger="play" id="rally" x="79" all="1" y="1"/>
-			<skill id="legion" x="34"/>
+			<health>190</health>
+			<attack>40</attack>
+			<skill id="revenge" x="6"/>
+			<skill trigger="play" id="rally" x="170" all="1" y="1"/>
+			<skill id="legion" x="40"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55267</card_id>
 			<level>6</level>
-			<health>125</health>
-			<attack>35</attack>
-			<skill id="revenge" x="5"/>
-			<skill trigger="play" id="rally" x="82" all="1" y="1"/>
-			<skill id="legion" x="34"/>
+			<health>200</health>
+			<attack>40</attack>
+			<skill id="revenge" x="6"/>
+			<skill trigger="play" id="rally" x="180" all="1" y="1"/>
+			<skill id="legion" x="45"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -19659,58 +19664,58 @@
 		<picture>impunitunit_lv3</picture>
 		<asset_bundle>280</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>36</attack>
-		<health>128</health>
+		<attack>45</attack>
+		<health>210</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="revenge" x="5"/>
-		<skill trigger="play" id="rally" x="85" all="1" y="1"/>
-		<skill id="legion" x="35"/>
+		<skill id="revenge" x="6"/>
+		<skill trigger="play" id="rally" x="200" all="1" y="1"/>
+		<skill id="legion" x="50"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>55269</card_id>
 			<level>2</level>
-			<health>130</health>
-			<attack>37</attack>
-			<skill id="revenge" x="5"/>
-			<skill trigger="play" id="rally" x="88" all="1" y="1"/>
-			<skill id="legion" x="36"/>
+			<health>215</health>
+			<attack>50</attack>
+			<skill id="revenge" x="7"/>
+			<skill trigger="play" id="rally" x="210" all="1" y="1"/>
+			<skill id="legion" x="50"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55270</card_id>
 			<level>3</level>
-			<health>132</health>
-			<attack>38</attack>
-			<skill id="revenge" x="5"/>
-			<skill trigger="play" id="rally" x="91" all="1" y="1"/>
-			<skill id="legion" x="37"/>
+			<health>220</health>
+			<attack>55</attack>
+			<skill id="revenge" x="7"/>
+			<skill trigger="play" id="rally" x="220" all="1" y="1"/>
+			<skill id="legion" x="55"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55271</card_id>
 			<level>4</level>
-			<health>135</health>
-			<attack>39</attack>
-			<skill id="revenge" x="5"/>
-			<skill trigger="play" id="rally" x="94" all="1" y="1"/>
-			<skill id="legion" x="38"/>
+			<health>225</health>
+			<attack>55</attack>
+			<skill id="revenge" x="7"/>
+			<skill trigger="play" id="rally" x="230" all="1" y="1"/>
+			<skill id="legion" x="55"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55272</card_id>
 			<level>5</level>
-			<health>137</health>
-			<attack>40</attack>
-			<skill id="revenge" x="5"/>
-			<skill trigger="play" id="rally" x="97" all="1" y="1"/>
-			<skill id="legion" x="39"/>
+			<health>230</health>
+			<attack>60</attack>
+			<skill id="revenge" x="7"/>
+			<skill trigger="play" id="rally" x="230" all="1" y="1"/>
+			<skill id="legion" x="60"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55273</card_id>
 			<level>6</level>
-			<health>140</health>
-			<skill id="revenge" x="6"/>
-			<skill trigger="play" id="rally" x="100" all="1" y="1"/>
-			<skill id="legion" x="40"/>
+			<health>240</health>
+			<skill id="revenge" x="8"/>
+			<skill trigger="play" id="rally" x="240" all="1" y="1"/>
+			<skill id="legion" x="60"/>
 		</upgrade>
 	</unit>
 	<unit>

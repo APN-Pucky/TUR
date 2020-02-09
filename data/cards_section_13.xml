@@ -19078,54 +19078,54 @@
 		<name>Abraxas Slumbering</name>
 		<picture>progenpauls_lv1</picture>
 		<asset_bundle>259</asset_bundle>
-		<attack>8</attack>
-		<health>30</health>
+		<attack>20</attack>
+		<health>60</health>
 		<cost>1</cost>
 		<rarity>5</rarity>
-		<skill id="evade" x="4"/>
-		<skill id="valor" x="12"/>
-		<skill id="drain" x="1"/>
+		<skill id="evade" x="7"/>
+		<skill id="bravery" x="20"/>
+		<skill id="drain" x="40"/>
 		<type>6</type>
 		<set>4750</set>
 		<upgrade>
 			<card_id>48017</card_id>
 			<level>2</level>
-			<health>31</health>
-			<skill id="evade" x="4"/>
-			<skill id="valor" x="13"/>
-			<skill id="drain" x="2"/>
+			<health>60</health>
+			<skill id="evade" x="7"/>
+			<skill id="bravery" x="30"/>
+			<skill id="drain" x="40"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48018</card_id>
 			<level>3</level>
-			<health>33</health>
-			<skill id="evade" x="4"/>
-			<skill id="valor" x="14"/>
-			<skill id="drain" x="3"/>
+			<health>60</health>
+			<skill id="evade" x="8"/>
+			<skill id="bravery" x="30"/>
+			<skill id="drain" x="40"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48019</card_id>
 			<level>4</level>
-			<health>35</health>
-			<skill id="evade" x="5"/>
-			<skill id="valor" x="15"/>
-			<skill id="drain" x="4"/>
+			<health>70</health>
+			<skill id="evade" x="8"/>
+			<skill id="bravery" x="30"/>
+			<skill id="drain" x="50"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48020</card_id>
 			<level>5</level>
-			<health>37</health>
-			<skill id="evade" x="5"/>
-			<skill id="valor" x="16"/>
-			<skill id="drain" x="5"/>
+			<health>70</health>
+			<skill id="evade" x="8"/>
+			<skill id="bravery" x="40"/>
+			<skill id="drain" x="50"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48021</card_id>
 			<level>6</level>
-			<health>38</health>
-			<skill id="evade" x="5"/>
-			<skill id="valor" x="17"/>
-			<skill id="drain" x="6"/>
+			<health>70</health>
+			<skill id="evade" x="8"/>
+			<skill id="bravery" x="50"/>
+			<skill id="drain" x="50"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -19134,54 +19134,54 @@
 		<picture>progenpauls_lv1</picture>
 		<asset_bundle>259</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>8</attack>
-		<health>40</health>
+		<attack>20</attack>
+		<health>80</health>
 		<cost>1</cost>
 		<rarity>5</rarity>
-		<skill id="evade" x="6"/>
-		<skill id="valor" x="19"/>
-		<skill id="drain" x="7"/>
+		<skill id="evade" x="8"/>
+		<skill id="bravery" x="50"/>
+		<skill id="drain" x="60"/>
 		<type>6</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>48023</card_id>
 			<level>2</level>
-			<health>42</health>
-			<skill id="evade" x="6"/>
-			<skill id="valor" x="20"/>
-			<skill id="drain" x="8"/>
+			<health>80</health>
+			<skill id="evade" x="9"/>
+			<skill id="bravery" x="50"/>
+			<skill id="drain" x="60"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48024</card_id>
 			<level>3</level>
-			<health>44</health>
-			<skill id="evade" x="6"/>
-			<skill id="valor" x="21"/>
-			<skill id="drain" x="9"/>
+			<health>80</health>
+			<skill id="evade" x="9"/>
+			<skill id="bravery" x="60"/>
+			<skill id="drain" x="60"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48025</card_id>
 			<level>4</level>
-			<health>45</health>
-			<skill id="evade" x="7"/>
-			<skill id="valor" x="22"/>
-			<skill id="drain" x="11"/>
+			<health>90</health>
+			<skill id="evade" x="9"/>
+			<skill id="bravery" x="60"/>
+			<skill id="drain" x="70"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48026</card_id>
 			<level>5</level>
-			<health>47</health>
-			<skill id="evade" x="7"/>
-			<skill id="valor" x="23"/>
-			<skill id="drain" x="12"/>
+			<health>90</health>
+			<skill id="evade" x="9"/>
+			<skill id="bravery" x="70"/>
+			<skill id="drain" x="70"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48027</card_id>
 			<level>6</level>
-			<health>49</health>
-			<skill id="evade" x="7"/>
-			<skill id="valor" x="24"/>
-			<skill id="drain" x="13"/>
+			<health>90</health>
+			<skill id="evade" x="10"/>
+			<skill id="bravery" x="70"/>
+			<skill id="drain" x="70"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -19190,54 +19190,54 @@
 		<picture>progenpauls_lv3</picture>
 		<asset_bundle>259</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>8</attack>
-		<health>51</health>
+		<attack>20</attack>
+		<health>100</health>
 		<cost>1</cost>
 		<rarity>5</rarity>
-		<skill id="evade" x="8"/>
-		<skill id="valor" x="26"/>
-		<skill id="drain" x="14"/>
+		<skill id="evade" x="10"/>
+		<skill id="bravery" x="70"/>
+		<skill id="drain" x="80"/>
 		<type>6</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>48029</card_id>
 			<level>2</level>
-			<health>52</health>
-			<skill id="evade" x="8"/>
-			<skill id="valor" x="27"/>
-			<skill id="drain" x="15"/>
+			<health>100</health>
+			<skill id="evade" x="10"/>
+			<skill id="bravery" x="80"/>
+			<skill id="drain" x="80"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48030</card_id>
 			<level>3</level>
-			<health>54</health>
-			<skill id="evade" x="8"/>
-			<skill id="valor" x="28"/>
-			<skill id="drain" x="16"/>
+			<health>110</health>
+			<skill id="evade" x="11"/>
+			<skill id="bravery" x="80"/>
+			<skill id="drain" x="90"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48031</card_id>
 			<level>4</level>
-			<health>56</health>
-			<skill id="evade" x="9"/>
-			<skill id="valor" x="29"/>
-			<skill id="drain" x="17"/>
+			<health>110</health>
+			<skill id="evade" x="11"/>
+			<skill id="bravery" x="90"/>
+			<skill id="drain" x="90"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48032</card_id>
 			<level>5</level>
-			<health>58</health>
-			<skill id="evade" x="9"/>
-			<skill id="valor" x="30"/>
-			<skill id="drain" x="18"/>
+			<health>120</health>
+			<skill id="evade" x="11"/>
+			<skill id="bravery" x="90"/>
+			<skill id="drain" x="90"/>
 		</upgrade>
 		<upgrade>
 			<card_id>48033</card_id>
 			<level>6</level>
-			<health>60</health>
-			<skill id="evade" x="10"/>
-			<skill id="valor" x="32"/>
-			<skill id="drain" x="20"/>
+			<health>120</health>
+			<skill id="evade" x="12"/>
+			<skill id="bravery" x="100"/>
+			<skill id="drain" x="90"/>
 		</upgrade>
 	</unit>
 	

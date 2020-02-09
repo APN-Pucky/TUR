@@ -18571,46 +18571,46 @@
 		<name>Beta Zoid</name>
 		<picture>tredmech</picture>
 		<asset_bundle>149</asset_bundle>
-		<attack>6</attack>
-		<health>27</health>
+		<attack>35</attack>
+		<health>75</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="besiege" x="6" all="1"/>
-		<skill id="legion" x="6"/>
+		<skill id="besiege" x="20" all="1"/>
+		<skill id="legion" x="15"/>
 		<skill id="flurry" c="3"/>
 		<type>2</type>
 		<set>3000</set>
 		<upgrade>
 			<card_id>36887</card_id>
 			<level>2</level>
-			<health>28</health>
+			<health>80</health>
 		</upgrade>
 		<upgrade>
 			<card_id>36888</card_id>
 			<level>3</level>
 			<cost>1</cost>
-			<health>30</health>
+			<health>85</health>
 		</upgrade>
 		<upgrade>
 			<card_id>36889</card_id>
 			<level>4</level>
-			<health>31</health>
-			<attack>7</attack>
+			<health>90</health>
+			<attack>45</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>36890</card_id>
 			<level>5</level>
-			<health>33</health>
-			<skill id="besiege" x="6" all="1"/>
-			<skill id="legion" x="7"/>
+			<health>95</health>
+			<skill id="besiege" x="25" all="1"/>
+			<skill id="legion" x="18"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36891</card_id>
 			<level>6</level>
-			<health>34</health>
-			<skill id="besiege" x="7" all="1"/>
-			<skill id="legion" x="7"/>
+			<health>100</health>
+			<skill id="besiege" x="30" all="1"/>
+			<skill id="legion" x="20"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 	</unit>
@@ -18620,49 +18620,49 @@
 		<picture>tredmech</picture>
 		<asset_bundle>149</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>7</attack>
-		<health>36</health>
+		<attack>55</attack>
+		<health>105</health>
 		<cost>1</cost>
 		<rarity>3</rarity>
-		<skill id="besiege" x="7" all="1"/>
-		<skill id="legion" x="7"/>
+		<skill id="besiege" x="32" all="1"/>
+		<skill id="legion" x="25"/>
 		<skill id="flurry" c="3"/>
 		<type>2</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>36893</card_id>
 			<level>2</level>
-			<attack>8</attack>
-			<health>37</health>
+			<attack>60</attack>
+			<health>110</health>
 		</upgrade>
 		<upgrade>
 			<card_id>36894</card_id>
 			<level>3</level>
-			<health>39</health>
-			<skill id="besiege" x="7" all="1"/>
-			<skill id="legion" x="8"/>
+			<health>115</health>
+			<skill id="besiege" x="35" all="1"/>
+			<skill id="legion" x="30"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36895</card_id>
 			<level>4</level>
-			<health>40</health>
-			<attack>9</attack>
+			<health>120</health>
+			<attack>65</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>36896</card_id>
 			<level>5</level>
-			<health>42</health>
-			<skill id="besiege" x="7" all="1"/>
-			<skill id="legion" x="9"/>
+			<health>125</health>
+			<skill id="besiege" x="38" all="1"/>
+			<skill id="legion" x="35"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36897</card_id>
 			<level>6</level>
-			<health>43</health>
-			<skill id="besiege" x="8" all="1"/>
-			<skill id="legion" x="9"/>
+			<health>130</health>
+			<skill id="besiege" x="40" all="1"/>
+			<skill id="legion" x="40"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 	</unit>
@@ -18672,49 +18672,49 @@
 		<picture>tredmech_lv3</picture>
 		<asset_bundle>149</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>9</attack>
-		<health>45</health>
+		<attack>70</attack>
+		<health>135</health>
 		<cost>1</cost>
 		<rarity>3</rarity>
-		<skill id="besiege" x="8" all="1"/>
-		<skill id="legion" x="9"/>
+		<skill id="besiege" x="45" all="1"/>
+		<skill id="legion" x="45"/>
 		<skill id="flurry" c="3"/>
 		<type>2</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>36899</card_id>
 			<level>2</level>
-			<health>46</health>
-			<attack>10</attack>
+			<health>140</health>
+			<attack>75</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>36900</card_id>
 			<level>3</level>
-			<health>48</health>
-			<skill id="besiege" x="8" all="1"/>
-			<skill id="legion" x="10"/>
+			<health>140</health>
+			<skill id="besiege" x="50" all="1"/>
+			<skill id="legion" x="50"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36901</card_id>
 			<level>4</level>
-			<health>49</health>
+			<health>140</health>
 			<attack>11</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>36902</card_id>
 			<level>5</level>
-			<health>51</health>
-			<skill id="besiege" x="9" all="1"/>
-			<skill id="legion" x="10"/>
+			<health>145</health>
+			<skill id="besiege" x="55" all="1"/>
+			<skill id="legion" x="55"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36903</card_id>
 			<level>6</level>
-			<health>53</health>
-			<skill id="besiege" x="9" all="1"/>
-			<skill id="legion" x="11"/>
+			<health>150</health>
+			<skill id="besiege" x="60" all="1"/>
+			<skill id="legion" x="60"/>
 			<skill id="flurry" c="3"/>
 		</upgrade>
 	</unit>
@@ -27765,50 +27765,50 @@
 		<name>Gigantos</name>
 		<picture>rightleemech_lv1</picture>
 		<asset_bundle>165</asset_bundle>
-		<attack>5</attack>
-		<health>19</health>
+		<attack>40</attack>
+		<health>60</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
 		<skill id="evade" x="1"/>
-		<skill id="mend" x="3"/>
-		<skill id="berserk" x="1"/>
+		<skill id="fortify" x="50"/>
+		<skill id="berserk" x="50"/>
 		<type>5</type>
-		<set>4750</set>
+		<set>4500</set>
 		<upgrade>
 			<card_id>36309</card_id>
 			<level>2</level>
-			<health>20</health>
+			<health>80</health>
 		</upgrade>
 		<upgrade>
 			<card_id>36310</card_id>
 			<level>3</level>
-			<health>21</health>
-			<skill id="evade" x="1"/>
-			<skill id="mend" x="4"/>
-			<skill id="berserk" x="1"/>
+			<health>100</health>
+			<skill id="evade" x="2"/>
+			<skill id="fortify" x="60"/>
+			<skill id="berserk" x="60"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36311</card_id>
 			<level>4</level>
-			<health>22</health>
-			<skill id="evade" x="1"/>
-			<skill id="mend" x="4"/>
-			<skill id="berserk" x="2"/>
+			<health>120</health>
+			<skill id="evade" x="3"/>
+			<skill id="fortify" x="65"/>
+			<skill id="berserk" x="65"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36312</card_id>
 			<level>5</level>
-			<skill id="evade" x="2"/>
-			<skill id="mend" x="4"/>
-			<skill id="berserk" x="2"/>
+			<skill id="evade" x="3"/>
+			<skill id="fortify" x="70"/>
+			<skill id="berserk" x="70"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36313</card_id>
 			<level>6</level>
-			<health>23</health>
-			<skill id="evade" x="2"/>
-			<skill id="mend" x="5"/>
-			<skill id="berserk" x="2"/>
+			<health>140</health>
+			<skill id="evade" x="3"/>
+			<skill id="fortify" x="75"/>
+			<skill id="berserk" x="75"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -27817,50 +27817,51 @@
 		<picture>rightleemech_lv1</picture>
 		<asset_bundle>165</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>5</attack>
-		<health>24</health>
+		<attack>45</attack>
+		<health>145</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="evade" x="2"/>
-		<skill id="mend" x="5"/>
-		<skill id="berserk" x="3"/>
+		<skill id="evade" x="3"/>
+		<skill id="fortify" x="80"/>
+		<skill id="berserk" x="80"/>
 		<type>5</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>36315</card_id>
 			<level>2</level>
-			<attack>6</attack>
+			<attack>47</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>36316</card_id>
 			<level>3</level>
-			<health>25</health>
-			<skill id="evade" x="3"/>
-			<skill id="mend" x="5"/>
-			<skill id="berserk" x="3"/>
+			<health>160</health>
+			<skill id="evade" x="4"/>
+			<skill id="fortify" x="85"/>
+			<skill id="berserk" x="85"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36317</card_id>
 			<level>4</level>
-			<health>26</health>
-			<skill id="evade" x="3"/>
-			<skill id="mend" x="6"/>
-			<skill id="berserk" x="3"/>
+			<health>180</health>
+			<skill id="evade" x="5"/>
+			<skill id="fortify" x="90"/>
+			<skill id="berserk" x="90"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36318</card_id>
 			<level>5</level>
-			<health>27</health>
-			<skill id="evade" x="3"/>
-			<skill id="mend" x="6"/>
-			<skill id="berserk" x="4"/>
+			<attack>50</attack>
+			<health>200</health>
+			<skill id="evade" x="6"/>
+			<skill id="fortify" x="95"/>
+			<skill id="berserk" x="95"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36319</card_id>
 			<level>6</level>
-			<skill id="evade" x="3"/>
-			<skill id="mend" x="7"/>
-			<skill id="berserk" x="4"/>
+			<skill id="evade" x="7"/>
+			<skill id="fortify" x="100"/>
+			<skill id="berserk" x="100"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -27869,49 +27870,49 @@
 		<picture>rightleemech_lv3</picture>
 		<asset_bundle>165</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>6</attack>
-		<health>27</health>
+		<attack>50</attack>
+		<health>210</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="evade" x="4"/>
-		<skill id="mend" x="7"/>
-		<skill id="berserk" x="4"/>
+		<skill id="evade" x="8"/>
+		<skill id="fortify" x="100"/>
+		<skill id="berserk" x="100"/>
 		<type>5</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>36321</card_id>
 			<level>2</level>
-			<health>28</health>
-			<skill id="evade" x="4"/>
-			<skill id="mend" x="7"/>
-			<skill id="berserk" x="5"/>
+			<health>220</health>
+			<skill id="evade" x="8"/>
+			<skill id="fortify" x="105"/>
+			<skill id="berserk" x="105"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36322</card_id>
 			<level>3</level>
-			<skill id="evade" x="4"/>
-			<skill id="mend" x="8"/>
-			<skill id="berserk" x="5"/>
+			<skill id="evade" x="8"/>
+			<skill id="fortify" x="110"/>
+			<skill id="berserk" x="110"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36323</card_id>
 			<level>4</level>
-			<health>29</health>
-			<attack>7</attack>
+			<health>240</health>
+			<attack>60</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>36324</card_id>
 			<level>5</level>
-			<skill id="evade" x="5"/>
-			<skill id="mend" x="8"/>
-			<skill id="berserk" x="5"/>
+			<skill id="evade" x="9"/>
+			<skill id="fortify" x="115"/>
+			<skill id="berserk" x="115"/>
 		</upgrade>
 		<upgrade>
 			<card_id>36325</card_id>
 			<level>6</level>
-			<skill id="evade" x="5"/>
-			<skill id="mend" x="9"/>
-			<skill id="berserk" x="5"/>
+			<skill id="evade" x="9"/>
+			<skill id="fortify" x="120"/>
+			<skill id="berserk" x="120"/>
 		</upgrade>
 	</unit>
 

@@ -31,6 +31,8 @@ import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
 import de.neuwirthinformatik.Alexander.TU.Basic.SkillSpec;
 import de.neuwirthinformatik.Alexander.TU.Render.Render;
 import de.neuwirthinformatik.Alexander.TU.util.GUI;
+import de.neuwirthinformatik.Alexander.TU.util.Task;
+import de.neuwirthinformatik.Alexander.TU.util.Wget;
 
 public class RenderPanel extends JPanel{
 	JTextField path;
@@ -144,6 +146,35 @@ public class RenderPanel extends JPanel{
 		this.updateUI();
 	}
 	
+	public static void updateXML()  {updateXML(true);}
+	public static void updateXML(boolean dev)
+	{
+		String tyrant_url = (dev?"http://mobile-dev.tyrantonline.com/assets/":"http://mobile.tyrantonline.com/assets/");
+		//XML
+		System.out.println("Downloading new XMLs ...");
+		Task.start(() -> {
+			int i =0;
+	        Wget.Status status = Wget.Status.Success;
+	        while (status == Wget.Status.Success)
+	        {
+	        	i++;
+				String sec = "cards_section_" + i + ".xml";
+				status = Wget.wGet("data" + GlobalData.file_seperator + sec, tyrant_url + sec);
+			}
+		});
+		final String[] arr = new String[] {"fusion_recipes_cj2","missions","levels","skills_set"};
+		for(int i =0; i < arr.length;i++)
+		{
+			final String sec = arr[i] + ".xml";
+			Task.start(() -> Wget.wGet("data" + GlobalData.file_seperator + sec,tyrant_url + sec));
+		}
+		Task.start(() -> Wget.wGet("data" + GlobalData.file_seperator + "raids.xml", "https://raw.githubusercontent.com/APN-Pucky/tyrant_optimize/merged/data/raids.xml"));
+		Task.start(() -> Wget.wGet("data" + GlobalData.file_seperator + "bges.txt", "https://raw.githubusercontent.com/APN-Pucky/tyrant_optimize/merged/data/bges.txt"));	
+        Task.sleepForAll();
+        System.out.println("...done -> reload");
+        GlobalData.init();
+	}
+	
 	public RenderPanel() 
 	{
 		super();
@@ -151,11 +182,12 @@ public class RenderPanel extends JPanel{
 		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 
 		JPanel tmp = new JPanel();
-		tmp.add(GUI.buttonAsync("Update", () -> updateIMG()));
+		tmp.add(GUI.buttonSync("Update", () -> updateIMG()));
 		tmp.add(path= GUI.textEdit("out.png"));
-		tmp.add(GUI.buttonAsync("Save", () -> saveIMG()));
+		tmp.add(GUI.buttonSync("Save", () -> saveIMG()));
 		tmp.add(load = GUI.textEdit("load card name or id"));
-		tmp.add(GUI.buttonAsync("Load", () -> loadIMG()));
+		tmp.add(GUI.buttonSync("Load", () -> loadIMG()));
+		tmp.add(GUI.buttonSync("updateXML", () -> updateXML()));
 		panel.add(tmp);
 
 		JPanel datapanel = new JPanel();

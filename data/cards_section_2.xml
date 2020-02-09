@@ -14426,7 +14426,7 @@
 	<unit>
 		<id>5257</id>
 		<name>Diviner</name> <!-- Divinator -->
-		<picture>progrocker_lv3.jpg</picture>
+		<picture>progrocker.jpg</picture>
 		<asset_bundle>1005</asset_bundle>
 		<attack>2</attack>
 		<health>21</health>

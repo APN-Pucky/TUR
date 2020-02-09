@@ -12012,56 +12012,56 @@
 		<name>Antiphon</name>
 		<picture>righteousfrigate.jpg</picture>
 		<asset_bundle>137</asset_bundle>
-		<attack>7</attack>
-		<health>24</health>
+		<attack>30</attack>
+		<health>80</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="avenge" x="5"/>
-		<skill id="protect" x="3" all="1" y="5"/>
+		<skill id="avenge" x="20"/>
+		<skill id="protect" x="11" all="1" y="5"/>
 		<skill id="besiege" x="7" all="1"/>
 		<type>5</type>
 		<set>3000</set>
 		<upgrade>
 			<card_id>30165</card_id>
 			<level>2</level>
-			<health>26</health>
-			<skill id="avenge" x="6"/>
-			<skill id="protect" x="3" all="1" y="5"/>
-			<skill id="besiege" x="7" all="1"/>
+			<health>90</health>
+			<skill id="avenge" x="25"/>
+			<skill id="protect" x="16" all="1" y="5"/>
+			<skill id="besiege" x="22" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30166</card_id>
 			<level>3</level>
-			<health>28</health>
-			<attack>8</attack>
-			<skill id="avenge" x="7"/>
-			<skill id="protect" x="3" all="1" y="5"/>
-			<skill id="besiege" x="7" all="1"/>
+			<health>100</health>
+			<attack>55</attack>
+			<skill id="avenge" x="30"/>
+			<skill id="protect" x="21" all="1" y="5"/>
+			<skill id="besiege" x="24" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30167</card_id>
 			<level>4</level>
-			<health>31</health>
-			<skill id="avenge" x="8"/>
-			<skill id="protect" x="3" all="1" y="5"/>
-			<skill id="besiege" x="8" all="1"/>
+			<health>110</health>
+			<skill id="avenge" x="35"/>
+			<skill id="protect" x="24" all="1" y="5"/>
+			<skill id="besiege" x="26" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30168</card_id>
 			<level>5</level>
-			<health>33</health>
-			<attack>9</attack>
-			<skill id="avenge" x="8"/>
-			<skill id="protect" x="4" all="1" y="5"/>
-			<skill id="besiege" x="8" all="1"/>
+			<health>120</health>
+			<attack>65</attack>
+			<skill id="avenge" x="40"/>
+			<skill id="protect" x="27" all="1" y="5"/>
+			<skill id="besiege" x="28" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30169</card_id>
 			<level>6</level>
-			<health>36</health>
-			<skill id="avenge" x="9"/>
-			<skill id="protect" x="4" all="1" y="5"/>
-			<skill id="besiege" x="9" all="1"/>
+			<health>130</health>
+			<skill id="avenge" x="45"/>
+			<skill id="protect" x="30" all="1" y="5"/>
+			<skill id="besiege" x="30" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -12070,56 +12070,56 @@
 		<picture>righteousfrigate.jpg</picture>
 		<asset_bundle>137</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>9</attack>
-		<health>38</health>
+		<attack>70</attack>
+		<health>140</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="avenge" x="10"/>
-		<skill id="protect" x="5" all="1" y="5"/>
-		<skill id="besiege" x="9" all="1"/>
+		<skill id="avenge" x="50"/>
+		<skill id="protect" x="35" all="1" y="5"/>
+		<skill id="besiege" x="32" all="1"/>
 		<type>5</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>30171</card_id>
 			<level>2</level>
-			<health>41</health>
-			<attack>10</attack>
-			<skill id="avenge" x="11"/>
-			<skill id="protect" x="5" all="1" y="5"/>
-			<skill id="besiege" x="9" all="1"/>
+			<health>150</health>
+			<attack>75</attack>
+			<skill id="avenge" x="55"/>
+			<skill id="protect" x="41" all="1" y="5"/>
+			<skill id="besiege" x="34" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30172</card_id>
 			<level>3</level>
-			<health>43</health>
-			<attack>11</attack>
-			<skill id="avenge" x="11"/>
-			<skill id="protect" x="5" all="1" y="5"/>
-			<skill id="besiege" x="10" all="1"/>
+			<health>160</health>
+			<attack>80</attack>
+			<skill id="avenge" x="60"/>
+			<skill id="protect" x="46" all="1" y="5"/>
+			<skill id="besiege" x="35" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30173</card_id>
 			<level>4</level>
-			<health>46</health>
-			<skill id="avenge" x="12"/>
-			<skill id="protect" x="5" all="1" y="5"/>
-			<skill id="besiege" x="10" all="1"/>
+			<health>170</health>
+			<skill id="avenge" x="65"/>
+			<skill id="protect" x="49" all="1" y="5"/>
+			<skill id="besiege" x="36" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30174</card_id>
 			<level>5</level>
-			<health>48</health>
-			<skill id="avenge" x="13"/>
-			<skill id="protect" x="5" all="1" y="5"/>
-			<skill id="besiege" x="11" all="1"/>
+			<health>180</health>
+			<skill id="avenge" x="70"/>
+			<skill id="protect" x="52" all="1" y="5"/>
+			<skill id="besiege" x="38" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30175</card_id>
 			<level>6</level>
-			<health>51</health>
-			<skill id="avenge" x="14"/>
-			<skill id="protect" x="6" all="1" y="5"/>
-			<skill id="besiege" x="11" all="1"/>
+			<health>190</health>
+			<skill id="avenge" x="75"/>
+			<skill id="protect" x="55" all="1" y="5"/>
+			<skill id="besiege" x="40" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -12128,56 +12128,56 @@
 		<picture>righteousfrigate_lv3.jpg</picture>
 		<asset_bundle>137</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>12</attack>
-		<health>53</health>
+		<attack>85</attack>
+		<health>200</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="avenge" x="14"/>
-		<skill id="protect" x="6" all="1" y="5"/>
-		<skill id="besiege" x="12" all="1"/>
+		<skill id="avenge" x="80"/>
+		<skill id="protect" x="60" all="1" y="5"/>
+		<skill id="besiege" x="41" all="1"/>
 		<type>5</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>30177</card_id>
 			<level>2</level>
-			<health>56</health>
-			<skill id="avenge" x="15"/>
-			<skill id="protect" x="7" all="1" y="5"/>
-			<skill id="besiege" x="12" all="1"/>
+			<health>210</health>
+			<skill id="avenge" x="83"/>
+			<skill id="protect" x="63" all="1" y="5"/>
+			<skill id="besiege" x="42" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30178</card_id>
 			<level>3</level>
-			<health>58</health>
-			<attack>13</attack>
-			<skill id="avenge" x="16"/>
-			<skill id="protect" x="7" all="1" y="5"/>
-			<skill id="besiege" x="12" all="1"/>
+			<health>220</health>
+			<attack>90</attack>
+			<skill id="avenge" x="86"/>
+			<skill id="protect" x="66" all="1" y="5"/>
+			<skill id="besiege" x="44" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30179</card_id>
 			<level>4</level>
-			<health>61</health>
-			<skill id="avenge" x="17"/>
-			<skill id="protect" x="7" all="1" y="5"/>
-			<skill id="besiege" x="13" all="1"/>
+			<health>230</health>
+			<skill id="avenge" x="90"/>
+			<skill id="protect" x="69" all="1" y="5"/>
+			<skill id="besiege" x="46" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30180</card_id>
 			<level>5</level>
-			<health>63</health>
-			<attack>14</attack>
-			<skill id="avenge" x="18"/>
-			<skill id="protect" x="7" all="1" y="5"/>
-			<skill id="besiege" x="13" all="1"/>
+			<health>240</health>
+			<attack>100</attack>
+			<skill id="avenge" x="95"/>
+			<skill id="protect" x="72" all="1" y="5"/>
+			<skill id="besiege" x="48" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>30181</card_id>
 			<level>6</level>
-			<health>66</health>
-			<skill id="avenge" x="18"/>
-			<skill id="protect" x="8" all="1" y="5"/>
-			<skill id="besiege" x="14" all="1"/>
+			<health>250</health>
+			<skill id="avenge" x="100"/>
+			<skill id="protect" x="75" all="1" y="5"/>
+			<skill id="besiege" x="50" all="1"/>
 		</upgrade>
 	</unit>
 	

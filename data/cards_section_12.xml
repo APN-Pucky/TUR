@@ -1347,57 +1347,57 @@
 		<picture>flightoffancy_lv1</picture>
 		<asset_bundle>255</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>6</attack>
-		<health>62</health>
+		<attack>20</attack>
+		<health>140</health>
 		<cost>4</cost>
 		<rarity>4</rarity>
 		<skill id="evade" x="4"/>
-		<skill id="avenge" x="13"/>
-		<skill id="counter" x="15"/>
+		<skill id="avenge" x="35"/>
+		<skill id="counter" x="70"/>
 		<type>1</type>
 		<set>2500</set>
 		<upgrade>
 			<card_id>47453</card_id>
 			<level>2</level>
-			<health>67</health>
+			<health>160</health>
 			<skill id="evade" x="5"/>
-			<skill id="avenge" x="14"/>
-			<skill id="counter" x="16"/>
+			<skill id="avenge" x="40"/>
+			<skill id="counter" x="80"/>
 		</upgrade>
 		<upgrade>
 			<card_id>47454</card_id>
 			<level>3</level>
-			<attack>7</attack>
-			<health>72</health>
+			<attack>24</attack>
+			<health>180</health>
 			<skill id="evade" x="6"/>
-			<skill id="avenge" x="16"/>
-			<skill id="counter" x="18"/>
+			<skill id="avenge" x="45"/>
+			<skill id="counter" x="90"/>
 		</upgrade>
 		<upgrade>
 			<card_id>47455</card_id>
 			<level>4</level>
-			<health>78</health>
+			<health>200</health>
 			<skill id="evade" x="7"/>
-			<skill id="avenge" x="17"/>
-			<skill id="counter" x="20"/>
+			<skill id="avenge" x="50"/>
+			<skill id="counter" x="100"/>
 		</upgrade>
 		<upgrade>
 			<card_id>47456</card_id>
 			<level>5</level>
-			<attack>8</attack>
-			<health>84</health>
+			<attack>26</attack>
+			<health>220</health>
 			<skill id="evade" x="8"/>
-			<skill id="avenge" x="19"/>
-			<skill id="counter" x="22"/>
+			<skill id="avenge" x="55"/>
+			<skill id="counter" x="110"/>
 		</upgrade>
 		<upgrade>
 			<card_id>47457</card_id>
 			<level>6</level>
-			<attack>9</attack>
-			<health>91</health>
+			<attack>30</attack>
+			<health>240</health>
 			<skill id="evade" x="9"/>
-			<skill id="avenge" x="21"/>
-			<skill id="counter" x="24"/>
+			<skill id="avenge" x="60"/>
+			<skill id="counter" x="120"/>
 		</upgrade>
 	</unit>
 	<unit>

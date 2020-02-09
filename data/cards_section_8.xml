@@ -772,7 +772,7 @@
 
 	<unit>
 		<id>33003</id>
-		<name>Surn of the Shadows</name> <!-- Rixz of the Night -->
+		<name>Surn of the Shadows</name> <!-- Surn of the Night -->
 		<picture>xenotallguy_lv1</picture>
 		<asset_bundle>151</asset_bundle>
 		<fusion_level>1</fusion_level>
@@ -5485,55 +5485,55 @@
 		<name>Deep Terror</name>
 		<picture>flotsam_lv1</picture>
 		<asset_bundle>150</asset_bundle>
-		<attack>6</attack>
-		<health>50</health>
+		<attack>80</attack>
+		<health>220</health>
 		<cost>4</cost>
 		<rarity>3</rarity>
-		<skill id="avenge" x="12"/>
-		<skill id="counter" x="12"/>
+		<skill id="avenge" x="30"/>
+		<skill id="counter" x="60"/>
 		<skill id="jam" c="7"/>
 		<type>3</type>
 		<set>3000</set>
 		<upgrade>
 			<card_id>33250</card_id>
 			<level>2</level>
-			<health>52</health>
-			<skill id="avenge" x="13"/>
-			<skill id="counter" x="12"/>
+			<health>240</health>
+			<skill id="avenge" x="40"/>
+			<skill id="counter" x="65"/>
 			<skill id="jam" c="6"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33251</card_id>
 			<level>3</level>
-			<health>55</health>
-			<attack>7</attack>
-			<skill id="avenge" x="13"/>
-			<skill id="counter" x="13"/>
+			<health>260</health>
+			<attack>100</attack>
+			<skill id="avenge" x="45"/>
+			<skill id="counter" x="70"/>
 			<skill id="jam" c="6"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33252</card_id>
 			<level>4</level>
-			<health>58</health>
-			<skill id="avenge" x="14"/>
-			<skill id="counter" x="14"/>
+			<health>280</health>
+			<skill id="avenge" x="50"/>
+			<skill id="counter" x="80"/>
 			<skill id="jam" c="6"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33253</card_id>
 			<level>5</level>
-			<health>61</health>
-			<skill id="avenge" x="15"/>
-			<skill id="counter" x="15"/>
+			<health>300</health>
+			<skill id="avenge" x="55"/>
+			<skill id="counter" x="85"/>
 			<skill id="jam" c="6"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33254</card_id>
 			<level>6</level>
-			<health>64</health>
-			<attack>8</attack>
-			<skill id="avenge" x="15"/>
-			<skill id="counter" x="15"/>
+			<health>320</health>
+			<attack>110</attack>
+			<skill id="avenge" x="60"/>
+			<skill id="counter" x="90"/>
 			<skill id="jam" c="5"/>
 		</upgrade>
 	</unit>
@@ -5543,54 +5543,54 @@
 		<picture>flotsam_lv1</picture>
 		<asset_bundle>150</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>9</attack>
-		<health>67</health>
+		<attack>120</attack>
+		<health>340</health>
 		<cost>4</cost>
 		<rarity>3</rarity>
-		<skill id="avenge" x="16"/>
-		<skill id="counter" x="16"/>
+		<skill id="avenge" x="70"/>
+		<skill id="counter" x="100"/>
 		<skill id="jam" c="5"/>
 		<type>3</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>33256</card_id>
 			<level>2</level>
-			<health>70</health>
-			<skill id="avenge" x="17"/>
-			<skill id="counter" x="17"/>
+			<health>340</health>
+			<skill id="avenge" x="80"/>
+			<skill id="counter" x="100"/>
 			<skill id="jam" c="5"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33257</card_id>
 			<level>3</level>
-			<health>73</health>
-			<skill id="avenge" x="18"/>
-			<skill id="counter" x="18"/>
+			<health>360</health>
+			<skill id="avenge" x="90"/>
+			<skill id="counter" x="110"/>
 			<skill id="jam" c="5"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33258</card_id>
 			<level>4</level>
-			<health>76</health>
-			<skill id="avenge" x="19"/>
-			<skill id="counter" x="18"/>
+			<health>380</health>
+			<skill id="avenge" x="100"/>
+			<skill id="counter" x="110"/>
 			<skill id="jam" c="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33259</card_id>
 			<level>5</level>
-			<health>79</health>
-			<skill id="avenge" x="20"/>
-			<skill id="counter" x="19"/>
+			<health>390</health>
+			<skill id="avenge" x="110"/>
+			<skill id="counter" x="120"/>
 			<skill id="jam" c="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33260</card_id>
 			<level>6</level>
-			<health>82</health>
-			<attack>10</attack>
-			<skill id="avenge" x="20"/>
-			<skill id="counter" x="20"/>
+			<health>400</health>
+			<attack>130</attack>
+			<skill id="avenge" x="120"/>
+			<skill id="counter" x="130"/>
 			<skill id="jam" c="4"/>
 		</upgrade>
 	</unit>
@@ -5600,56 +5600,56 @@
 		<picture>flotsam_lv3</picture>
 		<asset_bundle>150</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>10</attack>
-		<health>85</health>
+		<attack>130</attack>
+		<health>410</health>
 		<cost>4</cost>
 		<rarity>3</rarity>
-		<skill id="avenge" x="21"/>
-		<skill id="counter" x="21"/>
+		<skill id="avenge" x="130"/>
+		<skill id="counter" x="140"/>
 		<skill id="jam" c="3"/>
 		<type>3</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>33262</card_id>
 			<level>2</level>
-			<health>88</health>
-			<skill id="avenge" x="22"/>
-			<skill id="counter" x="22"/>
+			<health>410</health>
+			<skill id="avenge" x="140"/>
+			<skill id="counter" x="140"/>
 			<skill id="jam" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33263</card_id>
 			<level>3</level>
-			<health>91</health>
-			<attack>11</attack>
-			<skill id="avenge" x="23"/>
-			<skill id="counter" x="22"/>
+			<health>420</health>
+			<attack>140</attack>
+			<skill id="avenge" x="140"/>
+			<skill id="counter" x="140"/>
 			<skill id="jam" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33264</card_id>
 			<level>4</level>
-			<health>94</health>
-			<skill id="avenge" x="24"/>
-			<skill id="counter" x="23"/>
+			<health>430</health>
+			<skill id="avenge" x="140"/>
+			<skill id="counter" x="140"/>
 			<skill id="jam" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33265</card_id>
 			<level>5</level>
-			<health>97</health>
-			<attack>12</attack>
-			<skill id="avenge" x="24"/>
-			<skill id="counter" x="24"/>
+			<health>440</health>
+			<attack>150</attack>
+			<skill id="avenge" x="150"/>
+			<skill id="counter" x="140"/>
 			<skill id="jam" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>33266</card_id>
 			<level>6</level>
-			<health>100</health>
-			<skill id="avenge" x="25"/>
-			<skill id="counter" x="25"/>
-			<skill id="jam" n="2" c="3"/>
+			<health>450</health>
+			<skill id="avenge" x="150"/>
+			<skill id="counter" x="150"/>
+			<skill id="jam" n="3" c="3"/>
 		</upgrade>
 	</unit>
 
@@ -11175,143 +11175,142 @@
 		<name>Wind Dagger</name>
 		<picture>skydagger_lv1</picture>
 		<asset_bundle>158</asset_bundle>
-		<attack>13</attack>
-		<health>66</health>
+		<attack>55</attack>
+		<health>120</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
 		<skill id='revenge' x='4' />
-		<skill id='counter' x='17' />
-		<skill id='strike' x='11' all='1' />
+		<skill id='counter' x='40' />
+		<skill id='strike' x='35' all='1' />
 		<type>4</type>
 		<set>3000</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>34554</card_id>
 			<skill id='revenge' x='4' />
-			<skill id='counter' x='18' />
-			<skill id='strike' x='12' all='1' />
+			<skill id='counter' x='50' />
+			<skill id='strike' x='50' all='1' />
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<card_id>34555</card_id>
-			<health>70</health>
+			<health>150</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<card_id>34556</card_id>
 			<skill id='revenge' x='5' />
-			<skill id='counter' x='18' />
-			<skill id='strike' x='12' all='1' />
+			<skill id='counter' x='60' />
+			<skill id='strike' x='65' all='1' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<card_id>34557</card_id>
-			<attack>14</attack>
-			<health>74</health>
+			<attack>70</attack>
+			<health>180</health>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<card_id>34558</card_id>
 			<skill id='revenge' x='5' />
-			<skill id='counter' x='19' />
-			<skill id='strike' x='12' all='1' />
+			<skill id='counter' x='70' />
+			<skill id='strike' x='80' all='1' />
 		</upgrade>
 	</unit>
-
 	<unit>
 		<id>34559</id>
 		<name>Air Dagger</name> <!-- Wind Dagger -->
 		<picture>skydagger_lv1</picture>
 		<asset_bundle>158</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>15</attack>
-		<health>78</health>
+		<attack>85</attack>
+		<health>200</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
 		<skill id='revenge' x='5' />
-		<skill id='counter' x='20' />
-		<skill id='strike' x='13' all='1' />
+		<skill id='counter' x='80' />
+		<skill id='strike' x='95' all='1' />
 		<type>4</type>
 		<set>2000</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>34560</card_id>
 			<skill id='revenge' x='5' />
-			<skill id='counter' x='21' />
-			<skill id='strike' x='13' all='1' />
+			<skill id='counter' x='90' />
+			<skill id='strike' x='110' all='1' />
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<card_id>34561</card_id>
-			<health>82</health>
+			<health>220</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<card_id>34562</card_id>
 			<skill id='revenge' x='5' />
-			<skill id='counter' x='22' />
-			<skill id='strike' x='14' all='1' />
+			<skill id='counter' x='100' />
+			<skill id='strike' x='135' all='1' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<card_id>34563</card_id>
-			<attack>16</attack>
-			<health>86</health>
+			<attack>100</attack>
+			<health>240</health>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<card_id>34564</card_id>
 			<skill id='revenge' x='6' />
-			<skill id='counter' x='22' />
-			<skill id='strike' x='14' all='1' />
+			<skill id='counter' x='110' />
+			<skill id='strike' x='150' all='1' />
 		</upgrade>
 	</unit>
-
 	<unit>
 		<id>34565</id>
 		<name>Sky Dagger</name> <!-- Air Dagger -->
 		<picture>skydagger_lv3</picture>
 		<asset_bundle>158</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>17</attack>
-		<health>88</health>
+		<attack>125</attack>
+		<health>260</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
 		<skill id='revenge' x='6' />
-		<skill id='counter' x='23' />
-		<skill id='strike' x='15' all='1' />
+		<skill id='counter' x='120' />
+		<skill id='strike' x='165' all='1' />
 		<type>4</type>
 		<set>2000</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>34566</card_id>
 			<skill id='revenge' x='7' />
-			<skill id='counter' x='24' />
-			<skill id='strike' x='15' all='1' />
+			<skill id='counter' x='130' />
+			<skill id='strike' x='180' all='1' />
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<card_id>34567</card_id>
-			<health>91</health>
+			<health>280</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<card_id>34568</card_id>
 			<skill id='revenge' x='7' />
-			<skill id='counter' x='25' />
-			<skill id='strike' x='16' all='1' />
+			<skill id='counter' x='140' />
+			<skill id='strike' x='190' all='1' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<card_id>34569</card_id>
-			<health>93</health>
+			<attack>150</attack>
+			<health>300</health>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<card_id>34570</card_id>
 			<skill id='revenge' x='8' />
-			<skill id='counter' x='27' />
-			<skill id='strike' x='17' all='1' />
+			<skill id='counter' x='150' />
+			<skill id='strike' x='200' all='1' />
 		</upgrade>
 	</unit>
 

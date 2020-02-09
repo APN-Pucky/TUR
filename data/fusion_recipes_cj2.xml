@@ -1,6 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 
+	<!--Reemergence Box -->
+	
+	<fusion_recipe>
+		<card_id>64950</card_id>
+		<resource card_id="64949" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64956</card_id>
+		<resource card_id="64955" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64974</card_id>
+		<resource card_id="64973" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64980</card_id>
+		<resource card_id="64979" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65010</card_id>
+		<resource card_id="65009" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65016</card_id>
+		<resource card_id="65015" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65034</card_id>
+		<resource card_id="65033" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65040</card_id>
+		<resource card_id="65039" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65058</card_id>
+		<resource card_id="65057" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65064</card_id>
+		<resource card_id="65063" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65076</card_id>
+		<resource card_id="65075" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65082</card_id>
+		<resource card_id="65081" number="2"/>
+	</fusion_recipe>
+	
+	<!--2020 New Years Guild Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>64932</card_id>
+		<resource card_id="64931" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64938</card_id>
+		<resource card_id="64937" number="2"/>
+	</fusion_recipe>
+
+	<!-- Charged Up Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>64914</card_id>
+		<resource card_id="64913" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64920</card_id>
+		<resource card_id="64919" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Supercharged War Reward -->
+
+	<fusion_recipe>
+		<card_id>64896</card_id>
+		<resource card_id="64895" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64902</card_id>
+		<resource card_id="64901" number="2"/>
+	</fusion_recipe>
+
+	<!-- Transformation Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>63440</card_id>
+		<resource card_id="63439" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>63446</card_id>
+		<resource card_id="63445" number="2"/>
+	</fusion_recipe>
+
+	<!-- Unhallowed War Reward -->
+
+	<fusion_recipe>
+		<card_id>63422</card_id>
+		<resource card_id="63421" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>63428</card_id>
+		<resource card_id="63427" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Nexus War Reward -->
+
+	<fusion_recipe>
+		<card_id>63404</card_id>
+		<resource card_id="63403" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>63410</card_id>
+		<resource card_id="63409" number="2"/>
+	</fusion_recipe>
+
+	<!-- Timewarp Guild Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>63386</card_id>
+		<resource card_id="63385" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>63392</card_id>
+		<resource card_id="63391" number="2"/>
+	</fusion_recipe>
+
+	<!-- 6th Anniversary Mission Reward Part 2 -->
+	
+	<fusion_recipe>
+		<card_id>63674</card_id>
+		<resource card_id="63673" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>63680</card_id>
+		<resource card_id="63679" number="2"/>
+	</fusion_recipe>
+
+	<!-- August 2019 Vindicator Fusions -->
+
+	<fusion_recipe>
+		<card_id>64854</card_id>
+		<resource card_id="64259" number="1"/>
+		<resource card_id="58579" number="1"/>
+		<resource card_id="17240" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64860</card_id>
+		<resource card_id="64277" number="1"/>
+		<resource card_id="10276" number="1"/>
+		<resource card_id="17240" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64866</card_id>
+		<resource card_id="64289" number="1"/>
+		<resource card_id="58603" number="1"/>
+		<resource card_id="17240" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64872</card_id>
+		<resource card_id="64301" number="1"/>
+		<resource card_id="33776" number="1"/>
+		<resource card_id="17240" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>64884</card_id>
+		<resource card_id="64313" number="1"/>
+		<resource card_id="6039" number="1"/>
+		<resource card_id="17240" number="1"/>
+	</fusion_recipe>
+
 	<!-- Ultimate Box -->
 
 	<fusion_recipe>

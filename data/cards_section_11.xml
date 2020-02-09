@@ -1469,7 +1469,7 @@
 		<name>First Responder</name>
 		<picture>improckcar_lv1</picture>
 		<asset_bundle>226</asset_bundle>
-		<attack>6</attack>
+		<attack>40</attack>
 		<health>60</health>
 		<cost>1</cost>
 		<rarity>4</rarity>
@@ -1525,12 +1525,12 @@
 		<picture>improckcar_lv1</picture>
 		<asset_bundle>226</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>6</attack>
+		<attack>40</attack>
 		<health>74</health>
 		<cost>1</cost>
 		<rarity>4</rarity>
 		<skill id="evade" x="4"/>
-		<skill id="bravery" x="42"/>
+		<skill id="bravery" x="45"/>
 		<skill id="allegiance" x="17"/>
 		<type>1</type>
 		<set>2000</set>
@@ -1539,7 +1539,7 @@
 			<level>2</level>
 			<health>76</health>
 			<skill id="evade" x="4"/>
-			<skill id="bravery" x="44"/>
+			<skill id="bravery" x="50"/>
 			<skill id="allegiance" x="18"/>
 		</upgrade>
 		<upgrade>
@@ -1547,7 +1547,7 @@
 			<level>3</level>
 			<health>78</health>
 			<skill id="evade" x="4"/>
-			<skill id="bravery" x="46"/>
+			<skill id="bravery" x="55"/>
 			<skill id="allegiance" x="19"/>
 		</upgrade>
 		<upgrade>
@@ -1555,7 +1555,7 @@
 			<level>4</level>
 			<health>81</health>
 			<skill id="evade" x="5"/>
-			<skill id="bravery" x="48"/>
+			<skill id="bravery" x="60"/>
 			<skill id="allegiance" x="20"/>
 		</upgrade>
 		<upgrade>
@@ -1563,16 +1563,16 @@
 			<level>5</level>
 			<health>83</health>
 			<skill id="evade" x="5"/>
-			<skill id="bravery" x="50"/>
+			<skill id="bravery" x="65"/>
 			<skill id="allegiance" x="21"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44399</card_id>
 			<level>6</level>
 			<health>85</health>
-			<skill id="evade" x="5"/>
-			<skill id="bravery" x="52"/>
-			<skill id="allegiance" x="23"/>
+			<skill id="evade" x="6"/>
+			<skill id="bravery" x="70"/>
+			<skill id="allegiance" x="25"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -1581,54 +1581,54 @@
 		<picture>improckcar_lv3</picture>
 		<asset_bundle>226</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>6</attack>
-		<health>88</health>
+		<attack>40</attack>
+		<health>90</health>
 		<cost>1</cost>
 		<rarity>4</rarity>
-		<skill id="evade" x="5"/>
-		<skill id="bravery" x="54"/>
-		<skill id="allegiance" x="24"/>
+		<skill id="evade" x="6"/>
+		<skill id="bravery" x="70"/>
+		<skill id="allegiance" x="25"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>44401</card_id>
 			<level>2</level>
-			<health>90</health>
+			<health>95</health>
 			<skill id="evade" x="6"/>
-			<skill id="bravery" x="56"/>
-			<skill id="allegiance" x="25"/>
+			<skill id="bravery" x="80"/>
+			<skill id="allegiance" x="30"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44402</card_id>
 			<level>3</level>
-			<health>92</health>
-			<skill id="evade" x="6"/>
-			<skill id="bravery" x="58"/>
-			<skill id="allegiance" x="26"/>
+			<health>100</health>
+			<skill id="evade" x="7"/>
+			<skill id="bravery" x="90"/>
+			<skill id="allegiance" x="30"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44403</card_id>
 			<level>4</level>
-			<health>95</health>
-			<skill id="evade" x="6"/>
-			<skill id="bravery" x="60"/>
-			<skill id="allegiance" x="27"/>
+			<health>105</health>
+			<skill id="evade" x="7"/>
+			<skill id="bravery" x="100"/>
+			<skill id="allegiance" x="35"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44404</card_id>
 			<level>5</level>
-			<health>97</health>
-			<skill id="evade" x="6"/>
-			<skill id="bravery" x="62"/>
-			<skill id="allegiance" x="28"/>
+			<health>115</health>
+			<skill id="evade" x="7"/>
+			<skill id="bravery" x="110"/>
+			<skill id="allegiance" x="35"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44405</card_id>
 			<level>6</level>
-			<health>100</health>
-			<skill id="evade" x="7"/>
-			<skill id="bravery" x="64"/>
-			<skill id="allegiance" x="30"/>
+			<health>120</health>
+			<skill id="evade" x="8"/>
+			<skill id="bravery" x="120"/>
+			<skill id="allegiance" x="40"/>
 		</upgrade>
 	</unit>
 
@@ -20669,16 +20669,16 @@
 			<attack>23</attack>
 			<skill id="evade" x="7"/>
 			<skill id="overload" n="2"/>
-			<skill id="enfeeble" x="9" all="1"/>
+			<skill id="enfeeble" x="23" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42946</card_id>
 			<level>3</level>
 			<health>79</health>
-			<attack>24</attack>
+			<attack>30</attack>
 			<skill id="evade" x="7"/>
 			<skill id="overload" n="2"/>
-			<skill id="enfeeble" x="9" all="1"/>
+			<skill id="enfeeble" x="25" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42947</card_id>
@@ -20686,25 +20686,25 @@
 			<health>80</health>
 			<skill id="evade" x="7"/>
 			<skill id="overload" n="2"/>
-			<skill id="enfeeble" x="10" all="1"/>
+			<skill id="enfeeble" x="30" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42948</card_id>
 			<level>5</level>
-			<attack>25</attack>
-			<health>81</health>
+			<attack>35</attack>
+			<health>140</health>
 			<skill id="evade" x="8"/>
 			<skill id="overload" n="2"/>
-			<skill id="enfeeble" x="10" all="1"/>
+			<skill id="enfeeble" x="40" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42949</card_id>
 			<level>6</level>
-			<health>82</health>
-			<attack>26</attack>
+			<health>150</health>
+			<attack>39</attack>
 			<skill id="evade" x="8"/>
 			<skill id="overload" n="3"/>
-			<skill id="enfeeble" x="11" all="1"/>
+			<skill id="enfeeble" x="45" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -20713,57 +20713,57 @@
 		<picture>progenoiler_lv3</picture>
 		<asset_bundle>208</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>27</attack>
-		<health>84</health>
+		<attack>40</attack>
+		<health>160</health>
 		<cost>2</cost>
 		<rarity>6</rarity>
 		<skill id="evade" x="8"/>
 		<skill id="overload" n="3"/>
-		<skill id="enfeeble" x="12" all="1"/>
+		<skill id="enfeeble" x="50" all="1"/>
 		<type>6</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>42951</card_id>
 			<level>2</level>
-			<health>85</health>
+			<health>165</health>
 			<skill id="evade" x="9"/>
 			<skill id="overload" n="3"/>
-			<skill id="enfeeble" x="12" all="1"/>
+			<skill id="enfeeble" x="55" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42952</card_id>
 			<level>3</level>
-			<health>86</health>
-			<attack>28</attack>
+			<health>180</health>
 			<skill id="evade" x="9"/>
 			<skill id="overload" n="3"/>
-			<skill id="enfeeble" x="13" all="1"/>
+			<skill id="enfeeble" x="60" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42953</card_id>
 			<level>4</level>
-			<health>87</health>
-			<attack>29</attack>
+			<health>200</health>
+			<attack>50</attack>
 			<skill id="evade" x="9"/>
 			<skill id="overload" n="3"/>
-			<skill id="enfeeble" x="14" all="1"/>
+			<skill id="enfeeble" x="70" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42954</card_id>
 			<level>5</level>
-			<health>88</health>
-			<attack>30</attack>
+			<health>220</health>
+			<attack>60</attack>
 			<skill id="evade" x="10"/>
 			<skill id="overload" n="3"/>
-			<skill id="enfeeble" x="14" all="1"/>
+			<skill id="enfeeble" x="80" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42955</card_id>
 			<level>6</level>
-			<health>90</health>
+			<health>230</health>
+			<attack>70</attack>
 			<skill id="evade" x="10"/>
 			<skill id="overload" all="1"/>
-			<skill id="enfeeble" x="15" all="1"/>
+			<skill id="enfeeble" x="90" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>

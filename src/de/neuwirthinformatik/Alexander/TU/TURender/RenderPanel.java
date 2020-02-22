@@ -21,6 +21,7 @@ import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileFilter;
 
+import de.neuwirthinformatik.Alexander.TU.TU;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card.CardInstance;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card.CardInstance.Info;
@@ -178,7 +179,7 @@ public class RenderPanel extends JPanel{
 		datapanel.add(tmp);
 		
 		tmp = new JPanel();
-		tmp.add(imgfile = GUI.text("in.jpg"));
+		tmp.add(imgfile = GUI.text("in.png"));
 		tmp.add(GUI.buttonAsync("choose IMG", () -> chooseIMG()));
 		datapanel.add(tmp);
 		//JPanel d1panel = new JPanel();
@@ -365,7 +366,7 @@ public class RenderPanel extends JPanel{
 			}
 		}
 		
-		dataname.setText(ci.getName());
+		dataname.setText(ci.getCard().getName());
 		dhealth.setNumber(ci.getHealth());
 		dattack.setNumber(ci.getAttack());
 		ddelay.setNumber(ci.getCost());
@@ -414,7 +415,17 @@ public class RenderPanel extends JPanel{
 		id3.setNumber(ss[2].getCard_id());
 		trigger3.setText(ss[2].getTrigger());
 		}else {sid3.setText("no_skill");}
+		// TODO save image as in.jpg
+		imgfile.setText("in.png");
+		try {
+		BufferedImage bi = Render.getCardImage(ci.getCard().getAssetBundle(), ci.getCard().getPicture());
+		if(bi == null) bi = ImageIO.read(TU.class.getResourceAsStream("/resources/cogs.png"));
 		
+			ImageIO.write(bi, "png",new File("in.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		loadIMG(ci);
 	}
 	
@@ -466,7 +477,7 @@ public class RenderPanel extends JPanel{
 				iicon = new ImageIcon(img);
 				limg=new JLabel();
 				limg.setIcon(iicon);
-				ipanel2.add(limg);
+				ipanel.add(limg);
 				recurse_summon(cj);
 			}
 		}
@@ -486,7 +497,7 @@ public class RenderPanel extends JPanel{
 			ImageIcon iicon = new ImageIcon(img);
 			JLabel limg=new JLabel();
 			limg.setIcon(iicon);
-			ipanel2.add(limg);
+			ipanel.add(limg);
 			recurse_summon(cj);
 			}
 		}

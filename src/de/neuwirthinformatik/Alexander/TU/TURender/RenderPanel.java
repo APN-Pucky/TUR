@@ -163,7 +163,7 @@ public class RenderPanel extends JPanel{
 		tmp.add(path= GUI.textEdit("out.png"));
 		tmp.add(GUI.buttonSync("Save", () -> saveIMG()));
 		tmp.add(load = GUI.textEdit("load card name or id"));
-		tmp.add(GUI.buttonSync("Load", () -> loadIMG()));
+		tmp.add(GUI.buttonSync("Load", () -> loadCI()));
 		tmp.add(GUI.buttonSync("updateXML", () -> updateXML()));
 		tmp.add(GUI.buttonSync("reloadXML", () -> GlobalData.init()));
 		panel.add(tmp);
@@ -347,7 +347,7 @@ public class RenderPanel extends JPanel{
 		
 	}
 	
-	public void loadIMG()
+	public void loadCI()
 	{
 		CardInstance ci =null;
 		try {
@@ -364,6 +364,62 @@ public class RenderPanel extends JPanel{
 				return;
 			}
 		}
+		
+		dataname.setText(ci.getName());
+		dhealth.setNumber(ci.getHealth());
+		dattack.setNumber(ci.getAttack());
+		ddelay.setNumber(ci.getCost());
+		
+		jcbrarity.setSelectedItem(Rarity.get(ci.getRarity()));
+		jcbfaction.setSelectedItem(Faction.get(ci.getFaction()));
+		jcblevel.setSelectedItem(Level.get(ci.getFusionLevel()));
+		jcbrank.setSelectedItem(ci.getLevel());
+		jcbmaxrank.setSelectedItem(ci.getIDs().length);
+		jcbtype.setSelectedItem(CardType.getByID(ci.getID()));
+		
+		SkillSpec[] ss = ci.getSkills();
+		if(ss.length>0) {
+		sid1.setText(ss[0].getId());
+		x1.setNumber(ss[0].getX());
+		y1.setText(ss[0].getY());
+		n1.setNumber(ss[0].getN());
+		c1.setNumber(ss[0].getC());
+		s11.setText(ss[0].getS());
+		s21.setText(ss[0].getS2());
+		all1.setSelected(ss[0].isAll());
+		id1.setNumber(ss[0].getCard_id());
+		trigger1.setText(ss[0].getTrigger());
+		}else {sid1.setText("no_skill");}
+		if(ss.length>1) {
+		sid2.setText(ss[1].getId());
+		x2.setNumber(ss[1].getX());
+		y2.setText(ss[1].getY());
+		n2.setNumber(ss[1].getN());
+		c2.setNumber(ss[1].getC());
+		s12.setText(ss[1].getS());
+		s22.setText(ss[1].getS2());
+		all2.setSelected(ss[1].isAll());
+		id2.setNumber(ss[1].getCard_id());
+		trigger2.setText(ss[1].getTrigger());
+		}else {sid2.setText("no_skill");}
+		if(ss.length>2) {
+		sid3.setText(ss[2].getId());
+		x3.setNumber(ss[2].getX());
+		y3.setText(ss[2].getY());
+		n3.setNumber(ss[2].getN());
+		c3.setNumber(ss[2].getC());
+		s13.setText(ss[2].getS());
+		s23.setText(ss[2].getS2());
+		all3.setSelected(ss[2].isAll());
+		id3.setNumber(ss[2].getCard_id());
+		trigger3.setText(ss[2].getTrigger());
+		}else {sid3.setText("no_skill");}
+		
+		loadIMG(ci);
+	}
+	
+	public void loadIMG(CardInstance ci)
+	{
 		BufferedImage img = r.render(ci);
 		cimg = img;
 		ImageIcon iicon = new ImageIcon(img);

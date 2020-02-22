@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 import javax.imageio.ImageIO;
 import javax.swing.BoxLayout;
@@ -44,6 +45,8 @@ public class RenderPanel extends JPanel{
 	
 	JComboBox<Faction> jcbfaction;
 	JComboBox<Level> jcblevel;
+	JComboBox<Integer> jcbrank;
+	JComboBox<Integer> jcbmaxrank;
 	JComboBox<Rarity> jcbrarity;
 	JComboBox<CardType> jcbtype;
 	
@@ -58,7 +61,7 @@ public class RenderPanel extends JPanel{
 	JTextField s21,s22,s23;
 	JTextField trigger1,trigger2,trigger3;
 	JTextField txt1,txt2,txt3;
-	JPanel ipanel;
+	JPanel ipanel,ipanel2;
 	JTextField xml;
 	
 	BufferedImage cimg;
@@ -118,33 +121,7 @@ public class RenderPanel extends JPanel{
 	    imgfile.setText(nnn);
 	}
 	
-	public void loadIMG()
-	{
-		CardInstance ci =null;
-		try {
-		ci= GlobalData.getCardInstanceByNameAndLevel(load.getText());
-		}catch(Exception e) {}
-		if(ci==null || ci==CardInstance.NULL)
-		{
-			try {
-			ci = GlobalData.getCardInstanceById(Integer.parseInt(load.getText()));
-			}catch(Exception e) {}
-			if(ci==null || ci==CardInstance.NULL)
-			{
-				load.setText("unknown");
-				return;
-			}
-		}
-		BufferedImage img = r.render(ci);
-		cimg = img;
-		ImageIcon iicon = new ImageIcon(img);
-		ipanel.removeAll();
-		JLabel limg=new JLabel();
-		limg.setIcon(iicon);
-		ipanel.add(limg);
-		recurse_summon(ci);
-		this.updateUI();
-	}
+	
 	
 	public static void updateXML()  {updateXML(true);}
 	public static void updateXML(boolean dev)
@@ -234,12 +211,20 @@ public class RenderPanel extends JPanel{
 		//tmp.add(dfaction = GUI.numericEdit(1));
 		datapanel.add(tmp);
 		tmp=new JPanel();
-		tmp.add(GUI.textSmall("level"));
+		tmp.add(GUI.textSmall("fusion"));
 		jcblevel = new JComboBox<Level>(Level.values());
 		tmp.add(jcblevel);
 		//tmp.add(dlevel = GUI.numericEdit(1));
 		datapanel.add(tmp);
 		
+		tmp=new JPanel();
+		tmp.add(GUI.textSmall("level"));
+		jcbrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));
+		jcbmaxrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));
+		tmp.add(jcbrank);
+		tmp.add(jcbmaxrank);
+		//tmp.add(dlevel = GUI.numericEdit(1));
+		datapanel.add(tmp);
 
 		tmp=new JPanel();
 		tmp.add(GUI.textSmall("type"));
@@ -328,19 +313,25 @@ public class RenderPanel extends JPanel{
 		s3p_.add(txt3= GUI.textEdit("Always Laugh"));
 		skillpanel.add(s3p);
 		skillpanel.add(s3p_);
+
+		JPanel allipanel = new JPanel();
+		allipanel.setLayout(new BoxLayout(allipanel, BoxLayout.Y_AXIS));
 		ipanel = new JPanel();
+		ipanel2 = new JPanel();
+		allipanel.add(ipanel);
+		allipanel.add(ipanel2);
 		try {
 			r = new Render();
 		}
-	catch(Exception e) {e.printStackTrace();
-	JOptionPane.showMessageDialog(this, "Error on input!");
-	}
+		catch(Exception e) {e.printStackTrace();
+			JOptionPane.showMessageDialog(this, "Error on input!");
+		}
 		updateIMG();
 		//panel.add(new JScrollPane(ipanel));
 		
 		tmp = new JPanel();
 		JSplitPane splitpane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
-				new JScrollPane(ipanel),datapanel);
+				new JScrollPane(allipanel),datapanel);
 		splitpane.setPreferredSize(new Dimension(1000,400));
 		splitpane.setOneTouchExpandable(true);
 		splitpane.setDividerLocation(500);
@@ -356,6 +347,35 @@ public class RenderPanel extends JPanel{
 		
 	}
 	
+	public void loadIMG()
+	{
+		CardInstance ci =null;
+		try {
+		ci= GlobalData.getCardInstanceByNameAndLevel(load.getText());
+		}catch(Exception e) {}
+		if(ci==null || ci==CardInstance.NULL)
+		{
+			try {
+			ci = GlobalData.getCardInstanceById(Integer.parseInt(load.getText()));
+			}catch(Exception e) {}
+			if(ci==null || ci==CardInstance.NULL)
+			{
+				load.setText("unknown");
+				return;
+			}
+		}
+		BufferedImage img = r.render(ci);
+		cimg = img;
+		ImageIcon iicon = new ImageIcon(img);
+		ipanel.removeAll();
+		ipanel2.removeAll();
+		JLabel limg=new JLabel();
+		limg.setIcon(iicon);
+		ipanel.add(limg);
+		recurse_summon(ci);
+		this.updateUI();
+	}
+	
 	public void updateIMG()
 	{
 		try {
@@ -363,15 +383,22 @@ public class RenderPanel extends JPanel{
 		SkillSpec ss2 = new SkillSpec(sid2.getText().toLowerCase(),x2.getNumber(),y2.getText().toLowerCase(),n2.getNumber(),c2.getNumber(),s12.getText().toLowerCase(),s22.getText().toLowerCase(),all2.isSelected(),id2.getNumber(), trigger2.getText().toLowerCase());
 		SkillSpec ss3 = new SkillSpec(sid3.getText().toLowerCase(),x3.getNumber(),y3.getText().toLowerCase(),n3.getNumber(),c3.getNumber(),s13.getText().toLowerCase(),s23.getText().toLowerCase(),all3.isSelected(),id3.getNumber(), trigger3.getText().toLowerCase());
 		Info i = new Info(dattack.getNumber(),dhealth.getNumber(),ddelay.getNumber(),((Level)jcblevel.getSelectedItem()).toInt(),new SkillSpec[] {ss1,ss2,ss3});
-		Info[] ia = new Info[] {i};
-		Card c = new Card(new int[] {1},dataname.getText(),((Rarity)jcbrarity.getSelectedItem()).toInt(),((Level)jcblevel.getSelectedItem()).toInt(),new int[] {},0,0,((Faction)jcbfaction.getSelectedItem()).toInt(),ia, "",0);
-		CardInstance ci = CardInstance.get(1,c,i);
+		int mrank = (Integer)jcbmaxrank.getSelectedItem();
+		int rank = (Integer)jcbrank.getSelectedItem();
+		Info[] ia = new Info[mrank];
+		int[] ids = new int[mrank];
+		for(int j =0; j < ids.length;j++)ids[j]=1;
+		ids[rank-1] = 2;
+		ia[rank-1] = i;
+		Card c = new Card(ids,dataname.getText(),((Rarity)jcbrarity.getSelectedItem()).toInt(),((Level)jcblevel.getSelectedItem()).toInt(),new int[] {},0,0,((Faction)jcbfaction.getSelectedItem()).toInt(),ia, "",0);
+		CardInstance ci = CardInstance.get(2,c,i);
 		
 		//System.out.println(Data.getCardInstanceByNameAndLevel("Bulkhead Brawler-1").getSkills()[2].x);
 		BufferedImage img = r.render(ci,new String[] {txt1.getText(),txt2.getText(),txt3.getText()},imgfile.getText(),(CardType)jcbtype.getSelectedItem());
 		cimg = img;
 		ImageIcon iicon = new ImageIcon(img);
 		ipanel.removeAll();
+		ipanel2.removeAll();
 		JLabel limg=new JLabel();
 		limg.setIcon(iicon);
 		ipanel.add(limg);
@@ -383,7 +410,7 @@ public class RenderPanel extends JPanel{
 				iicon = new ImageIcon(img);
 				limg=new JLabel();
 				limg.setIcon(iicon);
-				ipanel.add(limg);
+				ipanel2.add(limg);
 				recurse_summon(cj);
 			}
 		}
@@ -397,13 +424,13 @@ public class RenderPanel extends JPanel{
 	{
 		for(SkillSpec ss : ci.getSkills()) {
 			int j	 = ss.getCard_id();
-			if(j != 0) {
+			if(j != 0 && j != ci.getID()) {
 			CardInstance cj = GlobalData.getCardInstanceById(j);
 			BufferedImage img = r.render(cj);
 			ImageIcon iicon = new ImageIcon(img);
 			JLabel limg=new JLabel();
 			limg.setIcon(iicon);
-			ipanel.add(limg);
+			ipanel2.add(limg);
 			recurse_summon(cj);
 			}
 		}

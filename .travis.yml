@@ -1,0 +1,22 @@
+language: java
+matrix:
+  include:
+  - env:
+    - TUR='TUR.jar'
+    os: linux
+    dist: xenial
+    sudo: required
+install:
+- sudo apt-get install ant
+script:
+- ant create_run_jar
+- zip -r TUR.zip build start.bat in.png out.png unitypucky.py
+deploy:
+  provider: releases
+  name: "${TRAVIS_COMMIT_MESSAGE}"
+  api_key:
+    secure: IY9Zc5kRQuVjDRIYHmjfzbXKGYaV8tXgb1r43KHLLNULsYS8zwK2ENiQznqmv3GQIE0vE45zTH2TUJ9KF/aIP70InJ1lI5xZ5QfDNYKrQc4gnmoM1yCCO+wF96JmzaHjbQJZqgh3IoZ+0tYiihkl8br7GWzUAbQJYPyuSBMiKrcJrCwUDj6hOxylAFVcrcZBZDQD3dAXQUZaAjuAdIlE+Pso9ox+tOyWX2vgmepSHpR5lAfUCZy+ZtqzGNdKeF88LtICw4tw58K8K2dWmmseXZp3p6WPmzseWFmgOjoC6giC9bCMxn8DQngI2YWDZdCA6Zr9qt3e430MJodQcdVO/CwjtdsxVPffnURErdcBwooyFIwPlc0q79RhrEn/6vocoGfW4ZhNIaTYlabyjTB/jW0WBeaLHDmFaotfVsISalfbubgoujMr4Bhn//FOMYMBNeDJA0e0BWpfyuqMMNrF/1uO5vhIFCuae775UGeqpIeVOy2nqhkGIGUvjZxwhiX9scNiVf7QU2IvAFdg8NNipBY7fb8iGzN0M6jYKM7TkS4Q2mMrRx+dUs6tVX5/ROQAPUcmW3IT8Xs54vbfO0G34CXNEh7kUXWuT3JPf3PiI43D97jUx5Zbd9ruAzOM9EG0YdYfbo6vk0tQnSsGTmBjEa9BYq9q3kQ/68wELAWxkM0=
+  file: TUR.zip
+  skip_cleanup: true
+  on:
+    tags: true

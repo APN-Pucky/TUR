@@ -4,7 +4,7 @@
     <!--ANT 1.7 is required-->
     <!--define folder properties-->
     <property name="dir.buildfile" value="."/>
-    <property name="dir.workspace" value="D:/de.neuwirthinformatik.Alexander/Development/eclipse"/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
     <property name="dir.jarfile" value="${dir.buildfile}/build"/>
     <target name="create_run_jar">
         <jar destfile="${dir.jarfile}/TUR.jar">

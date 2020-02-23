@@ -19,6 +19,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import javax.swing.JSplitPane;
 import javax.swing.JTextField;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import javax.swing.filechooser.FileFilter;
 
 import de.neuwirthinformatik.Alexander.TU.TU;
@@ -51,23 +53,37 @@ public class RenderPanel extends JPanel{
 	JComboBox<Rarity> jcbrarity;
 	JComboBox<CardType> jcbtype;
 	
-	JTextField sid1,sid2,sid3;
-	GUI.IntegerField x1,x2,x3;
-	JTextField y1,y2,y3;
-	JCheckBox all1,all2,all3;
-	GUI.IntegerField n1,n2,n3;
-	GUI.IntegerField c1,c2,c3;
-	GUI.IntegerField id1,id2,id3;
-	JTextField s11,s12,s13;
-	JTextField s21,s22,s23;
-	JTextField trigger1,trigger2,trigger3;
-	JTextField txt1,txt2,txt3;
+	//JTextField sid1,sid2,sid3;
+	//GUI.IntegerField x1,x2,x3;
+	//JTextField y1,y2,y3;
+	//JCheckBox all1,all2,all3;
+	//GUI.IntegerField n1,n2,n3;
+	//GUI.IntegerField c1,c2,c3;
+	//GUI.IntegerField id1,id2,id3;
+	//JTextField s11,s12,s13;
+	//JTextField s21,s22,s23;
+	//JTextField trigger1,trigger2,trigger3;
+	//JTextField txt1,txt2,txt3;
+	
+	JTextField[] sid = new JTextField[3];
+	GUI.IntegerField[] x = new GUI.IntegerField[3];
+	JTextField[] y = new JTextField[3];
+	JCheckBox[] all = new JCheckBox[3];
+	GUI.IntegerField[] n = new GUI.IntegerField[3];
+	GUI.IntegerField[] c = new GUI.IntegerField[3];
+	GUI.IntegerField[] id = new GUI.IntegerField[3];
+	JTextField[] s1 = new JTextField[3];
+	JTextField[] s2 = new JTextField[3];
+	JTextField[] trigger = new JTextField[3];
+	JTextField[] txt = new JTextField[3];
+	
 	JPanel ipanel,ipanel2;
 	JTextField xml;
 	
 	BufferedImage cimg;
 
 	Render r;
+	boolean block_img_update= false;
 	
 	
 	public void saveIMG()
@@ -168,6 +184,20 @@ public class RenderPanel extends JPanel{
 		tmp.add(GUI.buttonSync("updateXML", () -> updateXML()));
 		tmp.add(GUI.buttonSync("reloadXML", () -> GlobalData.init()));
 		panel.add(tmp);
+		
+		tmp=new JPanel();
+		tmp.add(GUI.textSmall("level"));
+		jcbrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));
+
+		tmp.add(GUI.buttonSync("dec", ()->jcbrank.setSelectedItem(((Integer)jcbrank.getSelectedItem()-1)%((Integer)jcbmaxrank.getSelectedItem()+1))));
+		tmp.add(jcbrank);
+		tmp.add(new JSeparator());
+		tmp.add(GUI.buttonSync("inc", ()->jcbrank.setSelectedItem(((Integer)jcbrank.getSelectedItem()+1)%((Integer)jcbmaxrank.getSelectedItem()+1))));
+		jcbmaxrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));	
+		tmp.add(GUI.textSmall("maxlevel"));
+		tmp.add(jcbmaxrank);
+		//tmp.add(dlevel = GUI.numericEdit(1));
+		panel.add(tmp);
 
 		JPanel datapanel = new JPanel();
 		datapanel.setLayout(new BoxLayout(datapanel, BoxLayout.Y_AXIS));
@@ -218,14 +248,7 @@ public class RenderPanel extends JPanel{
 		//tmp.add(dlevel = GUI.numericEdit(1));
 		datapanel.add(tmp);
 		
-		tmp=new JPanel();
-		tmp.add(GUI.textSmall("level"));
-		jcbrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));
-		jcbmaxrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));
-		tmp.add(jcbrank);
-		tmp.add(jcbmaxrank);
-		//tmp.add(dlevel = GUI.numericEdit(1));
-		datapanel.add(tmp);
+		
 
 		tmp=new JPanel();
 		tmp.add(GUI.textSmall("type"));
@@ -235,33 +258,35 @@ public class RenderPanel extends JPanel{
 		datapanel.add(tmp);
 		//datapanel.add(d2panel);
 		//String id, int x, String y, int n, int c, String s, String s2, boolean all,int card_id, String trigger
+		for (int k =0 ; k < 3;k++) {
 		JPanel s1p = new JPanel();
 		JPanel s1p_ = new JPanel();
 		s1p.add(GUI.label("id"));
-		s1p.add(sid1= GUI.textEdit("summon"));
-		s1p.add(all1 = GUI.check("All",false));
+		s1p.add(sid[k]= GUI.textEdit("strike"));
+		s1p.add(all[k] = GUI.check("All",false));
 		s1p.add(GUI.label("y"));
-		s1p.add(y1= GUI.textEdit("allfactions"));
+		s1p.add(y[k]= GUI.textEdit("allfactions"));
 		s1p.add(GUI.label("x"));
-		s1p.add(x1= GUI.numericEdit(0));
+		s1p.add(x[k]= GUI.numericEdit(0));
 		s1p.add(GUI.label("n"));
-		s1p.add(n1= GUI.numericEdit(0)); 
+		s1p.add(n[k]= GUI.numericEdit(0)); 
 		s1p.add(GUI.label("every"));
-		s1p.add(c1= GUI.numericEdit(0));
-		s1p.add(GUI.label("On"));
-		s1p.add(trigger1= GUI.textEdit("attacked"));
+		s1p.add(c[k]= GUI.numericEdit(0));
+		s1p.add(GUI.label("on"));
+		s1p.add(trigger[k]= GUI.textEdit("attacked"));
 		s1p_.add(GUI.label("s1"));
-		s1p_.add(s11= GUI.textEdit("no_skill"));
+		s1p_.add(s1[k]= GUI.textEdit("no_skill"));
 		s1p_.add(GUI.label("s2"));
-		s1p_.add(s21= GUI.textEdit("no_skill"));
+		s1p_.add(s2[k]= GUI.textEdit("no_skill"));
 		s1p_.add(GUI.label("summon_id"));
-		s1p_.add(id1= GUI.numericEdit(57801));// todo render summon tooo!!!!!	
+		s1p_.add(id[k]= GUI.numericEdit(0));// todo render summon tooo!!!!!	
 		s1p_.add(GUI.label("custom"));
-		s1p_.add(txt1= GUI.textEdit(""));
+		s1p_.add(txt[k]= GUI.textEdit(""));
 		skillpanel.add(s1p);
 		skillpanel.add(s1p_);
 		skillpanel.add(new JSeparator());
-		
+		}
+		/*
 		JPanel s2p = new JPanel();
 		JPanel s2p_ = new JPanel();
 		s2p.add(GUI.label("id"));
@@ -313,7 +338,7 @@ public class RenderPanel extends JPanel{
 		s3p_.add(GUI.label("custom"));
 		s3p_.add(txt3= GUI.textEdit("Always Laugh"));
 		skillpanel.add(s3p);
-		skillpanel.add(s3p_);
+		skillpanel.add(s3p_);*/
 
 		JPanel allipanel = new JPanel();
 		allipanel.setLayout(new BoxLayout(allipanel, BoxLayout.Y_AXIS));
@@ -346,6 +371,43 @@ public class RenderPanel extends JPanel{
 		
 		add(panel);
 		
+		jcbrank.addItemListener((e) -> Task.start(()->updateIMG()));
+		jcbmaxrank.addItemListener((e) -> Task.start(()->updateIMG()));
+		jcblevel.addItemListener((e) -> Task.start(()->updateIMG()));
+		jcbrarity.addItemListener((e) -> Task.start(()->updateIMG()));
+		jcbtype.addItemListener((e) -> Task.start(()->updateIMG()));
+		jcbfaction.addItemListener((e) -> Task.start(()->updateIMG()));
+		DocumentListener dl = new DocumentListener() {
+			  public void changedUpdate(DocumentEvent e) {
+				  	Task.start(()->updateIMG());
+				  }
+				  public void removeUpdate(DocumentEvent e) {
+					  Task.start(()->updateIMG());
+				  }
+				  public void insertUpdate(DocumentEvent e) {
+					  Task.start(()->updateIMG());
+				  }
+		};
+		imgfile.getDocument().addDocumentListener(dl);
+		dataname.getDocument().addDocumentListener(dl);
+		for(int k = 0 ; k < 3;k++)
+		{
+			sid[k].getDocument().addDocumentListener(dl);
+			all[k].addChangeListener((e)-> Task.start(()->updateIMG()));
+			y[k].getDocument().addDocumentListener(dl);
+			x[k].getDocument().addDocumentListener(dl);
+			n[k].getDocument().addDocumentListener(dl);
+			c[k].getDocument().addDocumentListener(dl);
+
+			trigger[k].getDocument().addDocumentListener(dl);
+
+			s1[k].getDocument().addDocumentListener(dl);
+			s2[k].getDocument().addDocumentListener(dl);
+			id[k].getDocument().addDocumentListener(dl);
+			txt[k].getDocument().addDocumentListener(dl);
+		}
+		
+		
 	}
 	
 	public void loadCI()
@@ -366,6 +428,9 @@ public class RenderPanel extends JPanel{
 			}
 		}
 		
+		block_img_update = true;
+		
+		
 		dataname.setText(ci.getCard().getName());
 		dhealth.setNumber(ci.getHealth());
 		dattack.setNumber(ci.getAttack());
@@ -379,6 +444,21 @@ public class RenderPanel extends JPanel{
 		jcbtype.setSelectedItem(CardType.getByID(ci.getID()));
 		
 		SkillSpec[] ss = ci.getSkills();
+		for(int k = 0; k < ss.length && k < 3;k++)
+		{
+			sid[k].setText(ss[k].getId());
+			x[k].setNumber(ss[k].getX());
+			y[k].setText(ss[k].getY());
+			n[k].setNumber(ss[k].getN());
+			c[k].setNumber(ss[k].getC());
+			s1[k].setText(ss[k].getS());
+			s2[k].setText(ss[k].getS2());
+			all[k].setSelected(ss[k].isAll());
+			id[k].setNumber(ss[k].getCard_id());
+			trigger[k].setText(ss[k].getTrigger());
+		}
+		for(int k = ss.length;k < 3;k++)sid[k].setText("no_skill");
+		/*
 		if(ss.length>0) {
 		sid1.setText(ss[0].getId());
 		x1.setNumber(ss[0].getX());
@@ -415,6 +495,8 @@ public class RenderPanel extends JPanel{
 		id3.setNumber(ss[2].getCard_id());
 		trigger3.setText(ss[2].getTrigger());
 		}else {sid3.setText("no_skill");}
+		
+		*/
 		// TODO save image as in.jpg
 		imgfile.setText("in.png");
 		try {
@@ -426,6 +508,8 @@ public class RenderPanel extends JPanel{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		block_img_update = false;
 		loadIMG(ci);
 	}
 	
@@ -443,13 +527,16 @@ public class RenderPanel extends JPanel{
 		this.updateUI();
 	}
 	
-	public void updateIMG()
+	public synchronized void updateIMG()
 	{
+		if(block_img_update)return;
 		try {
-		SkillSpec ss1 = new SkillSpec(sid1.getText().toLowerCase(),x1.getNumber(),y1.getText().toLowerCase(),n1.getNumber(),c1.getNumber(),s11.getText().toLowerCase(),s21.getText().toLowerCase(),all1.isSelected(),id1.getNumber(), trigger1.getText().toLowerCase());
-		SkillSpec ss2 = new SkillSpec(sid2.getText().toLowerCase(),x2.getNumber(),y2.getText().toLowerCase(),n2.getNumber(),c2.getNumber(),s12.getText().toLowerCase(),s22.getText().toLowerCase(),all2.isSelected(),id2.getNumber(), trigger2.getText().toLowerCase());
-		SkillSpec ss3 = new SkillSpec(sid3.getText().toLowerCase(),x3.getNumber(),y3.getText().toLowerCase(),n3.getNumber(),c3.getNumber(),s13.getText().toLowerCase(),s23.getText().toLowerCase(),all3.isSelected(),id3.getNumber(), trigger3.getText().toLowerCase());
-		Info i = new Info(dattack.getNumber(),dhealth.getNumber(),ddelay.getNumber(),((Level)jcblevel.getSelectedItem()).toInt(),new SkillSpec[] {ss1,ss2,ss3});
+		SkillSpec[] ss = new SkillSpec[3];
+		for(int  k = 0; k < ss.length;k++)
+			ss[k] = new SkillSpec(sid[k].getText().toLowerCase(),x[k].getNumber(),y[k].getText().toLowerCase(),n[k].getNumber(),c[k].getNumber(),s1[k].getText().toLowerCase(),s2[k].getText().toLowerCase(),all[k].isSelected(),id[k].getNumber(), trigger[k].getText().toLowerCase());
+		//SkillSpec ss2 = new SkillSpec(sid2.getText().toLowerCase(),x2.getNumber(),y2.getText().toLowerCase(),n2.getNumber(),c2.getNumber(),s12.getText().toLowerCase(),s22.getText().toLowerCase(),all2.isSelected(),id2.getNumber(), trigger2.getText().toLowerCase());
+		//SkillSpec ss3 = new SkillSpec(sid3.getText().toLowerCase(),x3.getNumber(),y3.getText().toLowerCase(),n3.getNumber(),c3.getNumber(),s13.getText().toLowerCase(),s23.getText().toLowerCase(),all3.isSelected(),id3.getNumber(), trigger3.getText().toLowerCase());
+		Info i = new Info(dattack.getNumber(),dhealth.getNumber(),ddelay.getNumber(),((Level)jcblevel.getSelectedItem()).toInt(),ss);
 		int mrank = (Integer)jcbmaxrank.getSelectedItem();
 		int rank = (Integer)jcbrank.getSelectedItem();
 		Info[] ia = new Info[mrank];
@@ -461,7 +548,7 @@ public class RenderPanel extends JPanel{
 		CardInstance ci = CardInstance.get(2,c,i);
 		
 		//System.out.println(Data.getCardInstanceByNameAndLevel("Bulkhead Brawler-1").getSkills()[2].x);
-		BufferedImage img = r.render(ci,new String[] {txt1.getText(),txt2.getText(),txt3.getText()},imgfile.getText(),(CardType)jcbtype.getSelectedItem());
+		BufferedImage img = r.render(ci,new String[] {txt[0].getText(),txt[1].getText(),txt[2].getText()},imgfile.getText(),(CardType)jcbtype.getSelectedItem());
 		cimg = img;
 		ImageIcon iicon = new ImageIcon(img);
 		ipanel.removeAll();
@@ -469,7 +556,7 @@ public class RenderPanel extends JPanel{
 		JLabel limg=new JLabel();
 		limg.setIcon(iicon);
 		ipanel.add(limg);
-		for(int j : new int[] {id1.getNumber(),id2.getNumber(),id3.getNumber()})
+		for(int j : new int[] {id[0].getNumber(),id[1].getNumber(),id[2].getNumber()})
 		{
 			if(j != 0) {
 				CardInstance cj = GlobalData.getCardInstanceById(j);

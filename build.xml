@@ -74,7 +74,7 @@
                 <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
                 <attribute name="Rsrc-Main-Class" value="de.neuwirthinformatik.Alexander.TU.TURender.Main"/>
                 <attribute name="Class-Path" value="."/>
-                <attribute name="Rsrc-Class-Path" value="./ jdom-2.0.6.jar json-20170516.jar iconloader.jar darcula.jar lombok-1.18.jar TU.jar"/>
+                <attribute name="Rsrc-Class-Path" value="./ jdom-2.0.6.jar json-20170516.jar iconloader.jar darcula.jar lombok-1.18.jar TU.jar yamlbeans-1.08.jar"/>
 		<attribute name="Implementation-Version" value="${gitversion}" />
             </manifest>
             <zipfileset src="jar-in-jar-loader.zip"/>

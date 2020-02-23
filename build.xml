@@ -1,28 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project default="create_run_jar" name="Create Runnable Jar for Project TURender with Jar-in-Jar Loader">
-    <!--this file was created by Eclipse Runnable JAR file Export Wizard-->
-    <!--ANT 1.7 is required-->
-    <!--define folder properties-->
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+    <project basedir="." default="create_run_jar" name="TURender">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="TURender.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="libs/jdom-2.0.6.jar"/>
+        <pathelement location="libs/json-20170516.jar"/>
+        <pathelement location="libs/yamlbeans-1.08.jar"/>
+        <pathelement location="libs/darcula.jar"/>
+        <pathelement location="libs/iconloader.jar"/>
+        <pathelement location="libs/lombok-1.18.0.jar"/>
+        <pathelement location="libs/TU.jar"/>
+    </path>
+    <path id="run.TUR.classpath">
+        <path refid="TURender.classpath"/>
+        <pathelement location="libs/jdom-2.0.6.jar"/>
+        <pathelement location="libs/json-20170516.jar"/>
+        <pathelement location="libs/yamlbeans-1.08.jar"/>
+        <pathelement location="libs/darcula.jar"/>
+        <pathelement location="libs/iconloader.jar"/>
+        <pathelement location="libs/lombok-1.18.0.jar"/>
+        <pathelement location="libs/TU.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="TURender.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="TUR">
+        <java classname="de.neuwirthinformatik.Alexander.TU.TURender.Main" failonerror="true" fork="yes">
+            <classpath refid="run.TUR.classpath"/>
+        </java>
+    </target>
+
     <property name="dir.buildfile" value="."/>
     <property name="dir.workspace" value="${dir.buildfile}/.."/>
-    <property name="dir.jarfile" value="${dir.buildfile}/build"/>
-    <target name="create_run_jar">
-        <jar destfile="${dir.jarfile}/TUR.jar">
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+
+
+    <target depends="build" name="create_run_jar">
+	<exec executable="git" outputproperty="gitversion">
+		<arg value="describe"/>
+		<arg value="--tags"/>
+		<arg value="--abbrev=0"/>
+	</exec>
+        <jar destfile="${dir.jarfile}/build/TUR.jar">
             <manifest>
                 <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
                 <attribute name="Rsrc-Main-Class" value="de.neuwirthinformatik.Alexander.TU.TURender.Main"/>
                 <attribute name="Class-Path" value="."/>
-                <attribute name="Rsrc-Class-Path" value="./ darcula.jar iconloader.jar jdom-2.0.6.jar json-20170516.jar lombok-1.18.0.jar TU.jar yamlbeans-1.08.jar"/>
+                <attribute name="Rsrc-Class-Path" value="./ jdom-2.0.6.jar json-20170516.jar iconloader.jar darcula.jar lombok-1.18.jar TU.jar"/>
+		<attribute name="Implementation-Version" value="${gitversion}" />
             </manifest>
             <zipfileset src="jar-in-jar-loader.zip"/>
-            <fileset dir="${dir.buildfile}/bin"/>
-            <zipfileset dir="${dir.buildfile}/libs" includes="darcula.jar"/>
-            <zipfileset dir="${dir.buildfile}/libs" includes="iconloader.jar"/>
-            <zipfileset dir="${dir.buildfile}/libs" includes="jdom-2.0.6.jar"/>
-            <zipfileset dir="${dir.buildfile}/libs" includes="json-20170516.jar"/>
-            <zipfileset dir="${dir.buildfile}/libs" includes="lombok-1.18.0.jar"/>
-            <zipfileset dir="${dir.buildfile}/libs" includes="TU.jar"/>
-            <zipfileset dir="${dir.buildfile}/libs" includes="yamlbeans-1.08.jar"/>
+            <fileset dir="${dir.jarfile}/bin"/>
+            <zipfileset dir="${dir.jarfile}/libs" includes="jdom-2.0.6.jar"/>
+            <zipfileset dir="${dir.jarfile}/libs" includes="json-20170516.jar"/>
+            <zipfileset dir="${dir.jarfile}/libs" includes="yamlbeans-1.08.jar"/>
+            <zipfileset dir="${dir.jarfile}/libs" includes="darcula.jar"/>
+            <zipfileset dir="${dir.jarfile}/libs" includes="iconloader.jar"/>
+            <zipfileset dir="${dir.jarfile}/libs" includes="lombok-1.18.jar"/>
+            <zipfileset dir="${dir.jarfile}/libs" includes="TU.jar"/>
         </jar>
     </target>
+
+    <target depends="create_run_jar" name="test">
+	    <java jar="${dir.jarfile}/TUR.jar" fork="true" />
+    </target>
+
 </project>

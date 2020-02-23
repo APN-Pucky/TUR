@@ -3,7 +3,13 @@ package de.neuwirthinformatik.Alexander.TU.TURender;
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import java.security.Permissions;
+import java.util.Enumeration;
+import java.util.jar.Attributes;
+import java.util.jar.JarFile;
+import java.util.jar.Manifest;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -42,10 +48,11 @@ public class TUR {
 		{
 			TUR._this = this;
 			GlobalData.init();
+			detectVersions();
 			frame = new JFrame();
 			
 			frame.setIconImage(GUI.icon);
-			frame.setTitle("TUR");
+			frame.setTitle("TUR " + VERSION);
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE );
 			frame.setResizable(true);
 			
@@ -108,6 +115,42 @@ public class TUR {
 		{
 			
 			startTUR();
+		}
+		
+		
+		public String VERSION = "Version not set";
+		
+		public static String getManifestInfo() {
+		    Enumeration resEnum;
+		    try {
+		        resEnum = Thread.currentThread().getContextClassLoader().getResources(JarFile.MANIFEST_NAME);
+		        while (resEnum.hasMoreElements()) {
+		            try {
+		                URL url = (URL)resEnum.nextElement();
+		                InputStream is = url.openStream();
+		                if (is != null) {
+		                    Manifest manifest = new Manifest(is);
+		                    Attributes mainAttribs = manifest.getMainAttributes();
+		                    String version = mainAttribs.getValue("Implementation-Version");
+		                    if(version != null) {
+		                        return version;
+		                    }
+		                }
+		            }
+		            catch (Exception e) {
+		                // Silently ignore wrong manifests on classpath?
+		            }
+		        }
+		    } catch (IOException e1) {
+		        // Silently ignore wrong manifests on classpath?
+		    }
+		    return null; 
+		}
+		
+		public void detectVersions() {
+			//TUM VERSION
+			VERSION = getManifestInfo();
+			if(VERSION==null)VERSION="DirtyDebug";
 		}
 		
 }

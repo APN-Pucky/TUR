@@ -10,7 +10,7 @@ install:
 - sudo apt-get install ant
 script:
 - ant create_run_jar
-- zip -r TUR.zip build start.bat in.png out.png unitypuck.py
+- zip -r TUR.zip build start.bat in.png out.png unitypuck.py data
 deploy:
   provider: releases
   name: "${TRAVIS_COMMIT_MESSAGE}"

@@ -1,6 +1,7 @@
 package de.neuwirthinformatik.Alexander.TU.TURender;
 
 import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -44,6 +45,7 @@ public class RenderPanel extends JPanel{
 	JTextField dataname;
 	JTextField imgfile;
 	JTextField load;
+	JCheckBox render_all_levels;
 	GUI.IntegerField dhealth,ddelay,dattack,ddef,drarity,dfaction,dlevel;
 	
 	JComboBox<Faction> jcbfaction;
@@ -77,13 +79,17 @@ public class RenderPanel extends JPanel{
 	JTextField[] trigger = new JTextField[3];
 	JTextField[] txt = new JTextField[3];
 	
-	JPanel ipanel,ipanel2;
+	JPanel[] ipanel = new JPanel[10];
+	//JPanel ipanel,ipanel2;
 	JTextField xml;
 	
 	BufferedImage cimg;
 
 	Render r;
 	boolean block_img_update= false;
+	
+	CardInstance[] cis = new CardInstance[10];
+	
 	
 	
 	public void saveIMG()
@@ -169,6 +175,8 @@ public class RenderPanel extends JPanel{
         GlobalData.init();
 	}
 	
+	
+	
 	public RenderPanel() 
 	{
 		super();
@@ -181,20 +189,23 @@ public class RenderPanel extends JPanel{
 		tmp.add(GUI.buttonSync("Save", () -> saveIMG()));
 		tmp.add(load = GUI.textEdit("load card name or id"));
 		tmp.add(GUI.buttonSync("Load", () -> loadCI()));
+		tmp.add(GUI.buttonSync("LoadAll", () -> loadCard()));
 		tmp.add(GUI.buttonSync("updateXML", () -> updateXML()));
 		tmp.add(GUI.buttonSync("reloadXML", () -> GlobalData.init()));
 		panel.add(tmp);
 		
 		tmp=new JPanel();
+		tmp.add(GUI.buttonSync("Clear levels", () -> {clear();}));
 		tmp.add(GUI.textSmall("level"));
 		jcbrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));
 
 		tmp.add(GUI.buttonSync("dec", ()->jcbrank.setSelectedItem(((Integer)jcbrank.getSelectedItem()-1)%((Integer)jcbmaxrank.getSelectedItem()+1))));
 		tmp.add(jcbrank);
-		tmp.add(new JSeparator());
 		tmp.add(GUI.buttonSync("inc", ()->jcbrank.setSelectedItem(((Integer)jcbrank.getSelectedItem()+1)%((Integer)jcbmaxrank.getSelectedItem()+1))));
-		jcbmaxrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));	
+		jcbmaxrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));
+		jcbmaxrank.setSelectedItem(6);
 		tmp.add(GUI.textSmall("maxlevel"));
+		tmp.add(render_all_levels= GUI.check("All",false));
 		tmp.add(jcbmaxrank);
 		//tmp.add(dlevel = GUI.numericEdit(1));
 		panel.add(tmp);
@@ -342,10 +353,10 @@ public class RenderPanel extends JPanel{
 
 		JPanel allipanel = new JPanel();
 		allipanel.setLayout(new BoxLayout(allipanel, BoxLayout.Y_AXIS));
-		ipanel = new JPanel();
-		ipanel2 = new JPanel();
-		allipanel.add(ipanel);
-		allipanel.add(ipanel2);
+		for(int i = 00; i < 10;i++) {
+			ipanel[i] = new JPanel();
+			allipanel.add(ipanel[i]);
+		}
 		try {
 			r = new Render();
 		}
@@ -356,23 +367,49 @@ public class RenderPanel extends JPanel{
 		//panel.add(new JScrollPane(ipanel));
 		
 		tmp = new JPanel();
-		JSplitPane splitpane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
-				new JScrollPane(allipanel),datapanel);
-		splitpane.setPreferredSize(new Dimension(1000,400));
-		splitpane.setOneTouchExpandable(true);
-		splitpane.setDividerLocation(500);
+		tmp.add(datapanel);
 		
-		tmp.add(splitpane);
+		//splitpane.setPreferredSize(new Dimension(1000,400));
+		//splitpane.setOneTouchExpandable(true);
+		//splitpane.setDividerLocation(500);
+		
+		//tmp.add(splitpane);
 		panel.add(tmp);
 		panel.add(skillpanel);
 		
 
 		panel.add(xml= GUI.textEdit("soon your xml here in/out"));
 		
-		add(panel);
 		
-		jcbrank.addItemListener((e) -> Task.start(()->updateIMG()));
-		jcbmaxrank.addItemListener((e) -> Task.start(()->updateIMG()));
+		JSplitPane splitpane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
+				panel,new JScrollPane(allipanel));
+		Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
+		d.width = d.width - 50;
+		d.height = d.height - 100;
+		splitpane.setPreferredSize(d);
+		splitpane.setOneTouchExpandable(true);
+		splitpane.setDividerLocation(1200);
+		add(splitpane);
+		d.width = d.width + 10;
+		d.height = d.height + 10;
+		this.setPreferredSize(d);
+		jcbrank.addItemListener((e) -> {
+			int prev = (Integer)e.getItem();
+			int next = (Integer)jcbrank.getSelectedItem();
+			if(prev != next) {
+				CardInstance cci = cis[next-1];	
+				if(cci==null) {
+					cis[next-1] = cis[prev-1];
+				}
+				else {
+					loadFromCI(cci);
+				}
+				Task.start(()->updateIMG());
+			}
+		});
+		
+		
+		jcbmaxrank.addItemListener((e) -> Task.start(()->updateIMG()));	
 		jcblevel.addItemListener((e) -> Task.start(()->updateIMG()));
 		jcbrarity.addItemListener((e) -> Task.start(()->updateIMG()));
 		jcbtype.addItemListener((e) -> Task.start(()->updateIMG()));
@@ -390,6 +427,10 @@ public class RenderPanel extends JPanel{
 		};
 		imgfile.getDocument().addDocumentListener(dl);
 		dataname.getDocument().addDocumentListener(dl);
+		dhealth.getDocument().addDocumentListener(dl);
+		ddelay.getDocument().addDocumentListener(dl);
+		dattack.getDocument().addDocumentListener(dl);
+		
 		for(int k = 0 ; k < 3;k++)
 		{
 			sid[k].getDocument().addDocumentListener(dl);
@@ -405,12 +446,22 @@ public class RenderPanel extends JPanel{
 			s2[k].getDocument().addDocumentListener(dl);
 			id[k].getDocument().addDocumentListener(dl);
 			txt[k].getDocument().addDocumentListener(dl);
+		}	
+	}
+	
+	public void clear()
+	{
+		for(int i = 0 ; i  < cis.length;++i) {
+			if(i!=(Integer)jcbrank.getSelectedItem()-1) {
+				cis[i]=null;
+				ipanel[i].removeAll();
+			}
 		}
-		
+		this.updateUI();
 		
 	}
 	
-	public void loadCI()
+	public CardInstance  getLoadCI()
 	{
 		CardInstance ci =null;
 		try {
@@ -424,12 +475,37 @@ public class RenderPanel extends JPanel{
 			if(ci==null || ci==CardInstance.NULL)
 			{
 				load.setText("unknown");
-				return;
+				return null;
 			}
 		}
-		
+		return ci;
+	}
+	
+	public void loadCard()
+	{
+		CardInstance ci = getLoadCI();
+		if(ci == null) return;
 		block_img_update = true;
+		Card c = ci.getCard();
+		int[] arr = c.getIDs();
+		for(int i=0;i<arr.length-1;i++)
+			loadFromCI(GlobalData.getCardInstanceById(arr[i]));
+		block_img_update = true;
+		loadFromCI(GlobalData.getCardInstanceById(arr[arr.length-1]));
+	}
+	
+	public void loadCI()
+	{
+		CardInstance ci = getLoadCI();
+		if(ci == null) return;
 		
+		loadFromCI(ci);
+	}
+	
+	public void loadFromCI(CardInstance ci)
+	{
+		boolean pre_tmp = block_img_update;
+		block_img_update = true;
 		
 		dataname.setText(ci.getCard().getName());
 		dhealth.setNumber(ci.getHealth());
@@ -439,7 +515,7 @@ public class RenderPanel extends JPanel{
 		jcbrarity.setSelectedItem(Rarity.get(ci.getRarity()));
 		jcbfaction.setSelectedItem(Faction.get(ci.getFaction()));
 		jcblevel.setSelectedItem(Level.get(ci.getFusionLevel()));
-		jcbrank.setSelectedItem(ci.getLevel());
+		if((Integer)jcbrank.getSelectedItem()!=ci.getLevel())jcbrank.setSelectedItem(ci.getLevel());
 		jcbmaxrank.setSelectedItem(ci.getIDs().length);
 		jcbtype.setSelectedItem(CardType.getByID(ci.getID()));
 		
@@ -456,8 +532,13 @@ public class RenderPanel extends JPanel{
 			all[k].setSelected(ss[k].isAll());
 			id[k].setNumber(ss[k].getCard_id());
 			trigger[k].setText(ss[k].getTrigger());
+			txt[k].setText("");
 		}
 		for(int k = ss.length;k < 3;k++)sid[k].setText("no_skill");
+		
+		
+		
+		
 		/*
 		if(ss.length>0) {
 		sid1.setText(ss[0].getId());
@@ -497,7 +578,10 @@ public class RenderPanel extends JPanel{
 		}else {sid3.setText("no_skill");}
 		
 		*/
-		// TODO save image as in.jpg
+		
+		cis[(Integer)jcbrank.getSelectedItem()-1] = ci;
+		
+		
 		imgfile.setText("in.png");
 		try {
 		BufferedImage bi = Render.getCardImage(ci.getCard().getAssetBundle(), ci.getCard().getPicture());
@@ -509,23 +593,11 @@ public class RenderPanel extends JPanel{
 			e.printStackTrace();
 		}
 		
-		block_img_update = false;
+		block_img_update = pre_tmp;
 		loadIMG(ci);
 	}
 	
-	public void loadIMG(CardInstance ci)
-	{
-		BufferedImage img = r.render(ci);
-		cimg = img;
-		ImageIcon iicon = new ImageIcon(img);
-		ipanel.removeAll();
-		ipanel2.removeAll();
-		JLabel limg=new JLabel();
-		limg.setIcon(iicon);
-		ipanel.add(limg);
-		recurse_summon(ci);
-		this.updateUI();
-	}
+	
 	
 	public synchronized void updateIMG()
 	{
@@ -546,9 +618,10 @@ public class RenderPanel extends JPanel{
 		ia[rank-1] = i;
 		Card c = new Card(ids,dataname.getText(),((Rarity)jcbrarity.getSelectedItem()).toInt(),((Level)jcblevel.getSelectedItem()).toInt(),new int[] {},0,0,((Faction)jcbfaction.getSelectedItem()).toInt(),ia, "",0);
 		CardInstance ci = CardInstance.get(2,c,i);
-		
+		cis[rank-1] = ci;
+		loadIMG(cis[rank-1]);
 		//System.out.println(Data.getCardInstanceByNameAndLevel("Bulkhead Brawler-1").getSkills()[2].x);
-		BufferedImage img = r.render(ci,new String[] {txt[0].getText(),txt[1].getText(),txt[2].getText()},imgfile.getText(),(CardType)jcbtype.getSelectedItem());
+		/*BufferedImage img = r.render(ci,new String[] {txt[0].getText(),txt[1].getText(),txt[2].getText()},imgfile.getText(),(CardType)jcbtype.getSelectedItem());
 		cimg = img;
 		ImageIcon iicon = new ImageIcon(img);
 		ipanel.removeAll();
@@ -568,10 +641,31 @@ public class RenderPanel extends JPanel{
 				recurse_summon(cj);
 			}
 		}
-		this.updateUI();
+		this.updateUI(); */
 		}catch(Exception e) {e.printStackTrace();
 		JOptionPane.showMessageDialog(this, "Error on input!");
 		}
+	}
+	
+	public int ilevel()
+	{
+		return (Integer)jcbrank.getSelectedItem()-1;
+	}
+	
+	public void loadIMG(CardInstance ci) //{loadIMG(ci,false);}
+	//public void loadIMG(CardInstance ci, boolean custom)
+	{
+		BufferedImage img = r.render(ci,new String[] {txt[0].getText(),txt[1].getText(),txt[2].getText()},imgfile.getText(),(CardType)jcbtype.getSelectedItem());
+				
+		cimg = img;
+		ImageIcon iicon = new ImageIcon(img);
+		
+		ipanel[ilevel()].removeAll();
+		JLabel limg=new JLabel();
+		limg.setIcon(iicon);
+		ipanel[ilevel()].add(limg);
+		recurse_summon(ci);
+		this.updateUI();
 	}
 	
 	public void recurse_summon(CardInstance ci)
@@ -584,7 +678,7 @@ public class RenderPanel extends JPanel{
 			ImageIcon iicon = new ImageIcon(img);
 			JLabel limg=new JLabel();
 			limg.setIcon(iicon);
-			ipanel.add(limg);
+			ipanel[ilevel()].add(limg);
 			recurse_summon(cj);
 			}
 		}

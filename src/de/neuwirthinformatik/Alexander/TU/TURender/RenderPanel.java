@@ -41,6 +41,7 @@ import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
 import de.neuwirthinformatik.Alexander.TU.Basic.SkillSpec;
 import de.neuwirthinformatik.Alexander.TU.Basic.XMLParser;
 import de.neuwirthinformatik.Alexander.TU.Render.Render;
+import de.neuwirthinformatik.Alexander.TU.TURender.XMLView.XmlTextPane;
 import de.neuwirthinformatik.Alexander.TU.util.GUI;
 import de.neuwirthinformatik.Alexander.TU.util.Task;
 import de.neuwirthinformatik.Alexander.TU.util.Wget;
@@ -87,8 +88,7 @@ public class RenderPanel extends JPanel{
 	
 	JPanel[] ipanel = new JPanel[10];
 	//JPanel ipanel,ipanel2;
-	//JTextField xml;
-	JTextArea xml;
+	XmlTextPane xml;
 	BufferedImage cimg;
 
 	Render r;
@@ -401,8 +401,12 @@ public class RenderPanel extends JPanel{
 		//panel.add(xml= GUI.textEdit("soon your xml here in/out"));
 		tmp = new JPanel();
 		
-		xml = new JTextArea();
-		xml.setEditable(false);
+		xml = new XMLView.XmlTextPane();
+		xml.setDisabledTextColor(new Color(38,139,210));
+		xml.setSelectionColor(new Color(38,139,210));
+		//xml.setDisabledTextColor(new Color(38,139,210));
+		//xml = new JTextArea();
+		//xml.setEditable(false);
 		JScrollPane jscp = new JScrollPane(xml);
 		Dimension xd = jscp.getPreferredSize();
 		xd.width = 700;

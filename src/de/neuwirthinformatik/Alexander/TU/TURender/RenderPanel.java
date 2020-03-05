@@ -193,7 +193,7 @@ public class RenderPanel extends JPanel{
 		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 
 		JPanel tmp = new JPanel();
-		tmp.add(GUI.buttonSync("Update", () -> updateIMG()));
+		tmp.add(GUI.buttonSync("Update", () -> {block_img_update=false;updateIMG();}));
 		tmp.add(path= GUI.textEdit("out.png"));
 		tmp.add(GUI.buttonSync("Save", () -> saveIMG()));
 		tmp.add(load = GUI.textEdit("load card name or id"));
@@ -456,13 +456,16 @@ public class RenderPanel extends JPanel{
 		jcbfaction.addItemListener((e) -> Task.start(()->updateIMG()));
 		DocumentListener dl = new DocumentListener() {
 			  public void changedUpdate(DocumentEvent e) {
-				  	Task.start(()->updateIMG());
+				  	//Task.start(()->updateIMG());
+				  	//System.out.println("ch");
 				  }
 				  public void removeUpdate(DocumentEvent e) {
-					  Task.start(()->updateIMG());
+					  //Task.start(()->updateIMG());
+					  	//System.out.println("rm");
 				  }
 				  public void insertUpdate(DocumentEvent e) {
 					  Task.start(()->updateIMG());
+					  	//System.out.println("in");
 				  }
 		};
 		imgfile.getDocument().addDocumentListener(dl);
@@ -521,7 +524,7 @@ public class RenderPanel extends JPanel{
 		return ci;
 	}
 	
-	public void loadCard()
+	public synchronized void loadCard()
 	{
 		CardInstance ci = getLoadCI();
 		if(ci == null) return;
@@ -530,8 +533,8 @@ public class RenderPanel extends JPanel{
 		int[] arr = c.getIDs();
 		for(int i=0;i<arr.length-1;i++)
 			loadFromCI(GlobalData.getCardInstanceById(arr[i]));
-		block_img_update = true;
 		loadFromCI(GlobalData.getCardInstanceById(arr[arr.length-1]));
+		block_img_update = false;
 	}
 	
 	public void loadCI()
@@ -542,7 +545,7 @@ public class RenderPanel extends JPanel{
 		loadFromCI(ci);
 	}
 	
-	public void loadFromCI(CardInstance ci)
+	public synchronized void loadFromCI(CardInstance ci)
 	{
 		boolean pre_tmp = block_img_update;
 		block_img_update = true;
@@ -637,11 +640,12 @@ public class RenderPanel extends JPanel{
 		loadIMG(ci);
 	}
 	
+	Object sync_flag = new Object();
 	
-	
-	public synchronized void updateIMG()
+	public void updateIMG()
 	{
 		if(block_img_update)return;
+		synchronized(sync_flag) {
 		try {
 		SkillSpec[] ss = new SkillSpec[3];
 		for(int  k = 0; k < ss.length;k++)
@@ -684,7 +688,7 @@ public class RenderPanel extends JPanel{
 		this.updateUI(); */
 		}catch(Exception e) {e.printStackTrace();
 		JOptionPane.showMessageDialog(this, "Error on input!");
-		}
+		}}
 	}
 	
 	public int ilevel()
@@ -705,11 +709,12 @@ public class RenderPanel extends JPanel{
 		limg.setIcon(iicon);
 		ipanel[ilevel()].add(limg);
 		//if(bg == null)bg = ipanel[ilevel()].getBorder();
-		ipanel[ilevel()].setBorder(BorderFactory.createLineBorder(Color.RED,5));
+		for( int i = 0; i  < ipanel.length; i++)ipanel[i].setBorder(BorderFactory.createEmptyBorder());
+		ipanel[ilevel()].setBorder(BorderFactory.createLineBorder(Color.GRAY,2));
 		recurse_summon(ci);
 		updateCardXML();
 		this.updateUI();
-		ipanel[ilevel()].setBorder(BorderFactory.createEmptyBorder());
+		//
 	}
 	Color bg = null;
 	Color fg = Color.GRAY;

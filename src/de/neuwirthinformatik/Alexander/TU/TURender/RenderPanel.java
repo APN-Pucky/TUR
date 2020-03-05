@@ -273,10 +273,10 @@ public class RenderPanel extends JPanel{
 		JPanel s1p = new JPanel();
 		JPanel s1p_ = new JPanel();
 		s1p.add(GUI.label("id"));
-		s1p.add(sid[k]= GUI.textEdit("strike"));
+		s1p.add(sid[k]= GUI.text("strike",true,125));
 		s1p.add(all[k] = GUI.check("All",false));
 		s1p.add(GUI.label("y"));
-		s1p.add(y[k]= GUI.textEdit("allfactions"));
+		s1p.add(y[k]= GUI.text("allfactions",true,125));
 		s1p.add(GUI.label("x"));
 		s1p.add(x[k]= GUI.numericEdit(0));
 		s1p.add(GUI.label("n"));
@@ -284,15 +284,15 @@ public class RenderPanel extends JPanel{
 		s1p.add(GUI.label("every"));
 		s1p.add(c[k]= GUI.numericEdit(0));
 		s1p.add(GUI.label("on"));
-		s1p.add(trigger[k]= GUI.textEdit("attacked"));
+		s1p.add(trigger[k]= GUI.text("attacked",true,125));
 		s1p_.add(GUI.label("s1"));
-		s1p_.add(s1[k]= GUI.textEdit("no_skill"));
+		s1p_.add(s1[k]= GUI.text("no_skill",true,125));
 		s1p_.add(GUI.label("s2"));
-		s1p_.add(s2[k]= GUI.textEdit("no_skill"));
+		s1p_.add(s2[k]= GUI.text("no_skill",true,125));
 		s1p_.add(GUI.label("summon_id"));
 		s1p_.add(id[k]= GUI.numericEdit(0));// todo render summon tooo!!!!!	
 		s1p_.add(GUI.label("custom"));
-		s1p_.add(txt[k]= GUI.textEdit(""));
+		s1p_.add(txt[k]= GUI.text("",true,125));
 		skillpanel.add(s1p);
 		skillpanel.add(s1p_);
 		skillpanel.add(new JSeparator());
@@ -383,12 +383,12 @@ public class RenderPanel extends JPanel{
 		
 		JSplitPane splitpane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
 				panel,new JScrollPane(allipanel));
-		Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
-		d.width = d.width - 50;
-		d.height = d.height - 100;
+		Dimension d = new Dimension(1500,750);//Toolkit.getDefaultToolkit().getScreenSize();
+		//d.width = d.width - 50;
+		//d.height = d.height - 100;
 		splitpane.setPreferredSize(d);
 		splitpane.setOneTouchExpandable(true);
-		splitpane.setDividerLocation(1200);
+		splitpane.setDividerLocation(1000);
 		add(splitpane);
 		d.width = d.width + 10;
 		d.height = d.height + 10;

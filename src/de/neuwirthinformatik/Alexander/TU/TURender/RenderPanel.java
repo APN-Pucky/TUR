@@ -1,5 +1,6 @@
 package de.neuwirthinformatik.Alexander.TU.TURender;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 import javax.imageio.ImageIO;
+import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
@@ -702,11 +704,15 @@ public class RenderPanel extends JPanel{
 		JLabel limg=new JLabel();
 		limg.setIcon(iicon);
 		ipanel[ilevel()].add(limg);
+		//if(bg == null)bg = ipanel[ilevel()].getBorder();
+		ipanel[ilevel()].setBorder(BorderFactory.createLineBorder(Color.RED,5));
 		recurse_summon(ci);
 		updateCardXML();
 		this.updateUI();
+		ipanel[ilevel()].setBorder(BorderFactory.createEmptyBorder());
 	}
-	
+	Color bg = null;
+	Color fg = Color.GRAY;
 	public void updateCardXML()
 	{
 		int mrank = (Integer)jcbmaxrank.getSelectedItem();

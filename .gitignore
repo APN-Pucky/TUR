@@ -8,7 +8,7 @@ __pycache__/
 # Created by https://www.gitignore.io/api/eclipse
 
 ### Eclipse ###
-
+data/
 .metadata
 bin/
 tmp/

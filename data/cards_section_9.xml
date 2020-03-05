@@ -3641,7 +3641,7 @@
 		<skill id="rally" x="1" all="1" y="1"/>
 		<skill id="jam" c="8"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>17243</card_id>
 			<level>2</level>
@@ -12097,7 +12097,7 @@
 		<skill id="rally" x="2" y="2"/>
 		<skill id="berserk" x="1"/>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>37551</card_id>
 			<level>2</level>
@@ -12248,7 +12248,7 @@
 		<skill id="pierce" x="2"/>
 		<skill id="poison" x="2"/>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>37037</card_id>
 			<level>2</level>
@@ -18698,13 +18698,11 @@
 		<upgrade>
 			<card_id>36901</card_id>
 			<level>4</level>
-			<health>140</health>
-			<attack>11</attack>
+			<health>145</health>
 		</upgrade>
 		<upgrade>
 			<card_id>36902</card_id>
 			<level>5</level>
-			<health>145</health>
 			<skill id="besiege" x="55" all="1"/>
 			<skill id="legion" x="55"/>
 			<skill id="flurry" c="3"/>
@@ -28165,45 +28163,45 @@
 		<picture>progenspider_lv1</picture>
 		<asset_bundle>150</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>3</attack>
-		<health>23</health>
+		<attack>23</attack>
+		<health>200</health>
 		<cost>2</cost>
 		<rarity>4</rarity>
-		<skill id='protect' x='1' all='1' />
-		<skill id='rally' x='1' all='1' />
-		<skill id='flurry' c='6' />
+		<skill id='protect' x='32' all='1' />
+		<skill id='rally' x='23' all='1' />
+		<skill id='flurry' c='3' />
 		<type>6</type>
 		<set>2000</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>34903</card_id>
-			<skill id='protect' x='2' all='1' />
-			<skill id='rally' x='1' all='1' />
-			<skill id='flurry' c='6' />
+			<skill id='protect' x='34' all='1' />
+			<skill id='rally' x='26' all='1' />
+			<skill id='flurry' c='3' />
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<card_id>34904</card_id>
-			<health>26</health>
+			<health>210</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<card_id>34905</card_id>
-			<skill id='protect' x='2' all='1' />
-			<skill id='rally' x='1' all='1' />
-			<skill id='flurry' c='5' />
+			<skill id='protect' x='37' all='1' />
+			<skill id='rally' x='28' all='1' />
+			<skill id='flurry' c='3' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<card_id>34906</card_id>
-			<health>29</health>
+			<health>220</health>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<card_id>34907</card_id>
-			<skill id='protect' x='2' all='1' />
-			<skill id='rally' x='2' all='1' />
-			<skill id='flurry' c='4' />
+			<skill id='protect' x='40' all='1' />
+			<skill id='rally' x='30' all='1' />
+			<skill id='flurry' c='3' />
 		</upgrade>
 	</unit>
 

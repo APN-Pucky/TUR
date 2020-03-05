@@ -2,6 +2,8 @@ package de.neuwirthinformatik.Alexander.TU.TURender;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -19,10 +21,11 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import javax.swing.JSplitPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.filechooser.FileFilter;
 
 import de.neuwirthinformatik.Alexander.TU.TU;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card;
@@ -34,6 +37,7 @@ import de.neuwirthinformatik.Alexander.TU.Basic.Card.Level;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card.Rarity;
 import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
 import de.neuwirthinformatik.Alexander.TU.Basic.SkillSpec;
+import de.neuwirthinformatik.Alexander.TU.Basic.XMLParser;
 import de.neuwirthinformatik.Alexander.TU.Render.Render;
 import de.neuwirthinformatik.Alexander.TU.util.GUI;
 import de.neuwirthinformatik.Alexander.TU.util.Task;
@@ -81,14 +85,17 @@ public class RenderPanel extends JPanel{
 	
 	JPanel[] ipanel = new JPanel[10];
 	//JPanel ipanel,ipanel2;
-	JTextField xml;
-	
+	//JTextField xml;
+	JTextArea xml;
 	BufferedImage cimg;
 
 	Render r;
 	boolean block_img_update= false;
 	
 	CardInstance[] cis = new CardInstance[10];
+	
+	
+	XMLParser xmlp = new XMLParser(true);
 	
 	
 	
@@ -223,41 +230,50 @@ public class RenderPanel extends JPanel{
 		tmp.add(imgfile = GUI.text("in.png"));
 		tmp.add(GUI.buttonAsync("choose IMG", () -> chooseIMG()));
 		datapanel.add(tmp);
-		//JPanel d1panel = new JPanel();
-
+		
+		JPanel ddp = new JPanel();
+		JPanel datapanel_ = new JPanel();
+		datapanel_.setLayout(new BoxLayout(datapanel_, BoxLayout.Y_AXIS));
+		
 		tmp = new JPanel();
 		tmp.add(GUI.textSmall("hp"));
 		tmp.add(dhealth = GUI.numericEdit(420));
-		datapanel.add(tmp);
+		datapanel_.add(tmp);
 		tmp=new JPanel();
 		tmp.add(GUI.textSmall("delay"));
 		tmp.add(ddelay = GUI.numericEdit(3));
-		datapanel.add(tmp);
+		datapanel_.add(tmp);
 		tmp=new JPanel();
 		tmp.add(GUI.textSmall("atk"));
 		tmp.add(dattack = GUI.numericEdit(69));
-		datapanel.add(tmp);
-		//datapanel.add(d1panel);
+		datapanel_.add(tmp);
+		ddp.add(datapanel_);
+		
+		JSeparator js = new JSeparator();
+		js.setOrientation(SwingConstants.VERTICAL);
+		ddp.add(js);
+		
+		datapanel_ = new JPanel();
+		datapanel_.setLayout(new BoxLayout(datapanel_, BoxLayout.Y_AXIS));
 
-		datapanel.add(new JSeparator());
 		tmp=new JPanel();
 		tmp.add(GUI.textSmall("rarity"));
 		jcbrarity = new JComboBox<Rarity>(Rarity.values());
 		tmp.add(jcbrarity);
 		//tmp.add(drarity = GUI.numericEdit(1));
-		datapanel.add(tmp);
+		datapanel_.add(tmp);
 		tmp=new JPanel();
 		tmp.add(GUI.textSmall("faction"));
 		jcbfaction = new JComboBox<Faction>(Faction.values());
 		tmp.add(jcbfaction);
 		//tmp.add(dfaction = GUI.numericEdit(1));
-		datapanel.add(tmp);
+		datapanel_.add(tmp);
 		tmp=new JPanel();
 		tmp.add(GUI.textSmall("fusion"));
 		jcblevel = new JComboBox<Level>(Level.values());
 		tmp.add(jcblevel);
 		//tmp.add(dlevel = GUI.numericEdit(1));
-		datapanel.add(tmp);
+		datapanel_.add(tmp);
 		
 		
 
@@ -266,8 +282,11 @@ public class RenderPanel extends JPanel{
 		jcbtype = new JComboBox<CardType>(CardType.values());
 		tmp.add(jcbtype);
 		//tmp.add(dlevel = GUI.numericEdit(1));
-		datapanel.add(tmp);
-		//datapanel.add(d2panel);
+		datapanel_.add(tmp);
+		
+		
+		ddp.add(datapanel_);
+		datapanel.add(ddp);
 		//String id, int x, String y, int n, int c, String s, String s2, boolean all,int card_id, String trigger
 		for (int k =0 ; k < 3;k++) {
 		JPanel s1p = new JPanel();
@@ -363,7 +382,6 @@ public class RenderPanel extends JPanel{
 		catch(Exception e) {e.printStackTrace();
 			JOptionPane.showMessageDialog(this, "Error on input!");
 		}
-		updateIMG();
 		//panel.add(new JScrollPane(ipanel));
 		
 		tmp = new JPanel();
@@ -378,8 +396,28 @@ public class RenderPanel extends JPanel{
 		panel.add(skillpanel);
 		
 
-		panel.add(xml= GUI.textEdit("soon your xml here in/out"));
+		//panel.add(xml= GUI.textEdit("soon your xml here in/out"));
+		tmp = new JPanel();
 		
+		xml = new JTextArea();
+		xml.setEditable(false);
+		JScrollPane jscp = new JScrollPane(xml);
+		Dimension xd = jscp.getPreferredSize();
+		xd.width = 700;
+		xd.height = 200;
+		jscp.setPreferredSize(xd);
+		tmp.add(jscp);
+		
+
+		updateIMG();
+		
+		tmp.add(GUI.buttonSync("Copy", () -> {
+			String get = xml.getText();
+			StringSelection selec = new StringSelection(get);
+			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+			clipboard.setContents(selec, selec);
+		}));
+		panel.add(tmp);
 		
 		JSplitPane splitpane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
 				panel,new JScrollPane(allipanel));
@@ -614,7 +652,7 @@ public class RenderPanel extends JPanel{
 		Info[] ia = new Info[mrank];
 		int[] ids = new int[mrank];
 		for(int j =0; j < ids.length;j++)ids[j]=1;
-		ids[rank-1] = 2;
+		ids[rank-1] = 2; // TODO Define card id somewhere close to name
 		ia[rank-1] = i;
 		Card c = new Card(ids,dataname.getText(),((Rarity)jcbrarity.getSelectedItem()).toInt(),((Level)jcblevel.getSelectedItem()).toInt(),new int[] {},0,0,((Faction)jcbfaction.getSelectedItem()).toInt(),ia, "",0);
 		CardInstance ci = CardInstance.get(2,c,i);
@@ -665,7 +703,33 @@ public class RenderPanel extends JPanel{
 		limg.setIcon(iicon);
 		ipanel[ilevel()].add(limg);
 		recurse_summon(ci);
+		updateCardXML();
 		this.updateUI();
+	}
+	
+	public void updateCardXML()
+	{
+		int mrank = (Integer)jcbmaxrank.getSelectedItem();
+		int[] ids = new int[mrank];
+		Info[] infos = new Info[mrank];
+		for(int i =0; i < mrank;++i) {
+			if(cis[i]!=null)
+			{
+				ids[i] = cis[i].getID();
+				infos[i] = cis[i].getInfo();
+			}
+			else
+			{
+				int rank = (Integer)jcbrank.getSelectedItem();
+				infos[i] = cis[rank-1].getInfo();
+				ids[i] = cis[rank-1].getID();
+			}
+		}
+		Card pc = cis[0].getCard();
+		Card c = new Card(ids,pc.getName(),pc.getRarity(),pc.getFusionLevel(),pc.getMaterials(),pc.getFortType(),pc.getSet(),pc.getFaction(), infos,pc.getPicture(), pc.getAssetBundle() );
+		
+		String s = xmlp.getCardXML(c);
+		xml.setText(s);
 	}
 	
 	public void recurse_summon(CardInstance ci)

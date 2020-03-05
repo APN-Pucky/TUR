@@ -7347,7 +7347,7 @@
 		<skill id="heal" x="14" all="1" y="4"/>
 		<skill id="strike" x="7" all="1"/>
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>48843</card_id>
 			<level>2</level>
@@ -7936,7 +7936,7 @@
 		<skill id="protect" x="4" all="1" y="5"/>
 		<skill id="inhibit" x="4"/>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>48399</card_id>
 			<level>2</level>
@@ -15097,7 +15097,7 @@
 		<skill id="legion" x="10"/>
 		<skill id="flurry" c="6"/>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>47759</card_id>
 			<level>2</level>
@@ -19086,7 +19086,7 @@
 		<skill id="bravery" x="20"/>
 		<skill id="drain" x="40"/>
 		<type>6</type>
-		<set>4750</set>
+		<set>4500</set>
 		<upgrade>
 			<card_id>48017</card_id>
 			<level>2</level>

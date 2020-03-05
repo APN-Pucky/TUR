@@ -6155,7 +6155,7 @@
 		<skill id='jam' c='8' />
 		<skill id='weaken' x='1' all='1' />
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>31270</card_id>
@@ -6300,7 +6300,7 @@
 		<skill id='legion' x='1' />
 		<skill id='flurry' c='7' />
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>31288</card_id>
@@ -15624,7 +15624,7 @@
 		<skill id='leech' x='5' />
 		<skill id='berserk' x='1' />
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>33034</card_id>
@@ -15822,7 +15822,7 @@
 		<skill id='counter' x='1' />
 		<skill id='corrosive' x='1' />
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>32318</card_id>

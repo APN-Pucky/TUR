@@ -1400,7 +1400,7 @@
 		<skill id='pierce' x='2' />
 		<skill id='poison' x='2' />
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 		<level>2</level>
 			<card_id>16335</card_id>
@@ -1596,7 +1596,7 @@
 		<skill id='evade' x='1' />
 		<skill id='berserk' x='1' />
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>15927</card_id>
@@ -13948,7 +13948,7 @@
 		<skill id='evade' x='1' />
 		<skill id='counter' x='1' />
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>16823</card_id>
@@ -16116,7 +16116,7 @@
 		<skill id='pierce' x='2' />
 		<skill id='inhibit' x='1' />
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>30725</card_id>
@@ -16313,7 +16313,7 @@
 		<skill id='rally' x='1' y='2' all='1' />
 		<skill id='enfeeble' x='1' all='1' />
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>30467</card_id>

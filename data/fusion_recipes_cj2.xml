@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 
-	<!--Reemergence Box -->
+	<!-- Munitions Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>65094</card_id>
+		<resource card_id="65093" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65100</card_id>
+		<resource card_id="65099" number="2"/>
+	</fusion_recipe>
+
+	<!-- Reemergence Box -->
 	
 	<fusion_recipe>
 		<card_id>64950</card_id>
@@ -52,7 +63,7 @@
 		<resource card_id="65081" number="2"/>
 	</fusion_recipe>
 	
-	<!--2020 New Years Guild Brawl Reward -->
+	<!-- 2020 New Years Guild Brawl Reward -->
 
 	<fusion_recipe>
 		<card_id>64932</card_id>

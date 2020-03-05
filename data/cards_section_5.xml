@@ -16,7 +16,7 @@
 		<skill id='protect' x='1' y='1' />
 		<skill id='legion' x='1' />
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>13291</card_id>
@@ -2224,7 +2224,7 @@
 	<unit>
 		<id>14228</id>
 		<name>Watchhound</name> <!-- Watchdog -->
-		<picture>imperialprotecto_lv3</picture>
+		<picture>imperialprotecto</picture>
 		<asset_bundle>124</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>5</attack>
@@ -3977,7 +3977,7 @@
 	<unit>
 		<id>14101</id>
 		<name>Enslaved Curator</name>
-		<picture>narada_lv3</picture>
+		<picture>narada</picture>
 		<asset_bundle>123</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>2</attack>
@@ -6321,7 +6321,7 @@
 	<unit>
 		<id>13614</id>
 		<name>Trauma Brawler</name> <!-- Trauma Troop -->
-		<picture>raiderinfiltrator_lv3</picture>
+		<picture>raiderinfiltrator</picture>
 		<asset_bundle>121</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>13</attack>
@@ -6922,7 +6922,7 @@
 		<cost>2</cost>
 		<rarity>4</rarity>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<skill id='heal' x='1' y='5' />
 		<skill id='rally' x='1' y='5' />
 		<upgrade>
@@ -7022,7 +7022,7 @@
 		<cost>3</cost>
 		<rarity>3</rarity>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<skill id='flurry' c='8' />
 		<upgrade>
 			<level>2</level>
@@ -11231,7 +11231,7 @@
 	<unit>
 		<id>14612</id>
 		<name>Gloom Master</name> <!-- Grim Master -->
-		<picture>xenoflash1crawler_lv3</picture>
+		<picture>xenoflash1crawler</picture>
 		<asset_bundle>126</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>3</attack>
@@ -13118,7 +13118,7 @@
 	<unit>
 		<id>14558</id>
 		<name>Keen Automaton</name> <!-- Sly Automaton -->
-		<picture>rightrobogunner_lv3</picture>
+		<picture>rightrobogunner</picture>
 		<asset_bundle>124</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>5</attack>
@@ -13622,7 +13622,7 @@
 		<cost>3</cost>
 		<rarity>4</rarity>
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<skill id='rally' x='1' />
 		<skill id='inhibit' x='1' />
 		<upgrade>
@@ -14833,7 +14833,7 @@
 		<skill id='enfeeble' x='1' />
 		<skill id='jam' c='7' />
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>15009</card_id>
@@ -14976,7 +14976,7 @@
 		<skill id='rally' x='1' y='2' />
 		<skill id='siege' x='2' />
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>15027</card_id>
@@ -16101,7 +16101,7 @@
 		<cost>1</cost>
 		<rarity>4</rarity>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<skill id='payback' x='1' />
 		<upgrade>
 			<level>2</level>

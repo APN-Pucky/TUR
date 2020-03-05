@@ -2,9 +2,9 @@
 <root>
 <!-- Lowest ID available
 
-	Assault 65088 ends at 49999 and continues at 55001
+	Assault 65166 ends at 49999 and continues at 55001
 	Commander 26272 ends at 1999 continues at 25000-29999
-	Structures 19024 (end at 2699) ends at 9999 continues  at 17000-24999 Fortress 2701
+	Structures 19048 (end at 2699) ends at 9999 continues  at 17000-24999 Fortress 2701
 	Dominions 50238 ends at 55000 -->
 
 	<!-- Unhallowed War Reward -->
@@ -22,7 +22,7 @@
 		<skill id="jam" n="1" c="15"/>
 		<skill id="enfeeble" x="5" all="1" trigger="death"/>
 		<type>2</type>
-		<set>2000</set>
+		<set>4500</set>
 		<upgrade>
 			<card_id>63417</card_id>
 			<level>2</level>
@@ -867,7 +867,7 @@
 		<rarity>6</rarity>
 		<skill trigger="play" id="summon" card_id="64962"/>
 		<skill id="stasis" x="30"/>
-		<skill id="besiege" x="30" all="1"/>
+		<skill trigger="attacked" id="besiege" x="30" all="1"/>
 		<type>1</type>
 		<set>2500</set>
 		<upgrade>
@@ -883,7 +883,7 @@
 			<health>135</health>
 			<skill trigger="play" id="summon" card_id="64962"/>
 			<skill id="stasis" x="31"/>
-			<skill id="besiege" x="31" all="1"/>
+			<skill trigger="attacked" id="besiege" x="31" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64947</card_id>
@@ -892,7 +892,7 @@
 			<health>140</health>
 			<skill trigger="play" id="summon" card_id="64963"/>
 			<skill id="stasis" x="32"/>
-			<skill id="besiege" x="32" all="1"/>
+			<skill trigger="attacked" id="besiege" x="32" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64948</card_id>
@@ -901,7 +901,7 @@
 			<health>145</health>
 			<skill trigger="play" id="summon" card_id="64963"/>
 			<skill id="stasis" x="32"/>
-			<skill id="besiege" x="32" all="1"/>
+			<skill trigger="attacked" id="besiege" x="32" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64949</card_id>
@@ -910,7 +910,7 @@
 			<health>150</health>
 			<skill trigger="play" id="summon" card_id="64963"/>
 			<skill id="stasis" x="33"/>
-			<skill id="besiege" x="33" all="1"/>
+			<skill trigger="attacked" id="besiege" x="33" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -925,7 +925,7 @@
 		<rarity>6</rarity>
 		<skill trigger="play" id="summon" card_id="64964"/>
 		<skill id="stasis" x="33"/>
-		<skill id="besiege" x="33" all="1"/>
+		<skill trigger="attacked" id="besiege" x="33" all="1"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
@@ -935,7 +935,7 @@
 			<health>160</health>
 			<skill trigger="play" id="summon" card_id="64964"/>
 			<skill id="stasis" x="34"/>
-			<skill id="besiege" x="34" all="1"/>
+			<skill trigger="attacked" id="besiege" x="34" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64952</card_id>
@@ -944,7 +944,7 @@
 			<health>165</health>
 			<skill trigger="play" id="summon" card_id="64964"/>
 			<skill id="stasis" x="35"/>
-			<skill id="besiege" x="35" all="1"/>
+			<skill trigger="attacked" id="besiege" x="35" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64953</card_id>
@@ -953,7 +953,7 @@
 			<health>170</health>
 			<skill trigger="play" id="summon" card_id="64965"/>
 			<skill id="stasis" x="36"/>
-			<skill id="besiege" x="36" all="1"/>
+			<skill trigger="attacked" id="besiege" x="36" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64954</card_id>
@@ -962,7 +962,7 @@
 			<health>175</health>
 			<skill trigger="play" id="summon" card_id="64965"/>
 			<skill id="stasis" x="37"/>
-			<skill id="besiege" x="37" all="1"/>
+			<skill trigger="attacked" id="besiege" x="37" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64955</card_id>
@@ -971,7 +971,7 @@
 			<health>180</health>
 			<skill trigger="play" id="summon" card_id="64965"/>
 			<skill id="stasis" x="38"/>
-			<skill id="besiege" x="38" all="1"/>
+			<skill trigger="attacked" id="besiege" x="38" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -986,7 +986,7 @@
 		<rarity>6</rarity>
 		<skill trigger="play" id="summon" card_id="64966"/>
 		<skill id="stasis" x="39"/>
-		<skill id="besiege" x="39" all="1"/>
+		<skill trigger="attacked" id="besiege" x="39" all="1"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
@@ -996,7 +996,7 @@
 			<health>215</health>
 			<skill trigger="play" id="summon" card_id="64966"/>
 			<skill id="stasis" x="40"/>
-			<skill id="besiege" x="40" all="1"/>
+			<skill trigger="attacked" id="besiege" x="40" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64958</card_id>
@@ -1005,7 +1005,7 @@
 			<health>230</health>
 			<skill trigger="play" id="summon" card_id="64966"/>
 			<skill id="stasis" x="41"/>
-			<skill id="besiege" x="41" all="1"/>
+			<skill trigger="attacked" id="besiege" x="41" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64959</card_id>
@@ -1014,7 +1014,7 @@
 			<health>245</health>
 			<skill trigger="play" id="summon" card_id="64967"/>
 			<skill id="stasis" x="43"/>
-			<skill id="besiege" x="43" all="1"/>
+			<skill trigger="attacked" id="besiege" x="43" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64960</card_id>
@@ -1023,7 +1023,7 @@
 			<health>260</health>
 			<skill trigger="play" id="summon" card_id="64967"/>
 			<skill id="stasis" x="44"/>
-			<skill id="besiege" x="44" all="1"/>
+			<skill trigger="attacked" id="besiege" x="44" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>64961</card_id>
@@ -1032,7 +1032,7 @@
 			<health>270</health>
 			<skill trigger="play" id="summon" card_id="64967"/>
 			<skill id="stasis" x="45"/>
-			<skill id="besiege" x="45" all="1"/>
+			<skill trigger="attacked" id="besiege" x="45" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -1103,7 +1103,7 @@
 		<asset_bundle>345</asset_bundle>
 		<attack>30</attack>
 		<health>65</health>
-		<cost>3</cost>
+		<cost>1</cost>
 		<rarity>6</rarity>
 		<skill id="evade" x="2"/>
 		<skill id="venom" x="45"/>
@@ -1160,7 +1160,7 @@
 		<fusion_level>1</fusion_level>
 		<attack>42</attack>
 		<health>79</health>
-		<cost>3</cost>
+		<cost>1</cost>
 		<rarity>6</rarity>
 		<skill id="evade" x="5"/>
 		<skill id="venom" x="75"/>
@@ -1218,7 +1218,7 @@
 		<fusion_level>2</fusion_level>
 		<attack>50</attack>
 		<health>97</health>
-		<cost>3</cost>
+		<cost>1</cost>
 		<rarity>6</rarity>
 		<skill id="evade" x="6"/>
 		<skill id="venom" x="93"/>
@@ -2389,6 +2389,1018 @@
 			<skill id="jam" n="2" c="5"/>
 			<skill id="sunder" x="10"/>
 			<skill id="mimic" x="90"/>
+		</upgrade>
+	</unit>
+	
+	<!-- Munitions Brawl Reward -->
+	
+	<unit>
+		<id>65088</id>
+		<name>Dreadbot</name>
+		<picture>xenoflash1crawler_lv3</picture>
+		<asset_bundle>126</asset_bundle>
+		<attack>2</attack>
+		<health>5</health>
+		<cost>0</cost>
+		<type>4</type>
+		<rarity>3</rarity>
+		<set>4500</set>
+		<skill id="rally" x="55" all="1" trigger="play" />
+		<skill id="revenge" x="2" />
+		<skill id="besiege" x="20" />
+		<upgrade>
+			<card_id>65089</card_id>
+			<level>2</level>
+			<attack>3</attack>
+			<health>10</health>
+			<skill id="rally" x="60" all="1" trigger="play" />
+			<skill id="revenge" x="3" />
+			<skill id="besiege" x="30" />
+		</upgrade>
+		<upgrade>
+			<card_id>65090</card_id>
+			<level>3</level>
+			<attack>5</attack>
+			<health>10</health>
+			<skill id="rally" x="65" all="1" trigger="play" />
+			<skill id="revenge" x="4" />
+			<skill id="besiege" x="40" />
+		</upgrade>
+		<upgrade>
+			<card_id>65091</card_id>
+			<level>4</level>
+			<attack>5</attack>
+			<health>15</health>
+			<skill id="rally" x="65" all="1" trigger="play" />
+			<skill id="revenge" x="4" />
+			<skill id="besiege" x="45" />
+		</upgrade>
+		<upgrade>
+			<card_id>65092</card_id>
+			<level>5</level>
+			<attack>10</attack>
+			<health>25</health>
+			<skill id="rally" x="65" all="1" trigger="play" />
+			<skill id="revenge" x="5" />
+			<skill id="besiege" x="50" />
+		</upgrade>
+		<upgrade>
+			<card_id>65093</card_id>
+			<level>6</level>
+			<attack>15</attack>
+			<health>30</health>
+			<skill id="rally" x="70" all="1" trigger="play" />
+			<skill id="revenge" x="5" />
+			<skill id="besiege" x="60" />
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65094</id>
+		<name>Alphabot</name> <!-- Dreadbot -->
+		<picture>xenoflash1crawler_lv3</picture>
+		<asset_bundle>126</asset_bundle>
+		<fusion_level>1</fusion_level>
+		<attack>15</attack>
+		<health>35</health>
+		<cost>0</cost>
+		<type>4</type>
+		<rarity>3</rarity>
+		<fusion_level>2</fusion_level>
+		<set>2000</set>
+		<skill id="rally" x="70" all="1" trigger="play" />
+		<skill id="revenge" x="6" />
+		<skill id="besiege" x="75" />
+		<upgrade>
+			<card_id>65095</card_id>
+			<level>2</level>
+			<attack>20</attack>
+			<health>35</health>
+			<skill id="rally" x="75" all="1" trigger="play" />
+			<skill id="revenge" x="7" />
+			<skill id="besiege" x="80" />
+		</upgrade>
+		<upgrade>
+			<card_id>65096</card_id>
+			<level>3</level>
+			<attack>20</attack>
+			<health>40</health>
+			<skill id="rally" x="75" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="80" />
+		</upgrade>
+		<upgrade>
+			<card_id>65097</card_id>
+			<level>4</level>
+			<attack>20</attack>
+			<health>45</health>
+			<skill id="rally" x="75" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="95" />
+		</upgrade>
+		<upgrade>
+			<card_id>65098</card_id>
+			<level>5</level>
+			<attack>20</attack>
+			<health>45</health>
+			<skill id="rally" x="75" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="100" />
+		</upgrade>
+		<upgrade>
+			<card_id>65099</card_id>
+			<level>6</level>
+			<attack>20</attack>
+			<health>50</health>
+			<skill id="rally" x="80" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="100" />
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65100</id>
+		<name>Xenbot Alpha</name> <!-- Alphabot -->
+		<picture>xenoflash1crawler_lv3</picture>
+		<asset_bundle>126</asset_bundle>
+		<fusion_level>2</fusion_level>
+		<attack>20</attack>
+		<health>55</health>
+		<cost>0</cost>
+		<type>4</type>
+		<rarity>3</rarity>
+		<fusion_level>2</fusion_level>
+		<set>2000</set>
+		<skill id="rally" x="85" all="1" trigger="play" />
+		<skill id="revenge" x="8" />
+		<skill id="besiege" x="100" />
+		<upgrade>
+			<card_id>65101</card_id>
+			<level>2</level>
+			<attack>25</attack>
+			<health>60</health>
+			<skill id="rally" x="85" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="100" />
+		</upgrade>
+		<upgrade>
+			<card_id>65102</card_id>
+			<level>3</level>
+			<attack>30</attack>
+			<health>60</health>
+			<skill id="rally" x="90" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="105" />
+		</upgrade>
+		<upgrade>
+			<card_id>65103</card_id>
+			<level>4</level>
+			<attack>35</attack>
+			<health>70</health>
+			<skill id="rally" x="90" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="110" />
+		</upgrade>
+		<upgrade>
+			<card_id>65104</card_id>
+			<level>5</level>
+			<attack>35</attack>
+			<health>75</health>
+			<skill id="rally" x="90" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="115" />
+		</upgrade>
+		<upgrade>
+			<card_id>65105</card_id>
+			<level>6</level>
+			<attack>40</attack>
+			<health>80</health>
+			<skill id="rally" x="95" all="1" trigger="play" />
+			<skill id="revenge" x="8" />
+			<skill id="besiege" x="120" />
+		</upgrade>
+	</unit>
+	
+	<!-- March 2020 Vindicator Fusions -->
+	
+	<unit>
+		<id>19024</id>
+		<name>Edenite Shelter</name>
+		<picture>imperialbase_lv3</picture>
+		<asset_bundle>118</asset_bundle>
+		<fusion_level>1</fusion_level>
+		<health>190</health>
+		<cost>1</cost>
+		<rarity>5</rarity>
+		<skill id="enhance" x="20" all="1" s="absorb"/>
+		<skill id="heal" x="40" all="1" y="1"/>
+		<skill id="summon" card_id="65106"/>
+		<type>1</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>19025</card_id>
+			<level>2</level>
+			<health>200</health>
+			<skill id="enhance" x="24" all="1" s="absorb"/>
+			<skill id="heal" x="44" all="1" y="1"/>
+			<skill id="summon" card_id="65106"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19026</card_id>
+			<level>3</level>
+			<health>210</health>
+			<skill id="enhance" x="28" all="1" s="absorb"/>
+			<skill id="heal" x="48" all="1" y="1"/>
+			<skill id="summon" card_id="65107"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19027</card_id>
+			<level>4</level>
+			<health>220</health>
+			<skill id="enhance" x="32" all="1" s="absorb"/>
+			<skill id="heal" x="52" all="1" y="1"/>
+			<skill id="summon" card_id="65107"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19028</card_id>
+			<level>5</level>
+			<health>230</health>
+			<skill id="enhance" x="36" all="1" s="absorb"/>
+			<skill id="heal" x="56" all="1" y="1"/>
+			<skill id="summon" card_id="65108"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19029</card_id>
+			<level>6</level>
+			<health>240</health>
+			<skill id="enhance" x="40" all="1" s="absorb"/>
+			<skill id="heal" x="80" all="1" y="1"/>
+			<skill id="summon" card_id="65108"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>19030</id>
+		<name>Edenite Stronghold</name> <!-- Edenite Shelter -->
+		<picture>imperialbase_lv3</picture>
+		<asset_bundle>118</asset_bundle>
+		<fusion_level>2</fusion_level>
+		<health>250</health>
+		<cost>1</cost>
+		<rarity>5</rarity>
+		<skill id="enhance" x="45" all="1" s="absorb"/>
+		<skill id="heal" x="65" all="1" y="1"/>
+		<skill id="summon" card_id="65109"/>
+		<type>1</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>19031</card_id>
+			<level>2</level>
+			<health>260</health>
+			<skill id="enhance" x="48" all="1" s="absorb"/>
+			<skill id="heal" x="68" all="1" y="1"/>
+			<skill id="summon" card_id="65109"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19032</card_id>
+			<level>3</level>
+			<health>270</health>
+			<skill id="enhance" x="51" all="1" s="absorb"/>
+			<skill id="heal" x="71" all="1" y="1"/>
+			<skill id="summon" card_id="65110"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19033</card_id>
+			<level>4</level>
+			<health>280</health>
+			<skill id="enhance" x="54" all="1" s="absorb"/>
+			<skill id="heal" x="74" all="1" y="1"/>
+			<skill id="summon" card_id="65110"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19034</card_id>
+			<level>5</level>
+			<health>290</health>
+			<skill id="enhance" x="57" all="1" s="absorb"/>
+			<skill id="heal" x="77" all="1" y="1"/>
+			<skill id="summon" card_id="65111"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19035</card_id>
+			<level>6</level>
+			<health>300</health>
+			<skill id="enhance" x="60" all="1" s="absorb"/>
+			<skill id="heal" x="80" all="1" y="1"/>
+			<skill id="summon" card_id="65111"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65106</id>
+		<name>Ironclad Guardian</name>
+		<picture>imperialprotecto_lv3</picture>
+		<asset_bundle>124</asset_bundle>
+		<attack>80</attack>
+		<health>200</health>
+		<cost>3</cost>
+		<rarity>5</rarity>
+		<skill id="stasis" x="50"/>
+		<skill id="absorb" x="75"/>
+		<skill id="legion" x="50"/>
+		<type>1</type>
+		<set>9500</set>
+		<upgrade>
+			<card_id>65107</card_id>
+			<level>2</level>
+			<attack>90</attack>
+			<health>210</health>
+			<skill id="stasis" x="60"/>
+			<skill id="absorb" x="80"/>
+			<skill id="legion" x="50"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65108</card_id>
+			<level>3</level>
+			<attack>100</attack>
+			<health>220</health>
+			<skill id="stasis" x="70"/>
+			<skill id="absorb" x="85"/>
+			<skill id="legion" x="55"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65109</card_id>
+			<level>4</level>
+			<attack>100</attack>
+			<health>230</health>
+			<skill id="stasis" x="80"/>
+			<skill id="absorb" x="90"/>
+			<skill id="legion" x="60"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65110</card_id>
+			<level>5</level>
+			<attack>110</attack>
+			<health>240</health>
+			<skill id="stasis" x="90"/>
+			<skill id="absorb" x="95"/>
+			<skill id="legion" x="65"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65111</card_id>
+			<level>6</level>
+			<attack>120</attack>
+			<health>250</health>
+			<skill id="stasis" x="100"/>
+			<skill id="absorb" x="100"/>
+			<skill id="legion" x="70"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65112</id>
+		<name>Hunter Y2</name> 
+		<picture>punkbot_lv3</picture>
+		<asset_bundle>103</asset_bundle>
+		<fusion_level>1</fusion_level>
+		<attack>35</attack>
+		<health>40</health>
+		<cost>0</cost>
+		<rarity>5</rarity>
+		<skill id="enfeeble" x="6" all="1"/>
+		<skill id="hunt" x="15"/>
+		<skill trigger="death" id="summon" card_id="65124"/>
+		<type>2</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>65113</card_id>
+			<level>2</level>
+			<attack>38</attack>
+			<health>44</health>
+			<skill id="enfeeble" x="8" all="1"/>
+			<skill id="hunt" x="17"/>
+			<skill trigger="death" id="summon" card_id="65124"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65114</card_id>
+			<level>3</level>
+			<attack>41</attack>
+			<health>48</health>
+			<skill id="enfeeble" x="9" all="1"/>
+			<skill id="hunt" x="19"/>
+			<skill trigger="death" id="summon" card_id="65125"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65115</card_id>
+			<level>4</level>
+			<attack>44</attack>
+			<health>52</health>
+			<skill id="enfeeble" x="10" all="1"/>
+			<skill id="hunt" x="21"/>
+			<skill trigger="death" id="summon" card_id="65125"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65116</card_id>
+			<level>5</level>
+			<attack>47</attack>
+			<health>56</health>
+			<skill id="enfeeble" x="11" all="1"/>
+			<skill id="hunt" x="23"/>
+			<skill trigger="death" id="summon" card_id="65126"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65117</card_id>
+			<level>6</level>
+			<attack>50</attack>
+			<health>60</health>
+			<skill id="enfeeble" x="12" all="1"/>
+			<skill id="hunt" x="25"/>
+			<skill trigger="death" id="summon" card_id="65126"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65118</id>
+		<name>Hunter-killer Y2</name> <!--Hunter Y2 -->
+		<picture>punkbot_lv3</picture>
+		<asset_bundle>103</asset_bundle>
+		<fusion_level>2</fusion_level>
+		<attack>54</attack>
+		<health>64</health>
+		<cost>0</cost>
+		<rarity>5</rarity>
+		<skill id="enfeeble" x="14" all="1"/>
+		<skill id="hunt" x="26"/>
+		<skill trigger="death" id="summon" card_id="65127"/>
+		<type>2</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>65119</card_id>
+			<level>2</level>
+			<attack>57</attack>
+			<health>68</health>
+			<skill id="enfeeble" x="15" all="1"/>
+			<skill id="hunt" x="28"/>
+			<skill trigger="death" id="summon" card_id="65127"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65120</card_id>
+			<level>3</level>
+			<attack>60</attack>
+			<health>71</health>
+			<skill id="enfeeble" x="16" all="1"/>
+			<skill id="hunt" x="29"/>
+			<skill trigger="death" id="summon" card_id="65128"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65121</card_id>
+			<level>4</level>
+			<attack>63</attack>
+			<health>74</health>
+			<skill id="enfeeble" x="17" all="1"/>
+			<skill id="hunt" x="31"/>
+			<skill trigger="death" id="summon" card_id="65128"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65122</card_id>
+			<level>5</level>
+			<attack>67</attack>
+			<health>77</health>
+			<skill id="enfeeble" x="18" all="1"/>
+			<skill id="hunt" x="33"/>
+			<skill trigger="death" id="summon" card_id="65129"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65123</card_id>
+			<level>6</level>
+			<attack>70</attack>
+			<health>80</health>
+			<skill id="enfeeble" x="20" all="1"/>
+			<skill id="hunt" x="35"/>
+			<skill trigger="death" id="summon" card_id="65129"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65124</id>
+		<name>Regenerative Automaton</name>
+		<picture>raiderinfiltrator_lv3</picture>
+		<asset_bundle>121</asset_bundle>
+		<attack>40</attack>
+		<health>110</health>
+		<cost>1</cost>
+		<rarity>5</rarity>
+		<skill id="strike" x="50" all="1"/>
+		<skill id="scavenge" x="30" />
+		<skill id="protect" x="10" all="1"/>
+		<type>2</type>
+		<set>9500</set>
+		<upgrade>
+			<card_id>65125</card_id>
+			<level>2</level>
+			<attack>50</attack>
+			<health>120</health>
+			<skill id="strike" x="58" all="1"/>
+			<skill id="scavenge" x="35" />
+			<skill id="protect" x="12" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65126</card_id>
+			<level>3</level>
+			<attack>55</attack>
+			<health>125</health>
+			<skill id="strike" x="60" all="1"/>
+			<skill id="scavenge" x="40" />
+			<skill id="protect" x="15" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65127</card_id>
+			<level>4</level>
+			<attack>60</attack>
+			<health>130</health>
+			<skill id="strike" x="67" all="1"/>
+			<skill id="scavenge" x="43" />
+			<skill id="protect" x="16" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65128</card_id>
+			<level>5</level>
+			<attack>65</attack>
+			<health>135</health>
+			<skill id="strike" x="74" all="1"/>
+			<skill id="scavenge" x="46" />
+			<skill id="protect" x="18" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65129</card_id>
+			<level>6</level>
+			<attack>70</attack>
+			<health>140</health>
+			<skill id="strike" x="80" all="1"/>
+			<skill id="scavenge" x="50" />
+			<skill id="protect" x="20" all="1"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65130</id>
+		<name>Afrit</name> 
+		<picture>gauntmech_lv3</picture>
+		<asset_bundle>1010</asset_bundle>
+		<fusion_level>1</fusion_level>
+		<attack>65</attack>
+		<health>200</health>
+		<cost>4</cost>
+		<rarity>5</rarity>
+		<skill id="evade" x="4"/>
+		<skill id="allegiance" x="30"/>
+		<skill trigger="attacked" id="besiege" x="40" all="1"/>
+		<type>3</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>65131</card_id>
+			<level>2</level>
+			<attack>70</attack>
+			<health>210</health>
+			<skill id="evade" x="5"/>
+			<skill id="allegiance" x="37"/>
+			<skill trigger="attacked" id="besiege" x="48" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65132</card_id>
+			<level>3</level>
+			<health>220</health>
+			<skill id="evade" x="5"/>
+			<skill id="allegiance" x="42"/>
+			<skill trigger="attacked" id="besiege" x="54" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65133</card_id>
+			<level>4</level>
+			<attack>75</attack>
+			<health>230</health>
+			<skill id="evade" x="5"/>
+			<skill id="allegiance" x="48"/>
+			<skill trigger="attacked" id="entrap" x="60" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65134</card_id>
+			<level>5</level>
+			<health>240</health>
+			<skill id="evade" x="5"/>
+			<skill id="allegiance" x="54"/>
+			<skill trigger="attacked" id="besiege" x="65" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65135</card_id>
+			<level>6</level>
+			<attack>80</attack>
+			<health>250</health>
+			<skill id="evade" x="6"/>
+			<skill id="allegiance" x="60"/>
+			<skill trigger="attacked" id="besiege" x="70" all="1"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65136</id>
+		<name>Abyssal Afrit</name> <!-- Afrit -->
+		<picture>gauntmech_lv3</picture>
+		<asset_bundle>1010</asset_bundle>
+		<fusion_level>2</fusion_level>
+		<attack>85</attack>
+		<health>260</health>
+		<cost>4</cost>
+		<rarity>5</rarity>
+		<skill id="evade" x="6"/>
+		<skill id="allegiance" x="67"/>
+		<skill trigger="attacked" id="besiege" x="76" all="1"/>
+		<type>3</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>65137</card_id>
+			<level>2</level>
+			<attack>90</attack>
+			<health>270</health>
+			<skill id="evade" x="7"/>
+			<skill id="allegiance" x="72"/>
+			<skill trigger="attacked" id="besiege" x="82" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65138</card_id>
+			<level>3</level>
+			<health>280</health>
+			<skill id="evade" x="7"/>
+			<skill id="allegiance" x="76"/>
+			<skill trigger="attacked" id="besiege" x="87" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65139</card_id>
+			<level>4</level>
+			<attack>95</attack>
+			<health>290</health>
+			<skill id="evade" x="7"/>
+			<skill id="allegiance" x="79"/>
+			<skill trigger="attacked" id="besiege" x="93" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65140</card_id>
+			<level>5</level>
+			<health>295</health>
+			<skill id="evade" x="8"/>
+			<skill id="allegiance" x="82"/>
+			<skill trigger="attacked" id="besiege" x="97" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65141</card_id>
+			<level>6</level>
+			<attack>100</attack>
+			<health>300</health>
+			<skill id="evade" x="8"/>
+			<skill id="allegiance" x="85"/>
+			<skill trigger="attacked" id="besiege" x="100" all="1"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>19036</id>
+		<name>Breeding Pods</name>
+		<picture>xenogrowroom_lv1</picture>
+		<asset_bundle>344</asset_bundle>
+		<fusion_level>1</fusion_level>
+		<health>140</health>
+		<cost>1</cost>
+		<rarity>5</rarity>
+		<skill trigger="play" id="summon" card_id="65142" />
+		<skill id="absorb" x="50" />
+		<skill id="enrage" x="20" all="1"/>
+		<type>4</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>19037</card_id>
+			<level>2</level>
+			<health>150</health>
+			<skill trigger="play" id="summon" card_id="65142" />
+			<skill id="absorb" x="54" />
+			<skill id="enrage" x="22" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19038</card_id>
+			<level>3</level>
+			<health>155</health>
+			<skill trigger="play" id="summon" card_id="65143" />
+			<skill id="absorb" x="58" />
+			<skill id="enrage" x="24" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19039</card_id>
+			<level>4</level>
+			<health>160</health>
+			<skill trigger="play" id="summon" card_id="65143" />
+			<skill id="absorb" x="62" />
+			<skill id="enrage" x="26" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19040</card_id>
+			<level>5</level>
+			<health>165</health>
+			<skill trigger="play" id="summon" card_id="65144" />
+			<skill id="absorb" x="66" />
+			<skill id="enrage" x="28" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19041</card_id>
+			<level>6</level>
+			<health>170</health>
+			<skill trigger="play" id="summon" card_id="65144" />
+			<skill id="absorb" x="70" />
+			<skill id="enrage" x="30" all="1"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>19042</id>
+		<name>Spawning Pods</name>	<!-- Breeding Pods-->
+		<picture>xenogrowroom_lv1</picture>
+		<asset_bundle>344</asset_bundle>
+		<fusion_level>2</fusion_level>
+		<health>175</health>
+		<cost>1</cost>
+		<rarity>5</rarity>
+		<skill trigger="play" id="summon" card_id="65145" />
+		<skill id="absorb" x="72" />
+		<skill id="enrage" x="32" all="1"/>
+		<type>4</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>19043</card_id>
+			<level>2</level>
+			<health>180</health>
+			<skill trigger="play" id="summon" card_id="65145" />
+			<skill id="absorb" x="74" />
+			<skill id="enrage" x="35" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19044</card_id>
+			<level>3</level>
+			<health>185</health>
+			<skill trigger="play" id="summon" card_id="65146" />
+			<skill id="absorb" x="78" />
+			<skill id="enrage" x="34" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19045</card_id>
+			<level>4</level>
+			<health>190</health>
+			<skill trigger="play" id="summon" card_id="65146" />
+			<skill id="absorb" x="82" />
+			<skill id="enrage" x="36" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19046</card_id>
+			<level>5</level>
+			<health>195</health>
+			<skill trigger="play" id="summon" card_id="65147" />
+			<skill id="absorb" x="86" />
+			<skill id="enrage" x="38" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>19047</card_id>
+			<level>6</level>
+			<health>200</health>
+			<skill trigger="play" id="summon" card_id="65147" />
+			<skill id="absorb" x="90" />
+			<skill id="enrage" x="40" all="1"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65142</id>
+		<name>Ominous Overseer</name>
+		<picture>narada_lv3</picture>
+		<asset_bundle>123</asset_bundle>
+		<attack>22</attack>
+		<health>190</health>
+		<cost>4</cost>
+		<rarity>5</rarity>
+		<skill id="avenge" x="40" />
+		<skill id="barrier" x="120" />
+		<skill id="heal" x="50" all="1" y="4" trigger="attacked"/>
+		<type>4</type>
+		<set>9500</set>
+		<upgrade>
+			<card_id>65143</card_id>
+			<level>2</level>
+			<attack>25</attack>
+			<health>200</health>
+			<skill id="avenge" x="45" />
+			<skill id="barrier" x="125" />
+			<skill id="heal" x="55" all="1" y="4" trigger="attacked"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65144</card_id>
+			<level>3</level>
+			<attack>28</attack>
+			<health>210</health>
+			<skill id="avenge" x="50" />
+			<skill id="barrier" x="130" />
+			<skill id="heal" x="60" all="1" y="4" trigger="attacked"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65145</card_id>
+			<level>4</level>
+			<attack>31</attack>
+			<health>220</health>
+			<skill id="avenge" x="54" />
+			<skill id="barrier" x="140" />
+			<skill id="heal" x="70" all="1" y="4" trigger="attacked"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65146</card_id>
+			<level>5</level>
+			<attack>34</attack>
+			<health>230</health>
+			<skill id="avenge" x="57" />
+			<skill id="barrier" x="145" />
+			<skill id="heal" x="75" all="1" y="4" trigger="attacked"/>
+		</upgrade>
+		<upgrade>
+			<card_id>65147</card_id>
+			<level>6</level>
+			<attack>37</attack>
+			<health>240</health>
+			<skill id="avenge" x="60" />
+			<skill id="barrier" x="150" />
+			<skill id="heal" x="80" all="1" y="4" trigger="attacked"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65148</id>
+		<name>Vindictive Juggernaut</name> 
+		<picture>averia_lv3.jpg</picture>
+		<asset_bundle>103</asset_bundle>
+		<fusion_level>1</fusion_level>
+		<attack>30</attack>
+		<health>160</health>
+		<cost>3</cost>
+		<rarity>5</rarity>
+		<skill trigger="play" id="summon" card_id="65160" />
+		<skill id="revenge" x="5" />
+		<skill id="stasis" x="20" />
+		<type>5</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>65149</card_id>
+			<level>2</level>
+			<attack>33</attack>
+			<health>170</health>
+			<skill trigger="play" id="summon" card_id="65160" />
+			<skill id="revenge" x="5" />
+			<skill id="stasis" x="22" />
+		</upgrade>
+		<upgrade>
+			<card_id>65150</card_id>
+			<level>3</level>
+			<attack>36</attack>
+			<health>180</health>
+			<skill trigger="play" id="summon" card_id="65161" />
+			<skill id="revenge" x="5" />
+			<skill id="stasis" x="24" />
+		</upgrade>
+		<upgrade>
+			<card_id>65151</card_id>
+			<level>4</level>
+			<attack>39</attack>
+			<health>190</health>
+			<skill trigger="play" id="summon" card_id="65161" />
+			<skill id="revenge" x="5" />
+			<skill id="stasis" x="26" />
+		</upgrade>
+		<upgrade>
+			<card_id>65152</card_id>
+			<level>5</level>
+			<attack>42</attack>
+			<health>200</health>
+			<skill trigger="play" id="summon" card_id="65162" />
+			<skill id="revenge" x="6" />
+			<skill id="stasis" x="28" />
+		</upgrade>
+		<upgrade>
+			<card_id>65153</card_id>
+			<level>6</level>
+			<attack>45</attack>
+			<health>210</health>
+			<skill trigger="play" id="summon" card_id="65162" />
+			<skill id="revenge" x="6" />
+			<skill id="stasis" x="30" />
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65154</id>
+		<name>Vindictive Colossus</name> <!--Vindictive Juggernaut-->
+		<picture>averia_lv3.jpg</picture>
+		<asset_bundle>103</asset_bundle>
+		<fusion_level>2</fusion_level>
+		<attack>47</attack>
+		<health>220</health>
+		<cost>3</cost>
+		<rarity>5</rarity>
+		<skill trigger="play" id="summon" card_id="65163" />
+		<skill id="revenge" x="6" />
+		<skill id="stasis" x="31" />
+		<type>5</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>65155</card_id>
+			<level>2</level>
+			<attack>49</attack>
+			<health>220</health>
+			<skill trigger="play" id="summon" card_id="65163" />
+			<skill id="revenge" x="6" />
+			<skill id="stasis" x="32" />
+		</upgrade>
+		<upgrade>
+			<card_id>65156</card_id>
+			<level>3</level>
+			<attack>51</attack>
+			<health>230</health>
+			<skill trigger="play" id="summon" card_id="65164" />
+			<skill id="revenge" x="7" />
+			<skill id="stasis" x="34" />
+		</upgrade>
+		<upgrade>
+			<card_id>65157</card_id>
+			<level>4</level>
+			<attack>54</attack>
+			<health>240</health>
+			<skill trigger="play" id="summon" card_id="65164" />
+			<skill id="revenge" x="7" />
+			<skill id="stasis" x="36" />
+		</upgrade>
+		<upgrade>
+			<card_id>65158</card_id>
+			<level>5</level>
+			<attack>57</attack>
+			<health>250</health>
+			<skill trigger="play" id="summon" card_id="65165" />
+			<skill id="revenge" x="7" />
+			<skill id="stasis" x="38" />
+		</upgrade>
+		<upgrade>
+			<card_id>65159</card_id>
+			<level>6</level>
+			<attack>60</attack>
+			<health>240</health>
+			<skill trigger="play" id="summon" card_id="65165" />
+			<skill id="revenge" x="8" />
+			<skill id="stasis" x="40" />
+		</upgrade>
+	</unit>
+	<unit>
+		<id>65160</id>
+		<name>Evasive Vandal</name>
+		<picture>rightrobogunner_lv3</picture>
+		<asset_bundle>124</asset_bundle>
+		<attack>15</attack>
+		<health>70</health>
+		<cost>1</cost>
+		<rarity>5</rarity>
+		<skill id="evade" x="5" />
+		<skill id="besiege" all="1" x="30" />
+		<skill id="hunt" x="30" />
+		<type>5</type>
+		<set>2500</set>
+		<upgrade>
+			<card_id>65161</card_id>
+			<level>2</level>
+			<attack>18</attack>
+			<health>80</health>
+			<skill id="evade" x="5" />
+			<skill id="besiege" all="1" x="32" />
+			<skill id="hunt" x="32" />
+		</upgrade>
+		<upgrade>
+			<card_id>65162</card_id>
+			<level>3</level>
+			<attack>20</attack>
+			<health>90</health>
+			<skill id="evade" x="6" />
+			<skill id="besiege" all="1" x="34" />
+			<skill id="hunt" x="34" />
+		</upgrade>
+		<upgrade>
+			<card_id>65163</card_id>
+			<level>4</level>
+			<attack>24</attack>
+			<health>100</health>
+			<skill id="evade" x="7" />
+			<skill id="besiege" all="1" x="36" />
+			<skill id="hunt" x="36" />
+		</upgrade>
+		<upgrade>
+			<card_id>65164</card_id>
+			<level>5</level>
+			<attack>27</attack>
+			<health>110</health>
+			<skill id="evade" x="7" />
+			<skill id="besiege" all="1" x="38" />
+			<skill id="hunt" x="38" />
+		</upgrade>
+		<upgrade>
+			<card_id>65165</card_id>
+			<level>6</level>
+			<attack>30</attack>
+			<health>120</health>
+			<skill id="evade" x="8" />
+			<skill id="besiege" all="1" x="40" />
+			<skill id="hunt" x="40" />
 		</upgrade>
 	</unit>
 </root>

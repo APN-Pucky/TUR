@@ -1723,7 +1723,7 @@
 		<skill id="subdue" x="120"/>
 		<skill trigger="attacked" id="besiege" x="60" all="1"/>
 		<type>1</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63399</card_id>
 			<level>2</level>
@@ -2089,7 +2089,7 @@
 		<skill trigger="death" id="heal" x="100" all="1"/>
 		<skill id="venom" x="65"/>
 		<type>4</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63363</card_id>
 			<level>2</level>
@@ -2388,7 +2388,7 @@
 		<skill id="fortify" x="70"/>
 		<skill id="swipe" x="90"/>
 		<type>6</type>
-		<set>4000</set>
+		<set>4500</set>
 		<upgrade>
 			<card_id>63669</card_id>
 			<level>2</level>
@@ -2569,7 +2569,7 @@
 		<skill id="hunt" x="40"/>
 		<skill id="berserk" x="40"/>
 		<type>5</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63633</card_id>
 			<level>2</level>
@@ -2747,7 +2747,7 @@
 		<skill id="inhibit" x="3"/>
 		<skill id="refresh" x="90"/>
 		<type>4</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63615</card_id>
 			<level>2</level>
@@ -4858,7 +4858,7 @@
 		<skill id="scavenge" x="25"/>
 		<skill id="sabotage" x="50"/>
 		<type>6</type>
-		<set>4000</set>
+		<set>4500</set>
 		<upgrade>
 			<card_id>63579</card_id>
 			<level>2</level>
@@ -5043,7 +5043,7 @@
 		<skill id="stasis" x="20"/>
 		<skill id="legion" x="30"/>
 		<type>5</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63309</card_id>
 			<level>2</level>
@@ -5221,7 +5221,7 @@
 		<skill id="disease" x="90"/>
 		<skill trigger="death" id="summon" card_id="64618"/>
 		<type>4</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63291</card_id>
 			<level>2</level>
@@ -5636,7 +5636,7 @@
 		<skill id="allegiance" x="30"/>
 		<skill trigger="attacked" id="entrap" x="50" all="1" y="1"/>
 		<type>1</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63561</card_id>
 			<level>2</level>
@@ -5806,7 +5806,7 @@
 		<skill id="absorb" x="90"/>
 		<skill id="besiege" x="50" all="1"/>
 		<type>6</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63273</card_id>
 			<level>2</level>
@@ -7772,7 +7772,7 @@
 		<skill id="allegiance" x="20"/>
 		<skill id="fortify" x="40"/>
 		<type>3</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63525</card_id>
 			<level>2</level>
@@ -7957,7 +7957,7 @@
 		<skill id="mark" x="40"/>
 		<skill id="flurry" c="6"/>
 		<type>1</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63255</card_id>
 			<level>2</level>
@@ -8140,7 +8140,7 @@
 		<skill id="disease" x="60"/>
 		<skill id="venom" x="45"/>
 		<type>2</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63237</card_id>
 			<level>2</level>
@@ -8321,7 +8321,7 @@
 		<skill id="besiege" x="50"/>
 		<skill id="coalition" x="25"/>
 		<type>6</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63219</card_id>
 			<level>2</level>
@@ -9607,7 +9607,7 @@
 		<skill id="absorb" x="80"/>
 		<skill id="weaken" x="30" all="1"/>
 		<type>5</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63507</card_id>
 			<level>2</level>
@@ -12123,7 +12123,7 @@
 		<skill id="bravery" x="25"/>
 		<skill id="absorb" x="60"/>
 		<type>3</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63201</card_id>
 			<level>2</level>
@@ -14088,7 +14088,7 @@
 		<skill id="barrier" x="25"/>
 		<skill id="weaken" x="25" all="1"/>
 		<type>1</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63471</card_id>
 			<level>2</level>
@@ -14458,7 +14458,7 @@
 		<skill id="absorb" x="50"/>
 		<skill id="mark" x="50"/>
 		<type>6</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63165</card_id>
 			<level>2</level>
@@ -14641,7 +14641,7 @@
 		<skill id="pierce" x="60"/>
 		<skill id="refresh" x="50"/>
 		<type>2</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63147</card_id>
 			<level>2</level>
@@ -15749,7 +15749,7 @@
 		<skill id="counter" x="55"/>
 		<skill trigger="attacked" id="rally" x="25" all="1" y="3"/>
 		<type>3</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63453</card_id>
 			<level>2</level>
@@ -17626,7 +17626,7 @@
 		<skill id="protect" x="12" all="1"/>
 		<skill id="coalition" x="14"/>
 		<type>1</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63129</card_id>
 			<level>2</level>
@@ -17806,7 +17806,7 @@
 		<skill trigger="play" id="protect" x="22" all="1"/>
 		<skill id="hunt" x="99"/>
 		<type>6</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>63005</card_id>
 			<level>2</level>
@@ -20084,7 +20084,7 @@
 		<skill id="barrier" x="25"/>
 		<skill id="enfeeble" x="15" all="1"/>
 		<type>2</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>62855</card_id>
 			<level>2</level>
@@ -21503,7 +21503,7 @@
 		<skill id="barrier" x="30"/>
 		<skill trigger="attacked" id="heal" x="18" all="1"/>
 		<type>6</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>62621</card_id>
 			<level>2</level>
@@ -21688,7 +21688,7 @@
 		<skill id="counter" x="30"/>
 		<skill id="subdue" x="60"/>
 		<type>4</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>62801</card_id>
 			<level>2</level>
@@ -21870,7 +21870,7 @@
 		<skill id="inhibit" x="3"/>
 		<skill id="refresh" x="44"/>
 		<type>3</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>62783</card_id>
 			<level>2</level>

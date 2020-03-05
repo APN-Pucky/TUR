@@ -5366,7 +5366,7 @@
 		<cost>0</cost>
 		<rarity>4</rarity>
 		<type>6</type>
-		<set>7000</set>
+		<set>4500</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>31184</card_id>
@@ -10318,7 +10318,7 @@
 	<unit>
 		<id>6415</id>
 		<name>Cyborg Sentinel</name> <!-- Cyborg -->
-		<picture>punkbot_lv3</picture>
+		<picture>punkbot</picture>
 		<asset_bundle>103</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<attack>3</attack>
@@ -14059,41 +14059,45 @@
 		<name>Tiamat the Destroyer</name> <!-- Tiamat -->
 		<picture>tiamatlv6.jpg</picture>
 		<fusion_level>1</fusion_level>
-		<attack>3</attack>
-		<health>9</health>
+		<attack>60</attack>
+		<health>115</health>
 		<cost>1</cost>
 		<rarity>3</rarity>
-		<skill id='strike' x='2' />
-		<skill id='siege' x='4' />
+		<skill id='strike' x='145' />
+		<skill id='besiege' x='145' />
+		<skill id='hunt' x='145' />
 		<type>1</type>
 		<set>2500</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>4478</card_id>
-			<health>10</health>
+			<health>120</health>
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<card_id>4479</card_id>
-			<health>11</health>
+			<health>120</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<card_id>4480</card_id>
-			<skill id='strike' x='3' />
-			<skill id='siege' x='4' />
+			<skill id='strike' x='150' />
+			<skill id='besiege' x='150' />
+			<skill id='hunt' x='150' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<card_id>4481</card_id>
-			<health>12</health>
+			<health>125</health>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<card_id>4482</card_id>
-			<skill id='strike' x='3' />
-			<skill id='siege' x='5' />
-			<health>13</health>
+			<skill id='strike' x='160' />
+			<skill id='besiege' x='160' />
+			<skill id='hunt' x='160' />
+			<health>130</health>
+			<attack>65</attack>
 		</upgrade>
 	</unit>
 
@@ -14102,41 +14106,45 @@
 		<name>Tiamat Destructor</name> <!-- Tiamat the Destroyer -->
 		<picture>tiamatlv6.jpg</picture>
 		<fusion_level>2</fusion_level>
-		<attack>3</attack>
-		<health>14</health>
+		<attack>65</attack>
+		<health>140</health>
 		<cost>1</cost>
 		<rarity>3</rarity>
-		<skill id='strike' x='3' />
-		<skill id='siege' x='5' />
+		<skill id='strike' x='170' />
+		<skill id='besiege' x='170' />
+		<skill id='hunt' x='170' />
 		<type>1</type>
 		<set>2500</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>4484</card_id>
-			<attack>4</attack>
+			<attack>70</attack>
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<card_id>4485</card_id>
-			<skill id='strike' x='3' />
-			<skill id='siege' x='6' />
+			<skill id='strike' x='180' />
+			<skill id='besiege' x='180' />
+			<skill id='hunt' x='180' />
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<card_id>4486</card_id>
-			<health>15</health>
+			<health>140</health>
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<card_id>4487</card_id>
-			<health>16</health>
+			<health>150</health>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<card_id>4488</card_id>
-			<skill id='strike' x='4' />
-			<skill id='siege' x='6' />
-			<health>17</health>
+			<health>160</health>
+			<attack>80</attack>
+			<skill id='strike' x='200' />
+			<skill id='besiege' x='200' />
+			<skill id='hunt' x='200' />
 		</upgrade>
 	</unit>
 
@@ -22276,7 +22284,7 @@
 		<skill id='protect' x='1' y='2' />
 		<skill id='rally' x='1' y='2' />
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>417</card_id>

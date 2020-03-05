@@ -15,7 +15,7 @@
 		<skill id='overload' n='1' y='4' />
 		<skill id='enfeeble' x='1' />
         <type>4</type>
-        <set>4700</set>
+        <set>4750</set>
         <upgrade>
             <level>2</level>
             <card_id>10844</card_id>
@@ -117,7 +117,7 @@
 		<skill id='overload' n='1' />
 		<skill id='leech' x='1' />
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>10404</card_id>
@@ -7284,7 +7284,7 @@
 		<cost>2</cost>
 		<rarity>3</rarity>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<skill id='valor' x='1' />
 		<skill id='pierce' x='2' />
 		<upgrade>
@@ -7379,7 +7379,7 @@
 		<cost>2</cost>
 		<rarity>3</rarity>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<skill id='evade' x='1' />
 		<skill id='rally' x='1' y='5' />
 		<skill id='strike' x='1' />
@@ -7479,7 +7479,7 @@
 		<skill id='enfeeble' x='1' />
 		<skill id='leech' x='3' />
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>11452</card_id>
@@ -9122,7 +9122,7 @@
 		<cost>3</cost>
 		<rarity>4</rarity>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<skill id='evade' x='1' />
 		<skill id='poison' x='1' />
 		<upgrade>
@@ -18512,7 +18512,7 @@
 	<unit>
 		<id>8263</id>
 		<name>Artemis Cell</name> <!-- Artemis Hold -->
-		<picture>imperialbase_lv3</picture>
+		<picture>imperialbase</picture>
 		<asset_bundle>118</asset_bundle>
 		<fusion_level>1</fusion_level>
 		<health>14</health>

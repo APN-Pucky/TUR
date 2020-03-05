@@ -13901,7 +13901,7 @@
 		<skill id="mend" x="2"/>
 		<skill id="rally" x="2" y="5"/>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>40327</card_id>
 			<level>2</level>
@@ -14063,7 +14063,7 @@
 		<skill id="stasis" x="5"/>
 		<skill id="heal" x="5" all="1" y="5"/>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>41251</card_id>
 			<level>2</level>
@@ -22101,7 +22101,7 @@
 		<skill id="avenge" x="2"/>
 		<skill id="inhibit" x="1"/>
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>39853</card_id>
 			<level>2</level>
@@ -22266,7 +22266,7 @@
 		<skill id="legion" x="1"/>
 		<skill id="berserk" x="1"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>39449</card_id>
 			<level>2</level>
@@ -22941,7 +22941,7 @@
 		<skill id="jam" c="6"/>
 		<skill id="leech" x="7"/>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>39769</card_id>
 			<level>2</level>
@@ -28623,7 +28623,7 @@
 		<skill id="jam" c="8"/>
 		<skill id="berserk" x="1"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>38939</card_id>
 			<level>2</level>
@@ -28912,48 +28912,47 @@
 		<picture>progenspider_lv3</picture>
 		<asset_bundle>150</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>4</attack>
-		<health>32</health>
+		<attack>26</attack>
+		<health>230</health>
 		<cost>2</cost>
 		<rarity>4</rarity>
-		<skill id='protect' x='2' all='1' />
-		<skill id='rally' x='2' all='1' />
-		<skill id='flurry' c='4' />
+		<skill id='protect' x='42' all='1' />
+		<skill id='rally' x='33' all='1' />
+		<skill id='flurry' c='2' />
 		<type>6</type>
 		<set>2000</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>34909</card_id>
-			<health>35</health>
-			<skill id='protect' x='2' all='1' />
-			<skill id='rally' x='3' all='1' />
-			<skill id='flurry' c='4' />
+			<health>240</health>
+			<skill id='protect' x='44' all='1' />
+			<skill id='rally' x='36' all='1' />
+			<skill id='flurry' c='2' />
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<card_id>34910</card_id>
-			<health>38</health>
+			<health>245</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<card_id>34911</card_id>
-			<health>41</health>
-			<skill id='protect' x='3' all='1' />
-			<skill id='rally' x='3' all='1' />
-			<skill id='flurry' c='4' />
+			<skill id='protect' x='47' all='1' />
+			<skill id='rally' x='38' all='1' />
+			<skill id='flurry' c='2' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<card_id>34912</card_id>
-			<attack>5</attack>
-			<health>44</health>
+			<attack>30</attack>
+			<health>250</health>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<card_id>34913</card_id>
-			<skill id='protect' x='3' all='1' />
-			<skill id='rally' x='3' all='1' />
-			<skill id='flurry' x='2' c='4' />
+			<skill id='protect' x='50' all='1' />
+			<skill id='rally' x='40' all='1' />
+			<skill id='flurry' x='2' c='3' />
 		</upgrade>
 	</unit>
 

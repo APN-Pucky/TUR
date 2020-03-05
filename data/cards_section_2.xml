@@ -302,7 +302,7 @@
 		<skill id='rally' x='2' y='5' />
 		<skill id='pierce' x='2' />
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>667</card_id>
@@ -352,7 +352,7 @@
 		<skill id='evade' x='1' />
 		<skill id='siege' x='2' />
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>673</card_id>
@@ -405,7 +405,7 @@
 		<skill id='protect' x='1' all='1' y='2' />
 		<skill id='siege' x='1' />
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>756</card_id>
@@ -3371,7 +3371,7 @@
 		<skill id='rally' x='1' />
 		<skill id='leech' x='2' />
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>974</card_id>
@@ -8038,7 +8038,7 @@
 		<skill id='enfeeble' x='1' />
 		<skill id='berserk' x='1' />
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>4713</card_id>
@@ -8093,7 +8093,7 @@
 		<skill id='heal' x='2' y='4' />
 		<skill id='jam' c='6' />
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>4695</card_id>
@@ -12560,7 +12560,7 @@
 		<skill id='evade' x='1' />
 		<skill id='jam' c='7' />
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>5150</card_id>
@@ -12667,7 +12667,7 @@
 		<skill id='protect' x='1' y='2' />
 		<skill id='enfeeble' x='1' />
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>5132</card_id>
@@ -16161,7 +16161,7 @@
         <skill id='siege' x='2' />
         <skill id='berserk' x='1' />
         <type>5</type>
-        <set>4700</set>
+        <set>4750</set>
         <upgrade>
             <level>2</level>
             <card_id>5483</card_id>
@@ -16268,7 +16268,7 @@
 		<skill id='strike' x='1' />
 		<skill id='inhibit' x='1' />
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>5433</card_id>
@@ -16374,7 +16374,7 @@
 		<skill id='armored' x='1' />
 		<skill id='strike' x='1' />
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>5409</card_id>
@@ -19974,7 +19974,7 @@
 		   <skill id='strike' x='1'/>
 		   <skill id='inhibit' x='1'/>
 		   <type>4</type>
-		   <set>4700</set>
+		   <set>4750</set>
 		   <upgrade>
 		       <level>2</level>
 		       <card_id>5849</card_id>

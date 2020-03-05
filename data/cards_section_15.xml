@@ -1618,7 +1618,7 @@
 		<skill id="avenge" x="14"/>
 		<skill id="barrier" x="22"/>
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>58363</card_id>
 			<level>2</level>
@@ -5698,7 +5698,7 @@
 		<skill id="absorb" x="49"/>
 		<skill id="rally" x="17" all="1" y="5" trigger="attacked"/>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>58105</card_id>
 			<level>2</level>
@@ -9567,7 +9567,7 @@
 		<skill id="absorb" x="30"/>
 		<skill id="heal" x="30" y="5"/>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>57457</card_id>
 			<level>2</level>
@@ -9738,7 +9738,7 @@
 		<skill id="allegiance" x="7"/>
 		<skill id="barrier" x="26"/>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>57421</card_id>
 			<level>2</level>
@@ -15723,27 +15723,27 @@
 		<health>68</health>
 		<cost>3</cost>
 		<rarity>3</rarity>
-		<skill id="rally" x="11" y="2" trigger="attacked"/>
 		<skill id="counter" x="15"/>
 		<skill id="absorb" x="25"/>
+		<skill id="rally" x="11" y="2" trigger="attacked"/>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>56977</card_id>
 			<level>2</level>
 			<health>69</health>
 			<attack>22</attack>
-			<skill id="rally" x="11" y="2" trigger="attacked"/>
 			<skill id="counter" x="15"/>
 			<skill id="absorb" x="26"/>
+			<skill id="rally" x="11" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56978</card_id>
 			<level>3</level>
 			<health>70</health>
-			<skill id="rally" x="12" y="2" trigger="attacked"/>
 			<skill id="counter" x="16"/>
 			<skill id="absorb" x="27"/>
+			<skill id="rally" x="12" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56979</card_id>
@@ -15751,26 +15751,26 @@
 			<picture>raiderhappenstance_lv3</picture>
 			<health>72</health>
 			<attack>23</attack>
-			<skill id="rally" x="13" y="2" trigger="attacked"/>
 			<skill id="counter" x="16"/>
 			<skill id="absorb" x="28"/>
+			<skill id="rally" x="13" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56980</card_id>
 			<level>5</level>
 			<health>73</health>
 			<attack>24</attack>
-			<skill id="rally" x="13" y="2" trigger="attacked"/>
 			<skill id="counter" x="17"/>
 			<skill id="absorb" x="29"/>
+			<skill id="rally" x="13" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56981</card_id>
 			<level>6</level>
 			<health>75</health>
-			<skill id="rally" x="14" y="2" trigger="attacked"/>
 			<skill id="counter" x="18"/>
 			<skill id="absorb" x="30"/>
+			<skill id="rally" x="14" y="2" trigger="attacked"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -15783,9 +15783,9 @@
 		<health>76</health>
 		<cost>3</cost>
 		<rarity>3</rarity>
-		<skill id="rally" x="15" y="2" trigger="attacked"/>
 		<skill id="counter" x="18"/>
 		<skill id="absorb" x="32"/>
+		<skill id="rally" x="15" y="2" trigger="attacked"/>
 		<type>2</type>
 		<set>2000</set>
 		<upgrade>
@@ -15793,43 +15793,43 @@
 			<level>2</level>
 			<health>77</health>
 			<attack>26</attack>
-			<skill id="rally" x="15" y="2" trigger="attacked"/>
 			<skill id="counter" x="19"/>
 			<skill id="absorb" x="33"/>
+			<skill id="rally" x="15" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56984</card_id>
 			<level>3</level>
 			<health>79</health>
-			<skill id="rally" x="16" y="2" trigger="attacked"/>
 			<skill id="counter" x="20"/>
 			<skill id="absorb" x="34"/>
+			<skill id="rally" x="16" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56985</card_id>
 			<level>4</level>
 			<health>80</health>
 			<attack>27</attack>
-			<skill id="rally" x="17" y="2" trigger="attacked"/>
 			<skill id="counter" x="20"/>
 			<skill id="absorb" x="35"/>
+			<skill id="rally" x="17" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56986</card_id>
 			<level>5</level>
 			<health>82</health>
 			<attack>28</attack>
-			<skill id="rally" x="17" y="2" trigger="attacked"/>
 			<skill id="counter" x="21"/>
 			<skill id="absorb" x="36"/>
+			<skill id="rally" x="17" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56987</card_id>
 			<level>6</level>
 			<health>83</health>
-			<skill id="rally" x="18" y="2" trigger="attacked"/>
 			<skill id="counter" x="22"/>
 			<skill id="absorb" x="37"/>
+			<skill id="rally" x="18" y="2" trigger="attacked"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -15842,9 +15842,9 @@
 		<health>84</health>
 		<cost>3</cost>
 		<rarity>3</rarity>
-		<skill id="rally" x="19" y="2" trigger="attacked"/>
 		<skill id="counter" x="22"/>
 		<skill id="absorb" x="39"/>
+		<skill id="rally" x="19" y="2" trigger="attacked"/>
 		<type>2</type>
 		<set>2000</set>
 		<upgrade>
@@ -15852,43 +15852,43 @@
 			<level>2</level>
 			<health>86</health>
 			<attack>30</attack>
-			<skill id="rally" x="19" y="2" trigger="attacked"/>
 			<skill id="counter" x="23"/>
 			<skill id="absorb" x="40"/>
+			<skill id="rally" x="19" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56990</card_id>
 			<level>3</level>
 			<health>87</health>
-			<skill id="rally" x="20" y="2" trigger="attacked"/>
 			<skill id="counter" x="24"/>
 			<skill id="absorb" x="41"/>
+			<skill id="rally" x="20" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56991</card_id>
 			<level>4</level>
 			<health>89</health>
 			<attack>31</attack>
-			<skill id="rally" x="21" y="2" trigger="attacked"/>
 			<skill id="counter" x="24"/>
 			<skill id="absorb" x="42"/>
+			<skill id="rally" x="21" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56992</card_id>
 			<level>5</level>
 			<health>90</health>
 			<attack>32</attack>
-			<skill id="rally" x="21" y="2" trigger="attacked"/>
 			<skill id="counter" x="25"/>
 			<skill id="absorb" x="43"/>
+			<skill id="rally" x="21" y="2" trigger="attacked"/>
 		</upgrade>
 		<upgrade>
 			<card_id>56993</card_id>
 			<level>6</level>
 			<health>92</health>
-			<skill id="rally" x="22" y="2" trigger="attacked"/>
 			<skill id="counter" x="26"/>
 			<skill id="absorb" x="45"/>
+			<skill id="rally" x="22" y="2" trigger="attacked"/>
 		</upgrade>
 	</unit>
 	

@@ -13,57 +13,57 @@
 		<name>Imperial Ambition</name>
 		<picture>imphymbooks_lv1</picture>
 		<asset_bundle>340</asset_bundle>
-		<attack>16</attack>
-		<health>66</health>
+		<attack>70</attack>
+		<health>110</health>
 		<cost>2</cost>
 		<rarity>5</rarity>
-		<skill id="absorb" x="45"/>
-		<skill trigger="attacked" id="protect" x="6" all="1"/>
-		<skill id="entrap" x="16" all="1"/>
+		<skill id="absorb" x="90"/>
+		<skill trigger="attacked" id="protect" x="35" all="1"/>
+		<skill id="entrap" x="50" all="1"/>
 		<type>1</type>
 		<set>4000</set>
 		<upgrade>
 			<card_id>62453</card_id>
 			<level>2</level>
-			<health>69</health>
-			<skill id="absorb" x="46"/>
-			<skill trigger="attacked" id="protect" x="6" all="1"/>
-			<skill id="entrap" x="17" all="1"/>
+			<health>120</health>
+			<skill id="absorb" x="100"/>
+			<skill trigger="attacked" id="protect" x="40" all="1"/>
+			<skill id="entrap" x="60" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62454</card_id>
 			<level>3</level>
-			<health>72</health>
-			<attack>17</attack>
-			<skill id="absorb" x="48"/>
-			<skill trigger="attacked" id="protect" x="7" all="1"/>
-			<skill id="entrap" x="17" all="1"/>
+			<attack>80</attack>
+			<health>125</health>
+			<skill id="absorb" x="110"/>
+			<skill trigger="attacked" id="protect" x="45" all="1"/>
+			<skill id="entrap" x="65" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62455</card_id>
 			<level>4</level>
-			<health>76</health>
-			<attack>18</attack>
-			<skill id="absorb" x="50"/>
-			<skill trigger="attacked" id="protect" x="8" all="1"/>
-			<skill id="entrap" x="18" all="1"/>
+			<attack>90</attack>
+			<health>130</health>
+			<skill id="absorb" x="120"/>
+			<skill trigger="attacked" id="protect" x="50" all="1"/>
+			<skill id="entrap" x="70" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62456</card_id>
 			<level>5</level>
-			<health>79</health>
-			<skill id="absorb" x="52"/>
-			<skill trigger="attacked" id="protect" x="9" all="1"/>
-			<skill id="entrap" x="19" all="1"/>
+			<health>135</health>
+			<skill id="absorb" x="130"/>
+			<skill trigger="attacked" id="protect" x="55" all="1"/>
+			<skill id="entrap" x="75" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62457</card_id>
 			<level>6</level>
-			<health>83</health>
-			<attack>19</attack>
-			<skill id="absorb" x="53"/>
-			<skill trigger="attacked" id="protect" x="10" all="1"/>
-			<skill id="entrap" x="20" all="1"/>
+			<attack>100</attack>
+			<health>140</health>
+			<skill id="absorb" x="140"/>
+			<skill trigger="attacked" id="protect" x="60" all="1"/>
+			<skill id="entrap" x="80" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -72,56 +72,56 @@
 		<picture>imphymbooks_lv1</picture>
 		<asset_bundle>340</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>19</attack>
-		<health>86</health>
+		<attack>108</attack>
+		<health>145</health>
 		<cost>2</cost>
 		<rarity>5</rarity>
-		<skill id="absorb" x="55"/>
-		<skill trigger="attacked" id="protect" x="10" all="1"/>
-		<skill id="entrap" x="21" all="1"/>
+		<skill id="absorb" x="145"/>
+		<skill trigger="attacked" id="protect" x="62" all="1"/>
+		<skill id="entrap" x="82" all="1"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>62459</card_id>
 			<level>2</level>
-			<health>89</health>
-			<skill id="absorb" x="57"/>
-			<skill trigger="attacked" id="protect" x="11" all="1"/>
-			<skill id="entrap" x="22" all="1"/>
+			<health>150</health>
+			<skill id="absorb" x="150"/>
+			<skill trigger="attacked" id="protect" x="65" all="1"/>
+			<skill id="entrap" x="85" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62460</card_id>
 			<level>3</level>
-			<health>93</health>
-			<attack>20</attack>
-			<skill id="absorb" x="59"/>
-			<skill trigger="attacked" id="protect" x="12" all="1"/>
-			<skill id="entrap" x="23" all="1"/>
+			<attack>115</attack>
+			<health>155</health>
+			<skill id="absorb" x="155"/>
+			<skill trigger="attacked" id="protect" x="68" all="1"/>
+			<skill id="entrap" x="88" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62461</card_id>
 			<level>4</level>
-			<health>96</health>
-			<skill id="absorb" x="60"/>
-			<skill trigger="attacked" id="protect" x="13" all="1"/>
-			<skill id="entrap" x="24" all="1"/>
+			<health>160</health>
+			<skill id="absorb" x="160"/>
+			<skill trigger="attacked" id="protect" x="72" all="1"/>
+			<skill id="entrap" x="92" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62462</card_id>
 			<level>5</level>
-			<health>100</health>
-			<attack>21</attack>
-			<skill id="absorb" x="62"/>
-			<skill trigger="attacked" id="protect" x="14" all="1"/>
-			<skill id="entrap" x="25" all="1"/>
+			<attack>120</attack>
+			<health>165</health>
+			<skill id="absorb" x="165"/>
+			<skill trigger="attacked" id="protect" x="76" all="1"/>
+			<skill id="entrap" x="96" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62463</card_id>
 			<level>6</level>
-			<health>103</health>
-			<skill id="absorb" x="64"/>
-			<skill trigger="attacked" id="protect" x="15" all="1"/>
-			<skill id="entrap" x="26" all="1"/>
+			<health>170</health>
+			<skill id="absorb" x="170"/>
+			<skill trigger="attacked" id="protect" x="80" all="1"/>
+			<skill id="entrap" x="100" all="1"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -130,57 +130,57 @@
 		<picture>imphymbooks_lv1</picture>
 		<asset_bundle>340</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>21</attack>
-		<health>106</health>
+		<attack>125</attack>
+		<health>175</health>
 		<cost>2</cost>
 		<rarity>5</rarity>
-		<skill id="absorb" x="66"/>
-		<skill trigger="attacked" id="protect" x="15" all="1"/>
-		<skill id="entrap" x="27" all="1"/>
+		<skill id="absorb" x="175"/>
+		<skill trigger="attacked" id="protect" x="83" all="1"/>
+		<skill id="entrap" x="103" all="1"/>
 		<type>1</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>62465</card_id>
 			<level>2</level>
 			<attack>22</attack>
-			<health>110</health>
-			<skill id="absorb" x="67"/>
-			<skill trigger="attacked" id="protect" x="16" all="1"/>
-			<skill id="entrap" x="28" all="1"/>
+			<health>130</health>
+			<skill id="absorb" x="180"/>
+			<skill trigger="attacked" id="protect" x="86" all="1"/>
+			<skill id="entrap" x="106" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62466</card_id>
 			<level>3</level>
-			<health>113</health>
-			<skill id="absorb" x="69"/>
-			<skill trigger="attacked" id="protect" x="17" all="1"/>
-			<skill id="entrap" x="29" all="1"/>
+			<health>185</health>
+			<skill id="absorb" x="185"/>
+			<skill trigger="attacked" id="protect" x="90" all="1"/>
+			<skill id="entrap" x="110" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62467</card_id>
 			<level>4</level>
-			<attack>23</attack>
-			<health>117</health>
-			<skill id="absorb" x="71"/>
-			<skill trigger="attacked" id="protect" x="18" all="1"/>
-			<skill id="entrap" x="30" all="1"/>
+			<attack>140</attack>
+			<health>190</health>
+			<skill id="absorb" x="190"/>
+			<skill trigger="attacked" id="protect" x="94" all="1"/>
+			<skill id="entrap" x="114" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62468</card_id>
 			<level>5</level>
-			<health>120</health>
-			<skill id="absorb" x="73"/>
-			<skill trigger="attacked" id="protect" x="19" all="1"/>
-			<skill id="entrap" x="31" all="1"/>
+			<health>195</health>
+			<skill id="absorb" x="195"/>
+			<skill trigger="attacked" id="protect" x="97" all="1"/>
+			<skill id="entrap" x="117" all="1"/>
 		</upgrade>
 		<upgrade>
 			<card_id>62469</card_id>
 			<level>6</level>
-			<attack>24</attack>
-			<health>124</health>
-			<skill id="absorb" x="75"/>
-			<skill trigger="attacked" id="protect" x="20" all="1"/>
-			<skill id="entrap" x="32" all="1"/>
+			<attack>150</attack>
+			<health>200</health>
+			<skill id="absorb" x="200"/>
+			<skill trigger="attacked" id="protect" x="100" all="1"/>
+			<skill id="entrap" x="120" all="1"/>
 		</upgrade>
 	</unit>
 	
@@ -767,7 +767,7 @@
 		<skill id="swipe" x="40"/>
 		<skill id="refresh" x="40"/>
 		<type>4</type>
-		<set>4000</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>62223</card_id>
 			<level>2</level>
@@ -5342,7 +5342,7 @@
 		<skill id="absorb" x="40"/>
 		<skill id="strike" x="10" all="1"/>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>61959</card_id>
 			<level>2</level>
@@ -9686,7 +9686,7 @@
 		<skill id="inhibit" x="3"/>
 		<skill id="mark" x="20"/>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>61579</card_id>
 			<level>2</level>
@@ -10531,7 +10531,7 @@
 		<skill id="bravery" x="18"/>
 		<skill id="mark" x="20"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>61357</card_id>
 			<level>2</level>
@@ -15507,7 +15507,7 @@
 		<skill id="subdue" x="42"/>
 		<skill id="allegiance" x="8"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>60911</card_id>
 			<level>2</level>
@@ -18615,7 +18615,7 @@
 		<skill id="absorb" x="40"/>
 		<skill id="besiege" x="14" all="1"/>
 		<type>1</type>
-		<set>4500</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>60749</card_id>
 			<level>2</level>

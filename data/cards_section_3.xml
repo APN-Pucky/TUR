@@ -1101,7 +1101,7 @@
 		<skill id='evade' x='1' />
 		<skill id='leech' x='2' />
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>6196</card_id>
@@ -1248,7 +1248,7 @@
         <rarity>4</rarity>
         <skill id='corrosive' x='1' />
         <type>3</type>
-        <set>4700</set>
+        <set>4750</set>
         <upgrade>
             <level>2</level>
             <card_id>6298</card_id>
@@ -2703,7 +2703,7 @@
     <unit>
         <id>6717</id>
         <name>Chayot Blade</name> 
-        <picture>averia_lv3.jpg</picture>
+        <picture>averia.jpg</picture>
         <asset_bundle>103</asset_bundle>
         <fusion_level>1</fusion_level>
         <attack>5</attack>
@@ -4168,7 +4168,7 @@
 		<skill id='strike' x='1' />
 		<skill id='pierce' x='2' />
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>6952</card_id>
@@ -8821,7 +8821,7 @@
     <unit>
         <id>7503</id>
         <name>Starved Terrorsaur</name>
-        <picture>gauntmech_lv3</picture>
+        <picture>gauntmech</picture>
 		<asset_bundle>1010</asset_bundle>
         <fusion_level>1</fusion_level>
         <attack>3</attack>
@@ -9501,7 +9501,7 @@
         <skill id='pierce' x='2' />
         <skill id='flurry' c='7' />
         <type>2</type>
-        <set>4700</set>
+        <set>4750</set>
         <upgrade>
             <level>2</level>
             <card_id>7552</card_id>
@@ -16106,7 +16106,7 @@
 		<skill id='jam' c='7' />
 		<skill id='leech' x='2' />
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>10002</card_id>
@@ -16262,7 +16262,7 @@
 		<skill id='counter' x='1' />
 		<skill id='rally' x='1' />
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<level>2</level>
 			<card_id>7792</card_id>

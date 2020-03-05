@@ -255,55 +255,54 @@
 		<picture>rightrocketbuddy_lv1</picture>
 		<asset_bundle>163</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>5</attack>
-		<health>45</health>
+		<attack>50</attack>
+		<health>190</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="evade" x="3"/>
-		<skill id="coalition" x="3"/>
-		<skill id="flurry" c="6"/>
+		<skill id="evade" x="5"/>
+		<skill id="coalition" x="20"/>
+		<skill id="flurry" c="4"/>
 		<type>5</type>
 		<set>2500</set>
 		<upgrade>
 			<card_id>44545</card_id>
 			<level>2</level>
-			<health>47</health>
-			<skill id="evade" x="3"/>
-			<skill id="coalition" x="3"/>
-			<skill id="flurry" c="5"/>
+			<health>200</health>
+			<skill id="evade" x="6"/>
+			<skill id="coalition" x="22"/>
+			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44546</card_id>
 			<level>3</level>
-			<health>49</health>
-			<skill id="evade" x="4"/>
-			<skill id="coalition" x="3"/>
-			<skill id="flurry" c="4"/>
+			<health>210</health>
+			<skill id="evade" x="6"/>
+			<skill id="coalition" x="24"/>
+			<skill id="flurry" c="3"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44547</card_id>
 			<level>4</level>
-			<health>51</health>
-			<skill id="evade" x="4"/>
-			<skill id="coalition" x="4"/>
-			<skill id="flurry" c="4"/>
+			<health>220</health>
+			<skill id="evade" x="7"/>
+			<skill id="coalition" x="26"/>
+			<skill id="flurry" c="2"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44548</card_id>
 			<level>5</level>
-			<health>53</health>
-			<attack>6</attack>
-			<skill id="evade" x="4"/>
-			<skill id="coalition" x="4"/>
-			<skill id="flurry" c="3"/>
+			<health>230</health>
+			<skill id="evade" x="7"/>
+			<skill id="coalition" x="28"/>
+			<skill id="flurry" c="2"/>
 		</upgrade>
 		<upgrade>
 			<card_id>44549</card_id>
 			<level>6</level>
-			<health>56</health>
-			<skill id="evade" x="5"/>
-			<skill id="coalition" x="5"/>
-			<skill id="flurry" c="3"/>
+			<health>250</health>
+			<skill id="evade" x="8"/>
+			<skill id="coalition" x="30"/>
+			<skill id="flurry" c="1"/>
 		</upgrade>
 	</unit>
 	
@@ -5552,7 +5551,7 @@
 		<skill id="besiege" x="3"/>
 		<skill id="coalition" x="2"/>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>44053</card_id>
 			<level>2</level>
@@ -7116,7 +7115,7 @@
 		<skill id="enfeeble" x="3"/>
 		<skill id="strike" x="1" all="1"/>
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>43579</card_id>
 			<level>2</level>
@@ -16841,7 +16840,7 @@
 		<skill id="counter" x="4"/>
 		<skill id="siege" x="4" all="1"/>
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>43047</card_id>
 			<level>2</level>
@@ -24422,58 +24421,59 @@
 		<picture>btstrongarm_lv3</picture>
 		<asset_bundle>208</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>6</attack>
-		<health>48</health>
+		<attack>60</attack>
+		<health>120</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<skill id="corrosive" x="8"/>
-		<skill id="allegiance" x="3"/>
-		<skill id="fortify" x="13"/>
+		<skill id="corrosive" x="60"/>
+		<skill id="allegiance" x="60"/>
+		<skill id="fortify" x="60"/>
 		<type>3</type>
 		<set>2500</set>
 		<upgrade>
 			<card_id>42547</card_id>
 			<level>2</level>
-			<health>54</health>
-			<skill id="corrosive" x="12"/>
-			<skill id="allegiance" x="4"/>
-			<skill id="fortify" x="18"/>
+			<attack>65</attack>
+			<health>130</health>
+			<skill id="corrosive" x="65"/>
+			<skill id="allegiance" x="65"/>
+			<skill id="fortify" x="65"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42548</card_id>
 			<level>3</level>
-			<attack>7</attack>
-			<health>58</health>
-			<skill id="corrosive" x="16"/>
-			<skill id="allegiance" x="6"/>
-			<skill id="fortify" x="23"/>
+			<attack>70</attack>
+			<health>140</health>
+			<skill id="corrosive" x="70"/>
+			<skill id="allegiance" x="70"/>
+			<skill id="fortify" x="70"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42549</card_id>
 			<level>4</level>
-			<attack>8</attack>
-			<health>64</health>
-			<skill id="corrosive" x="20"/>
-			<skill id="allegiance" x="8"/>
-			<skill id="fortify" x="28"/>
+			<attack>75</attack>
+			<health>150</health>
+			<skill id="corrosive" x="75"/>
+			<skill id="allegiance" x="75"/>
+			<skill id="fortify" x="75"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42550</card_id>
 			<level>5</level>
-			<attack>10</attack>
-			<health>70</health>
-			<skill id="corrosive" x="24"/>
-			<skill id="allegiance" x="10"/>
-			<skill id="fortify" x="33"/>
+			<attack>80</attack>
+			<health>160</health>
+			<skill id="corrosive" x="80"/>
+			<skill id="allegiance" x="80"/>
+			<skill id="fortify" x="80"/>
 		</upgrade>
 		<upgrade>
 			<card_id>42551</card_id>
 			<level>6</level>
-			<attack>12</attack>
-			<health>78</health>
-			<skill id="corrosive" x="28"/>
-			<skill id="allegiance" x="12"/>
-			<skill id="fortify" x="38"/>
+			<attack>85</attack>
+			<health>170</health>
+			<skill id="corrosive" x="85"/>
+			<skill id="allegiance" x="85"/>
+			<skill id="fortify" x="85"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -32106,7 +32106,7 @@
 		<skill id="weaken" x="1" all="1"/>
 		<skill id="leech" x="7"/>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>41767</card_id>
 			<level>2</level>
@@ -32270,7 +32270,7 @@
 		<skill id="heal" x="3" all="1" y="3"/>
 		<skill id="enrage" x="1" all="1"/>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>42391</card_id>
 			<level>2</level>

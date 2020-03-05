@@ -1659,7 +1659,7 @@
 		<skill id="coalition" x="3"/>
 		<skill id="refresh" x="16"/>
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>47327</card_id>
 			<level>2</level>
@@ -8556,7 +8556,7 @@
 		<skill id="heal" x="4" all="1"/>
 		<skill id="sabotage" x="4"/>
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>46603</card_id>
 			<level>2</level>
@@ -9889,7 +9889,7 @@
 		<skill id="rally" x="4" all="1" y="1"/>
 		<skill id="pierce" x="17"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>46129</card_id>
 			<level>2</level>
@@ -22696,7 +22696,7 @@
 		<skill id="coalition" x="4"/>
 		<skill id="sabotage" x="3"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>45449</card_id>
 			<level>2</level>
@@ -23399,7 +23399,7 @@
 		<skill id="armored" x="4"/>
 		<skill id="heal" x="4" all="1" y="2"/>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>44997</card_id>
 			<level>2</level>

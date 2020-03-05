@@ -610,7 +610,7 @@
 		<skill id="absorb" x="25"/>
 		<skill id="besiege" x="16" all="1"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>56677</card_id>
 			<level>2</level>
@@ -3764,7 +3764,7 @@
 		<skill id="pierce" x="11"/>
 		<skill id="berserk" x="7"/>
 		<type>1</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>56331</card_id>
 			<level>2</level>
@@ -8536,7 +8536,7 @@
 		<skill id="subdue" x="15"/>
 		<skill id="barrier" x="18"/>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>56019</card_id>
 			<level>2</level>
@@ -13322,7 +13322,7 @@
 		<skill id="rally" x="10" y="3"/>
 		<skill id="venom" x="10"/>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>55485</card_id>
 			<level>2</level>
@@ -13542,56 +13542,56 @@
 		<picture>walkerstalker_lv1</picture>
 		<asset_bundle>283</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>10</attack>
-		<health>56</health>
+		<attack>50</attack>
+		<health>100</health>
 		<cost>1</cost>
 		<rarity>3</rarity>
-		<skill id="rally" x="8" all="1" y="2" trigger="play"/>
-		<skill id="enfeeble" x="16"/>
-		<skill id="swipe" x="16"/>
+		<skill id="rally" x="50" all="1" y="2" trigger="play"/>
+		<skill id="enfeeble" x="100"/>
+		<skill id="swipe" x="100"/>
 		<type>2</type>
 		<set>2500</set>
 		<upgrade>
 			<card_id>55443</card_id>
 			<level>2</level>
-			<health>58</health>
-			<skill id="rally" x="9" all="1" y="2" trigger="play"/>
-			<skill id="enfeeble" x="17"/>
-			<skill id="swipe" x="17"/>
+			<health>110</health>
+			<skill id="rally" x="80" all="1" y="2" trigger="play"/>
+			<skill id="enfeeble" x="110"/>
+			<skill id="swipe" x="110"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55444</card_id>
 			<level>3</level>
-			<health>60</health>
-			<attack>11</attack>
-			<skill id="rally" x="9" all="1" y="2" trigger="play"/>
-			<skill id="enfeeble" x="18"/>
-			<skill id="swipe" x="18"/>
+			<health>120</health>
+			<attack>60</attack>
+			<skill id="rally" x="85" all="1" y="2" trigger="play"/>
+			<skill id="enfeeble" x="120"/>
+			<skill id="swipe" x="120"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55445</card_id>
 			<level>4</level>
-			<health>62</health>
-			<skill id="rally" x="10" all="1" y="2" trigger="play"/>
-			<skill id="enfeeble" x="19"/>
-			<skill id="swipe" x="19"/>
+			<health>130</health>
+			<skill id="rally" x="90" all="1" y="2" trigger="play"/>
+			<skill id="enfeeble" x="130"/>
+			<skill id="swipe" x="130"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55446</card_id>
 			<level>5</level>
-			<health>64</health>
-			<skill id="rally" x="11" all="1" y="2" trigger="play"/>
-			<skill id="enfeeble" x="20"/>
-			<skill id="swipe" x="20"/>
+			<health>140</health>
+			<skill id="rally" x="95" all="1" y="2" trigger="play"/>
+			<skill id="enfeeble" x="140"/>
+			<skill id="swipe" x="140"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55447</card_id>
 			<level>6</level>
-			<attack>12</attack>
-			<health>66</health>
-			<skill id="rally" x="12" all="1" y="2" trigger="play"/>
-			<skill id="enfeeble" x="21"/>
-			<skill id="swipe" x="21"/>
+			<attack>100</attack>
+			<health>150</health>
+			<skill id="rally" x="100" all="1" y="2" trigger="play"/>
+			<skill id="enfeeble" x="150"/>
+			<skill id="swipe" x="150"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -13659,56 +13659,56 @@
 		<picture>xenojeep_lv1</picture>
 		<asset_bundle>283</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>10</attack>
-		<health>50</health>
+		<attack>30</attack>
+		<health>90</health>
 		<cost>1</cost>
 		<rarity>3</rarity>
-		<skill id="barrier" x="20"/>
-		<skill id="legion" x="10"/>
-		<skill id="refresh" x="22"/>
+		<skill id="barrier" x="90"/>
+		<skill id="legion" x="30"/>
+		<skill id="refresh" x="60"/>
 		<type>4</type>
 		<set>2500</set>
 		<upgrade>
 			<card_id>55455</card_id>
 			<level>2</level>
-			<health>52</health>
-			<skill id="barrier" x="21"/>
-			<skill id="legion" x="11"/>
-			<skill id="refresh" x="23"/>
+			<health>110</health>
+			<skill id="barrier" x="110"/>
+			<skill id="legion" x="35"/>
+			<skill id="refresh" x="75"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55456</card_id>
 			<level>3</level>
-			<health>55</health>
-			<attack>11</attack>
-			<skill id="barrier" x="22"/>
-			<skill id="legion" x="11"/>
-			<skill id="refresh" x="24"/>
+			<health>120</health>
+			<attack>60</attack>
+			<skill id="barrier" x="120"/>
+			<skill id="legion" x="40"/>
+			<skill id="refresh" x="80"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55457</card_id>
 			<level>4</level>
-			<health>58</health>
-			<skill id="barrier" x="23"/>
-			<skill id="legion" x="12"/>
-			<skill id="refresh" x="25"/>
+			<health>130</health>
+			<skill id="barrier" x="130"/>
+			<skill id="legion" x="45"/>
+			<skill id="refresh" x="90"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55458</card_id>
 			<level>5</level>
-			<health>61</health>
-			<skill id="barrier" x="24"/>
-			<skill id="legion" x="13"/>
-			<skill id="refresh" x="26"/>
+			<health>140</health>
+			<skill id="barrier" x="140"/>
+			<skill id="legion" x="45"/>
+			<skill id="refresh" x="95"/>
 		</upgrade>
 		<upgrade>
 			<card_id>55459</card_id>
 			<level>6</level>
-			<attack>12</attack>
-			<health>64</health>
-			<skill id="barrier" x="25"/>
-			<skill id="legion" x="14"/>
-			<skill id="refresh" x="28"/>
+			<attack>75</attack>
+			<health>150</health>
+			<skill id="barrier" x="150"/>
+			<skill id="legion" x="50"/>
+			<skill id="refresh" x="100"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -20910,48 +20910,48 @@
 		<name>Needler Vekt</name>
 		<picture>xenodoubleup_lv1</picture>
 		<asset_bundle>274</asset_bundle>
-		<attack>12</attack>
-		<health>58</health>
+		<attack>18</attack>
+		<health>110</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
 		<skill id="evade" x="2"/>
 		<skill id="summon" card_id="49532"/>
-		<skill id="protect" x="6" all="1" y="4"/>
+		<skill id="protect" x="26" all="1" y="4"/>
 		<type>4</type>
-		<set>4700</set>
+		<set>4500</set>
 		<upgrade>
 			<card_id>49515</card_id>
 			<level>2</level>
-			<health>59</health>
+			<health>115</health>
 		</upgrade>
 		<upgrade>
 			<card_id>49516</card_id>
 			<level>3</level>
-			<health>61</health>
-			<attack>13</attack>
+			<health>120</health>
+			<attack>22</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>49517</card_id>
 			<level>4</level>
 			<picture>xenodoubleup_lv3</picture>
-			<health>63</health>
+			<health>125</health>
 			<skill id="evade" x="2"/>
 			<skill id="summon" card_id="49533"/>
-			<skill id="protect" x="7" all="1" y="4"/>
+			<skill id="protect" x="28" all="1" y="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49518</card_id>
 			<level>5</level>
-			<health>65</health>
+			<health>130</health>
 			<skill id="evade" x="3"/>
 			<skill id="summon" card_id="49533"/>
-			<skill id="protect" x="7" all="1" y="4"/>
+			<skill id="protect" x="30" all="1" y="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49519</card_id>
 			<level>6</level>
-			<health>66</health>
-			<attack>14</attack>
+			<health>135</health>
+			<attack>24</attack>
 		</upgrade>
 	</unit>
 	<unit>
@@ -20960,47 +20960,47 @@
 		<picture>xenodoubleup_lv3</picture>
 		<asset_bundle>274</asset_bundle>
 		<fusion_level>1</fusion_level>
-		<attack>14</attack>
-		<health>68</health>
+		<attack>34</attack>
+		<health>175</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
-		<skill id="evade" x="3"/>
+		<skill id="evade" x="5"/>
 		<skill id="summon" card_id="49534"/>
-		<skill id="protect" x="8" all="1" y="4"/>
+		<skill id="protect" x="34" all="1" y="4"/>
 		<type>4</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>49521</card_id>
 			<level>2</level>
-			<health>70</health>
-			<attack>15</attack>
+			<health>155</health>
+			<attack>36</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>49522</card_id>
 			<level>3</level>
-			<health>72</health>
-			<skill id="evade" x="4"/>
+			<health>180</health>
+			<skill id="evade" x="5"/>
 			<skill id="summon" card_id="49535"/>
-			<skill id="protect" x="8" all="1" y="4"/>
+			<skill id="protect" x="38" all="1" y="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49523</card_id>
 			<level>4</level>
-			<health>73</health>
+			<health>155</health>
 		</upgrade>
 		<upgrade>
 			<card_id>49524</card_id>
 			<level>5</level>
-			<health>75</health>
-			<skill id="evade" x="4"/>
+			<health>182</health>
+			<skill id="evade" x="6"/>
 			<skill id="summon" card_id="49535"/>
-			<skill id="protect" x="9" all="1" y="4"/>
+			<skill id="protect" x="40" all="1" y="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49525</card_id>
 			<level>6</level>
-			<health>77</health>
-			<attack>16</attack>
+			<health>185</health>
+			<attack>37</attack>
 		</upgrade>
 	</unit>
 	<unit>
@@ -21009,53 +21009,53 @@
 		<picture>xenodoubleup_lv3</picture>
 		<asset_bundle>274</asset_bundle>
 		<fusion_level>2</fusion_level>
-		<attack>16</attack>
-		<health>79</health>
+		<attack>38</attack>
+		<health>190</health>
 		<cost>3</cost>
 		<rarity>4</rarity>
-		<skill id="evade" x="5"/>
+		<skill id="evade" x="7"/>
 		<skill id="summon" card_id="49536"/>
-		<skill id="protect" x="9" all="1" y="4"/>
+		<skill id="protect" x="44" all="1" y="4"/>
 		<type>4</type>
 		<set>2000</set>
 		<upgrade>
 			<card_id>49527</card_id>
 			<level>2</level>
-			<health>80</health>
-			<skill id="evade" x="5"/>
+			<health>190</health>
+			<skill id="evade" x="7"/>
 			<skill id="summon" card_id="49536"/>
-			<skill id="protect" x="10" all="1" y="4"/>
+			<skill id="protect" x="46" all="1" y="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49528</card_id>
 			<level>3</level>
-			<health>82</health>
-			<attack>17</attack>
+			<health>185</health>
+			<attack>38</attack>
 		</upgrade>
 		<upgrade>
 			<card_id>49529</card_id>
 			<level>4</level>
-			<health>84</health>
-			<attack>18</attack>
-			<skill id="evade" x="6"/>
+			<health>190</health>
+			<attack>40</attack>
+			<skill id="evade" x="8"/>
 			<skill id="summon" card_id="49537"/>
-			<skill id="protect" x="10" all="1" y="4"/>
+			<skill id="protect" x="48" all="1" y="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49530</card_id>
 			<level>5</level>
-			<health>86</health>
-			<skill id="evade" x="6"/>
+			<health>195</health>
+			<skill id="evade" x="8"/>
 			<skill id="summon" card_id="49537"/>
-			<skill id="protect" x="10" all="1" y="4"/>
+			<skill id="protect" x="49" all="1" y="4"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49531</card_id>
 			<level>6</level>
-			<health>88</health>
-			<skill id="evade" x="7"/>
+			<health>200</health>
+			<skill id="evade" x="9"/>
 			<skill id="summon" card_id="49537"/>
-			<skill id="protect" x="11" all="1" y="4"/>
+			<skill id="protect" x="50" all="1" y="4"/>
 		</upgrade>
 	</unit>
 	
@@ -21064,58 +21064,58 @@
 		<name>Needle Sliver</name>
 		<picture>kiteflyer_lv3</picture>
 		<asset_bundle>128</asset_bundle>
-		<attack>4</attack>
-		<health>30</health>
+		<attack>9</attack>
+		<health>65</health>
 		<cost>1</cost>
 		<rarity>4</rarity>
-		<skill id="enfeeble" x="5" all="1" trigger="play"/>
-		<skill id="legion" x="6"/>
-		<skill id="pierce" x="10"/>
+		<skill id="enfeeble" x="30" all="1" trigger="play"/>
+		<skill id="legion" x="10"/>
+		<skill id="pierce" x="120"/>
 		<type>4</type>
 		<set>9500</set>
 		<upgrade>
 			<card_id>49533</card_id>
 			<level>2</level>
-			<health>33</health>
-			<skill id="enfeeble" x="6" all="1" trigger="play"/>
-			<skill id="legion" x="7"/>
-			<skill id="pierce" x="11"/>
+			<health>70</health>
+			<skill id="enfeeble" x="40" all="1" trigger="play"/>
+			<skill id="legion" x="15"/>
+			<skill id="pierce" x="140"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49534</card_id>
 			<level>3</level>
-			<attack>5</attack>
-			<health>36</health>
-			<skill id="enfeeble" x="7" all="1" trigger="play"/>
-			<skill id="legion" x="8"/>
-			<skill id="pierce" x="13"/>
+			<attack>11</attack>
+			<health>75</health>
+			<skill id="enfeeble" x="50" all="1" trigger="play"/>
+			<skill id="legion" x="20"/>
+			<skill id="pierce" x="140"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49535</card_id>
 			<level>4</level>
-			<attack>6</attack>
-			<health>39</health>
-			<skill id="enfeeble" x="8" all="1" trigger="play"/>
-			<skill id="legion" x="9"/>
-			<skill id="pierce" x="15"/>
+			<attack>12</attack>
+			<health>80</health>
+			<skill id="enfeeble" x="60" all="1" trigger="play"/>
+			<skill id="legion" x="25"/>
+			<skill id="pierce" x="160"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49536</card_id>
 			<level>5</level>
-			<attack>7</attack>
-			<health>42</health>
-			<skill id="enfeeble" x="9" all="1" trigger="play"/>
-			<skill id="legion" x="10"/>
-			<skill id="pierce" x="17"/>
+			<attack>13</attack>
+			<health>85</health>
+			<skill id="enfeeble" x="70" all="1" trigger="play"/>
+			<skill id="legion" x="30"/>
+			<skill id="pierce" x="180"/>
 		</upgrade>
 		<upgrade>
 			<card_id>49537</card_id>
 			<level>6</level>
-			<attack>8</attack>
-			<health>45</health>
-			<skill id="enfeeble" x="10" all="1" trigger="play"/>
-			<skill id="legion" x="11"/>
-			<skill id="pierce" x="19"/>
+			<attack>15</attack>
+			<health>90</health>
+			<skill id="enfeeble" x="80" all="1" trigger="play"/>
+			<skill id="legion" x="35"/>
+			<skill id="pierce" x="200"/>
 		</upgrade>
 	</unit>
 	

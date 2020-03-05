@@ -21,7 +21,7 @@
 		<skill id="coalition" x="8"/>
 		<skill id="refresh" x="30"/>
 		<type>5</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>60569</card_id>
 			<level>2</level>
@@ -198,7 +198,7 @@
 		<skill id="enfeeble" x="40"/>
 		<skill id="drain" x="30"/>
 		<type>4</type>
-		<set>4001</set>
+		<set>4000</set>
 		<upgrade>
 			<card_id>60533</card_id>
 			<level>2</level>
@@ -1033,7 +1033,7 @@
 		<skill id="revenge" x="2"/>
 		<skill id="hunt" x="25"/>
 		<type>2</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>60455</card_id>
 			<level>2</level>
@@ -3707,7 +3707,7 @@
 		<skill id="scavenge" x="6"/>
 		<skill id="berserk" x="18"/>
 		<type>6</type>
-		<set>4501</set>
+		<set>4500</set>
 		<upgrade>
 			<card_id>60437</card_id>
 			<level>2</level>
@@ -12089,7 +12089,7 @@
 		<skill id="rally" x="14" all="1"/>
 		<skill id="refresh" x="28"/>
 		<type>6</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>58867</card_id>
 			<level>2</level>
@@ -12913,7 +12913,7 @@
 		<skill id="summon" card_id="18608"/>
 		<skill id="mimic" x="10"/>
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>59095</card_id>
 			<level>2</level>
@@ -15815,7 +15815,7 @@
 		<skill id="hunt" x="20"/>
 		<skill id="flurry" c="8"/>
 		<type>4</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>59525</card_id>
 			<level>2</level>
@@ -17643,7 +17643,7 @@
 		<skill id="bravery" x="21"/>
 		<skill id="refresh" x="31"/>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>59795</card_id>
 			<level>2</level>
@@ -20229,7 +20229,7 @@
 		<skill id="scavenge" x="10"/>
 		<skill id="allegiance" x="8"/>
 		<type>3</type>
-		<set>4700</set>
+		<set>4750</set>
 		<upgrade>
 			<card_id>60233</card_id>
 			<level>2</level>

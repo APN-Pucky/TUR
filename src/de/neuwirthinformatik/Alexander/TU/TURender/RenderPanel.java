@@ -5,6 +5,8 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -23,7 +25,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import javax.swing.JSplitPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.event.DocumentEvent;
@@ -56,7 +57,7 @@ public class RenderPanel extends JPanel{
 	GUI.IntegerField dhealth,ddelay,dattack,ddef,drarity,dfaction,dlevel;
 	
 	JComboBox<Faction> jcbfaction;
-	JComboBox<Level> jcblevel;
+	JComboBox<Level> jcblevel; // fusion
 	JComboBox<Integer> jcbrank;
 	JComboBox<Integer> jcbmaxrank;
 	JComboBox<Rarity> jcbrarity;
@@ -376,6 +377,13 @@ public class RenderPanel extends JPanel{
 		allipanel.setLayout(new BoxLayout(allipanel, BoxLayout.Y_AXIS));
 		for(int i = 00; i < 10;i++) {
 			ipanel[i] = new JPanel();
+			final int k = i;
+			ipanel[i].addMouseListener(new MouseAdapter() {
+				public void mouseClicked(MouseEvent e) {
+					jcbrank.setSelectedIndex(k);
+					
+				}
+			});
 			allipanel.add(ipanel[i]);
 		}
 		try {
@@ -753,12 +761,18 @@ public class RenderPanel extends JPanel{
 			int j	 = ss.getCard_id();
 			if(j != 0 && j != ci.getID()) {
 			CardInstance cj = GlobalData.getCardInstanceById(j);
-			BufferedImage img = r.render(cj);
-			ImageIcon iicon = new ImageIcon(img);
-			JLabel limg=new JLabel();
-			limg.setIcon(iicon);
-			ipanel[ilevel()].add(limg);
-			recurse_summon(cj);
+			if(cj.getID()!=0)
+			{
+				BufferedImage img = r.render(cj);
+				ImageIcon iicon = new ImageIcon(img);
+				JLabel limg=new JLabel();
+				limg.setIcon(iicon);
+				ipanel[ilevel()].add(limg);
+				recurse_summon(cj);
+			}
+			else {
+				TUR._this.log.w("Can't render non existing card", "Summon");
+			}
 			}
 		}
 	}

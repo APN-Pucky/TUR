@@ -8,9 +8,15 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
@@ -51,6 +57,7 @@ public class RenderPanel extends JPanel{
 	JTextField path;
 	JPanel datapanel;
 	JTextField dataname;
+	GUI.IntegerField did;
 	JTextField imgfile;
 	JTextField load;
 	JCheckBox render_all_levels;
@@ -215,8 +222,8 @@ public class RenderPanel extends JPanel{
 		jcbmaxrank = new JComboBox<Integer>(Arrays.stream( new int[] {1,2,3,4,5,6,7,8,9,10} ).boxed().toArray( Integer[]::new ));
 		jcbmaxrank.setSelectedItem(6);
 		tmp.add(GUI.textSmall("maxlevel"));
-		tmp.add(render_all_levels= GUI.check("All",false));
 		tmp.add(jcbmaxrank);
+		tmp.add(render_all_levels= GUI.check("All",false));
 		//tmp.add(dlevel = GUI.numericEdit(1));
 		panel.add(tmp);
 
@@ -227,6 +234,8 @@ public class RenderPanel extends JPanel{
 		skillpanel.setLayout(new BoxLayout(skillpanel, BoxLayout.Y_AXIS));
 		tmp = new JPanel();
 		tmp.add(dataname= GUI.textEdit("yourcardnamehere"));
+		tmp.add(GUI.textSmall("id"));
+		tmp.add(did= GUI.numericEdit(999999));
 		datapanel.add(tmp);
 		
 		tmp = new JPanel();
@@ -432,6 +441,45 @@ public class RenderPanel extends JPanel{
 			clipboard.setContents(selec, selec);
 		}));
 		panel.add(tmp);
+
+		tmp.add(GUI.buttonSync("Load", () -> {
+			int CARD_SECTIONS_COUNT=0;
+			List<String> lines = new ArrayList<String>();
+			String get = xml.getText();
+		    String line = null;
+
+	        try {
+			File dir = new File("data/");
+			for (File f : dir.listFiles()) {
+				if (f.getName().matches("cards_section_\\d+.xml") && GlobalData.readFile(f.getAbsolutePath()).length() > 10)
+					CARD_SECTIONS_COUNT++;
+			}
+			File f1 = new File("data/cards_section_"+CARD_SECTIONS_COUNT + ".xml");
+			FileReader fr = new FileReader(f1);
+            BufferedReader br = new BufferedReader(fr);
+            while ((line = br.readLine()) != null) {
+                if (line.contains("</root>"))
+                    line = line.replace("</root>", get + "</root>");
+                lines.add(line);
+            }
+            fr.close();
+            br.close();
+            FileWriter fw = new FileWriter(f1);
+            BufferedWriter out = new BufferedWriter(fw);
+            for(String s : lines)
+                 out.write(s + "\n");
+            out.flush();
+            out.close();
+	        GlobalData.init();
+	        load.setText(""+did.getNumber());
+	        loadCard();
+	        }catch (Exception e) {
+	        	TUR.log.e("XML write crashed, maybe manula fix needed", "load from xml");
+	        	e.printStackTrace();
+	        }
+			
+		}));
+		panel.add(tmp);
 		
 		JSplitPane splitpane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
 				panel,new JScrollPane(allipanel));
@@ -482,6 +530,7 @@ public class RenderPanel extends JPanel{
 		};
 		imgfile.getDocument().addDocumentListener(dl);
 		dataname.getDocument().addDocumentListener(dl);
+		did.getDocument().addDocumentListener(dl);
 		dhealth.getDocument().addDocumentListener(dl);
 		ddelay.getDocument().addDocumentListener(dl);
 		dattack.getDocument().addDocumentListener(dl);
@@ -563,6 +612,7 @@ public class RenderPanel extends JPanel{
 		block_img_update = true;
 		
 		dataname.setText(ci.getCard().getName());
+		did.setNumber(ci.getCard().getLowestID());
 		dhealth.setNumber(ci.getHealth());
 		dattack.setNumber(ci.getAttack());
 		ddelay.setNumber(ci.getCost());
@@ -654,6 +704,7 @@ public class RenderPanel extends JPanel{
 	
 	Object sync_flag = new Object();
 	
+	
 	public void updateIMG()
 	{
 		if(block_img_update)return;
@@ -669,11 +720,11 @@ public class RenderPanel extends JPanel{
 		int rank = (Integer)jcbrank.getSelectedItem();
 		Info[] ia = new Info[mrank];
 		int[] ids = new int[mrank];
-		for(int j =0; j < ids.length;j++)ids[j]=1;
-		ids[rank-1] = 2; // TODO Define card id somewhere close to name
+		for(int j =0; j < ids.length;j++)ids[j]=did.getNumber()+j;
+		//ids[rank-1] = 2; // TODO Define card id somewhere close to name
 		ia[rank-1] = i;
 		Card c = new Card(ids,dataname.getText(),((Rarity)jcbrarity.getSelectedItem()).toInt(),((Level)jcblevel.getSelectedItem()).toInt(),new int[] {},0,0,((Faction)jcbfaction.getSelectedItem()).toInt(),ia, "",0);
-		CardInstance ci = CardInstance.get(2,c,i);
+		CardInstance ci = CardInstance.get(did.getNumber()+rank-1,c,i);
 		cis[rank-1] = ci;
 		loadIMG(cis[rank-1]);
 		//System.out.println(Data.getCardInstanceByNameAndLevel("Bulkhead Brawler-1").getSkills()[2].x);

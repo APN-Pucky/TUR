@@ -712,7 +712,7 @@ public class RenderPanel extends JPanel{
 		try {
 		SkillSpec[] ss = new SkillSpec[3];
 		for(int  k = 0; k < ss.length;k++)
-			ss[k] = new SkillSpec(sid[k].getText().toLowerCase(),x[k].getNumber(),y[k].getText().toLowerCase(),n[k].getNumber(),c[k].getNumber(),s1[k].getText().toLowerCase(),s2[k].getText().toLowerCase(),all[k].isSelected(),id[k].getNumber(), trigger[k].getText().toLowerCase());
+			ss[k] = new SkillSpec(sid[k].getText().toLowerCase(),x[k].getNumber(),y[k].getText().toLowerCase(),n[k].getNumber(),c[k].getNumber(),s1[k].getText().toLowerCase(),s2[k].getText().toLowerCase(),all[k].isSelected(),id[k].getNumber(),"".equals(trigger[k].getText())?"activate": trigger[k].getText().toLowerCase());
 		//SkillSpec ss2 = new SkillSpec(sid2.getText().toLowerCase(),x2.getNumber(),y2.getText().toLowerCase(),n2.getNumber(),c2.getNumber(),s12.getText().toLowerCase(),s22.getText().toLowerCase(),all2.isSelected(),id2.getNumber(), trigger2.getText().toLowerCase());
 		//SkillSpec ss3 = new SkillSpec(sid3.getText().toLowerCase(),x3.getNumber(),y3.getText().toLowerCase(),n3.getNumber(),c3.getNumber(),s13.getText().toLowerCase(),s23.getText().toLowerCase(),all3.isSelected(),id3.getNumber(), trigger3.getText().toLowerCase());
 		Info i = new Info(dattack.getNumber(),dhealth.getNumber(),ddelay.getNumber(),((Level)jcblevel.getSelectedItem()).toInt(),ss);

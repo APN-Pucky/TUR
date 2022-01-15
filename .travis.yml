@@ -10,13 +10,13 @@ install:
 - sudo apt-get install ant
 script:
 - ant create_run_jar
-- zip -r TUR.zip build start.bat in.png out.png unitypuck.py data
+- zip -r TUR_travis.zip build start.bat in.png out.png unitypuck.py data
 deploy:
   provider: releases
   name: "${TRAVIS_COMMIT_MESSAGE}"
   api_key:
     secure: "K3qEYpMOxxPQvVFv0AlPezXwHuq8AgBnIl4/WuCmjYG2hC393UJQnVlf6i47dhFDL0jX13BsRjC4rUz3SZyGO0TEcC+xwOKaSQgvK26JKkQCFd9fiPVCtRm6zo+IKhDfx3vKCzo81z4szHQW0Vr4zC5vg4aFvUTy+TI9pvTTSUqMxSYxRzR1Cs5IjclPUUoC7ibjFDg1vC50gsnojUv2l9lH6uENjNQWFkiKmBX02EqBcdNJ7aptZAi5SzT2ZAmVa0adKCb8fQDUIBbsegO0p9O0VMSI+0nQvh3kN2KsjwxnbicAsvS3gYu1bHjjDMMvGCq5LgF7R11FswR48K9DF06IbTx256Bkbz2Xetsrvk03nNUhPE50GOHWrzRSLPPFEWBsz9dCW+y48ESz/cQqEEPbe4a4WBtD+pwxP3KGOwE+kCsLKcaZvJKACyL6X2q7M9Flz38KDCW2DI1t9TECvnXZPQzW2r6qRdhVDmutABTxPOlu3Cn+yD6bqtSv0BMQ/tmzoSYW42yFgn1pxrs/3kna5G/v6LC5OoBjpuDSJg4n2d6IbK1EApIQE6mjGcWQpCHu8CzKVyNPY3oz8bFruT4QZUzsjSFC3otMYx0x46XE1IpdZVtW6taXOyqgoWCr9aLGByF0dALwsIVZha3Xg/4VdL3C1W0tIJXwaJALLzw="
-  file: TUR.zip
+  file: TUR_travis.zip
   skip_cleanup: true
   on:
     tags: true

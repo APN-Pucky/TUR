@@ -5,6 +5,8 @@ __pycache__/
 *.png
 *.jpg
 build/
+in.png
+git_jar_version.json
 
 # Created by https://www.gitignore.io/api/eclipse
 

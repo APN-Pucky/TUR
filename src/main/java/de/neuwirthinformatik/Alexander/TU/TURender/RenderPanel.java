@@ -690,7 +690,7 @@ public class RenderPanel extends JPanel{
 		imgfile.setText("in.png");
 		try {
 		BufferedImage bi = Render.getCardImage(ci.getCard().getAssetBundle(), ci.getCard().getPicture());
-		if(bi == null) bi = ImageIO.read(TU.class.getResourceAsStream("/resources/cogs.png"));
+		if(bi == null) bi = ImageIO.read(TU.class.getResourceAsStream("/cogs.png"));
 		
 			ImageIO.write(bi, "png",new File("in.png"));
 		} catch (IOException e) {

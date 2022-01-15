@@ -398,15 +398,11 @@ public class Render {
 			 * builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
 			 * System.out.println("Exec extract"); Process p = builder.start();
 			 */
-			System.out.println("python3" + "unitypuck.py" + "--name" + card_name);
-			System.out.println("--outdir" + pic.getPath().getParent());
-			System.out.println("--outdir" + pic.getPath().getParent().toString());
-			System.out.println("--file" + pic.getPath().getFileName().toString() + unity3d.getPath().toString());
 			ProcessBuilder builder = new ProcessBuilder("python3", "unitypuck.py", "--name", card_name, "--outdir",
 					pic.getPath().getParent().toString(), "--file", pic.getPath().getFileName().toString(),
 					unity3d.getPath().toString());
-			 builder.redirectError(ProcessBuilder.Redirect.INHERIT);
-			 builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+			 //builder.redirectError(ProcessBuilder.Redirect.INHERIT);
+			 //builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
 			System.out.println("Exec unitypucky.py");
 			Process p = builder.start();
 			StringBuilder byaml = new StringBuilder();
@@ -420,7 +416,6 @@ public class Render {
 			p.waitFor();
 			// System.out.println(byaml.toString());
 			String yaml = byaml.toString();
-			System.out.println(yaml);
 			// yaml = yaml.replace("!PPtr", "m_ptr:");
 			// yaml = yaml.replace("!!python/tuple", "m_tuple:");
 			// yaml = yaml.toString().replaceAll("!unitypack:(.+?)(\\s)", "$1:$2");

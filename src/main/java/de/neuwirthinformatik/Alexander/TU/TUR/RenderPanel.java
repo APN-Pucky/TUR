@@ -99,7 +99,7 @@ public class RenderPanel extends JPanel{
 	XmlTextPane xml;
 	BufferedImage cimg;
 
-	Render r;
+	Render render;
 	boolean block_img_update= false;
 	
 	CardInstance[] cis = new CardInstance[10];
@@ -396,7 +396,7 @@ public class RenderPanel extends JPanel{
 			allipanel.add(ipanel[i]);
 		}
 		try {
-			r = new Render();
+			render = new Render();
 		}
 		catch(Exception e) {e.printStackTrace();
 			JOptionPane.showMessageDialog(this, "Error on input!");
@@ -689,7 +689,7 @@ public class RenderPanel extends JPanel{
 		
 		imgfile.setText("in.png");
 		try {
-		BufferedImage bi = Render.getCardImage(ci.getCard().getAssetBundle(), ci.getCard().getPicture());
+		BufferedImage bi = render.getCardImage(ci.getCard().getAssetBundle(), ci.getCard().getPicture());
 		if(bi == null) bi = ImageIO.read(TU.class.getResourceAsStream("/cogs.png"));
 		
 			ImageIO.write(bi, "png",new File("in.png"));
@@ -762,7 +762,7 @@ public class RenderPanel extends JPanel{
 	public void loadIMG(CardInstance ci) //{loadIMG(ci,false);}
 	//public void loadIMG(CardInstance ci, boolean custom)
 	{
-		BufferedImage img = r.render(ci,new String[] {txt[0].getText(),txt[1].getText(),txt[2].getText()},imgfile.getText(),(CardType)jcbtype.getSelectedItem());
+		BufferedImage img = render.render(ci,new String[] {txt[0].getText(),txt[1].getText(),txt[2].getText()},imgfile.getText(),(CardType)jcbtype.getSelectedItem());
 				
 		cimg = img;
 		ImageIcon iicon = new ImageIcon(img);
@@ -814,7 +814,7 @@ public class RenderPanel extends JPanel{
 			CardInstance cj = GlobalData.getCardInstanceById(j);
 			if(cj.getID()!=0)
 			{
-				BufferedImage img = r.render(cj);
+				BufferedImage img = render.render(cj);
 				ImageIcon iicon = new ImageIcon(img);
 				JLabel limg=new JLabel();
 				limg.setIcon(iicon);

@@ -357,7 +357,7 @@ public class Render {
 		}
 	}
 
-	public static DownloadedContent createTempFile(String ext) throws IOException {
+	public DownloadedContent createTempFile(String ext) throws IOException {
 		String fileName = LocalDateTime.now().toString() + '-' + UUID.randomUUID().toString() + '.' + ext;
 		Path tempFile = new File(new File(".").getCanonicalPath() +"/"+ fileName).toPath();
 		try {
@@ -371,7 +371,7 @@ public class Render {
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static BufferedImage getCardImage(int card_bundle, String picture) {
+	public BufferedImage getCardImage(int card_bundle, String picture) {
 		if (card_bundle == 0)
 			return null;
 		BufferedImage img = null;

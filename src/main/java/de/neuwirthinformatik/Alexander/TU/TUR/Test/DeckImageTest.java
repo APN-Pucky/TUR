@@ -20,7 +20,7 @@ public class DeckImageTest {
 		//g.drawImage(getImage(222,"rightwidewings_lv3"), 0, 0, 150, 125,0,0,150,125,null);
 		Render r = new Render();
 		//System.out.println(Data.getCardInstanceByNameAndLevel("Bulkhead Brawler-1").getSkills()[2].x);
-		Deck c = GlobalData.constructDeck("Cyrus,Alpha Dominion,Obsidian Overlord, Obsidian#9");
+		Deck c = GlobalData.constructDeck("Cyrus,Obsidian Overlord, Obsidian#9");
 		BufferedImage img = r.renderDeck(c);
 		//BufferedImage img = getImage(204,"xenowavebreak_lv3"); //Obsdin id=4 img=0
 		//ImageIO.write(img,"png", new File("output.png"));

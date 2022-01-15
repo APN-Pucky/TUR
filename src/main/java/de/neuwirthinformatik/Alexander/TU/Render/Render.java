@@ -32,6 +32,7 @@ import javax.validation.constraints.NotNull;
 import com.esotericsoftware.yamlbeans.YamlReader;
 
 import de.neuwirthinformatik.Alexander.TU.TU;
+import de.neuwirthinformatik.Alexander.TU.Basic.Card;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card.CardInstance;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card.CardType;
 import de.neuwirthinformatik.Alexander.TU.Basic.Deck;
@@ -39,7 +40,6 @@ import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
 import de.neuwirthinformatik.Alexander.TU.Basic.SkillSpec;
 import de.neuwirthinformatik.Alexander.TU.util.StringUtil;
 import de.neuwirthinformatik.Alexander.TU.util.Wget;
-import lombok.Value;
 
 public class Render {
 	Font optimus;
@@ -191,6 +191,7 @@ public class Render {
 	}
 
 	public BufferedImage render(CardInstance c, String[] txts, String file, CardType type) {
+		if(c == null || c.getCard()==Card.NULL)return null;
 		BufferedImage img = new BufferedImage(CARD_WIDTH, CARD_HEIGHT, BufferedImage.TYPE_INT_ARGB);
 		Graphics g = img.createGraphics();
 		int[] style = GlobalData.style_borders[c.getFaction()][c.getRarity()];

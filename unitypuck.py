@@ -43,6 +43,8 @@ class UnityExtract:
                        default="", help="Picture name")
         p.add_argument("-o", "--outdir", nargs="?",
                        default="", help="Output directory")
+        p.add_argument("-f", "--file", nargs="?",
+                       default="", help="Output file")
         p.add_argument("--as-asset", action="store_true",
                        help="Force open files as Asset format")
         p.add_argument("--filter", nargs="*",
@@ -106,11 +108,12 @@ class UnityExtract:
                         # print(d["textures"][0].resolve().type)
                         d = d["textures"][0].resolve()
 
-                        itr = 0
-                        filename = d.name + str(itr) + ".png"
-                        while os.path.isfile(self.get_output_path(filename)):
-                            itr += 1
-                            filename = d.name + str(itr) + ".png"
+                        filename = self.args.file
+                        #itr = 0
+                        #filename = d.name + str(itr) + ".png"
+                        #while os.path.isfile(self.get_output_path(filename)):
+                        #    itr += 1
+                        #    filename = d.name + str(itr) + ".png"
 
                         try:
                             from PIL import ImageOps

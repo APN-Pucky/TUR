@@ -44,7 +44,7 @@ import lombok.Value;
 public class Render {
 	Font optimus;
 	Font arial;
-	
+
 	final static int CARD_WIDTH = 160;
 	final static int CARD_HEIGHT = 220;
 
@@ -54,24 +54,24 @@ public class Render {
 	}
 
 	public BufferedImage renderDeck(Deck d) {
-		//int offset_y = 10;
-		int width = CARD_WIDTH*6;
-		int height = CARD_HEIGHT*2;
+		// int offset_y = 10;
+		int width = CARD_WIDTH * 6;
+		int height = CARD_HEIGHT * 2;
 		BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
 		Graphics g = img.getGraphics();
 		g.setColor(Color.white);
 		g.fillRect(0, 0, width, height);
-		
-		g.drawImage(render(d.getCommander()), 0,0, null);
-		g.drawImage(render(d.getDominion()), 0,CARD_HEIGHT, null);
+
+		g.drawImage(render(d.getCommander()), 0, 0, null);
+		g.drawImage(render(d.getDominion()), 0, CARD_HEIGHT, null);
 		int i = 0;
 		for (int id : d.getOffenseDeck()) {
-			if(i > 1) 
-			g.drawImage(render(id), CARD_WIDTH*(1+(i-2)%5), ((i-2)/5)*CARD_HEIGHT , null);
+			if (i > 1)
+				g.drawImage(render(id), CARD_WIDTH * (1 + (i - 2) % 5), ((i - 2) / 5) * CARD_HEIGHT, null);
 			i++;
-			
+
 		}
-		
+
 		return img;
 	}
 
@@ -177,14 +177,15 @@ public class Render {
 			}
 		}
 	}
-	
-	public BufferedImage render(Deck d ) {
+
+	public BufferedImage render(Deck d) {
 		return renderDeck(d);
 	}
 
 	public BufferedImage render(int i) {
 		return render(GlobalData.getCardInstanceById(i));
 	}
+
 	public BufferedImage render(CardInstance c) {
 		return render(c, new String[] { "", "", "" }, "", null);
 	}
@@ -355,102 +356,105 @@ public class Render {
 			x += dxy;
 		}
 	}
-	public static DownloadedContent createTempFile(String ext) {
+
+	public static DownloadedContent createTempFile(String ext) throws IOException {
 		String fileName = LocalDateTime.now().toString() + '-' + UUID.randomUUID().toString() + '.' + ext;
-		Path tempFile = new File(fileName).toPath();
+		Path tempFile = new File(new File(".").getCanonicalPath() +"/"+ fileName).toPath();
+		try {
+			tempFile.toFile().createNewFile();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		tempFile.toFile().deleteOnExit();
 		return new DownloadedContent(tempFile, tempFile.toString());
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static BufferedImage getCardImage(int card_bundle, String picture) {
-		if(card_bundle==0)return null;
+		if (card_bundle == 0)
+			return null;
 		BufferedImage img = null;
 		String card_name = picture.split("\\.")[0];
 		int card_pack = card_bundle;
-		DownloadedContent unity3d = null;;
-		DownloadedContent  pic = null;
-		//String tmp_time = ""+System.currentTimeMillis();
-		//File f = new File("cardpack" + card_pack+ "-" + tmp_time);
+		DownloadedContent unity3d = null;
+		DownloadedContent pic = null;
+		// String tmp_time = ""+System.currentTimeMillis();
+		// File f = new File("cardpack" + card_pack+ "-" + tmp_time);
 		try {
 			unity3d = createTempFile("unity3d");
 			pic = createTempFile("png");
-		//deleteDirectory(f);
+			// deleteDirectory(f);
 
-		// TODO clear folder
-		// String file = "cardpack" + card_pack + "/"+
-		// "cardpack"+card_pack+"_Unity5_4_2_WebGL.unity3d";
-		 getUnityCardPack(card_pack, unity3d);
+			// TODO clear folder
+			// String file = "cardpack" + card_pack + "/"+
+			// "cardpack"+card_pack+"_Unity5_4_2_WebGL.unity3d";
+			getUnityCardPack(card_pack, unity3d);
 
-		/*ProcessBuilder builder = new ProcessBuilder("python3", "unitypucky.py", "--name", picture,
-				"--outdir", f.toPath().toString(), file);
-		builder.redirectError(ProcessBuilder.Redirect.INHERIT);
-		builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
-		System.out.println("Exec extract");
-		Process p = builder.start();*/
+			/*
+			 * ProcessBuilder builder = new ProcessBuilder("python3", "unitypucky.py",
+			 * "--name", picture, "--outdir", f.toPath().toString(), file);
+			 * builder.redirectError(ProcessBuilder.Redirect.INHERIT);
+			 * builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+			 * System.out.println("Exec extract"); Process p = builder.start();
+			 */
+			System.out.println("python3" + "unitypuck.py" + "--name" + card_name);
+			System.out.println("--outdir" + pic.getPath().getParent());
+			System.out.println("--outdir" + pic.getPath().getParent().toString());
+			System.out.println("--file" + pic.getPath().getFileName().toString() + unity3d.getPath().toString());
+			ProcessBuilder builder = new ProcessBuilder("python3", "unitypuck.py", "--name", card_name, "--outdir",
+					pic.getPath().getParent().toString(), "--file", pic.getPath().getFileName().toString(),
+					unity3d.getPath().toString());
+			 builder.redirectError(ProcessBuilder.Redirect.INHERIT);
+			 builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+			System.out.println("Exec unitypucky.py");
+			Process p = builder.start();
+			StringBuilder byaml = new StringBuilder();
+			BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
-		ProcessBuilder builder = new ProcessBuilder("python3", "unitypuck.py", "--name", card_name,
-				"--outdir", pic.getPath().getParent().toString(), "--file",pic.getPath().getFileName().toString(), unity3d.getPath().toString());
-		// builder.redirectError(ProcessBuilder.Redirect.INHERIT);
-		// builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
-		System.out.println("Exec unitypucky.py");
-		Process p = builder.start();
-		StringBuilder byaml = new StringBuilder();
-		BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
-
-		String line = null;
-		while ((line = br.readLine()) != null) {
-			byaml.append(line);
-			byaml.append("\n");
-		}
-		p.waitFor();
-		// System.out.println(byaml.toString());
-		String yaml = byaml.toString();
-		//System.out.println(yaml);
-		//yaml = yaml.replace("!PPtr", "m_ptr:");
-		//yaml = yaml.replace("!!python/tuple", "m_tuple:");
-		//yaml = yaml.toString().replaceAll("!unitypack:(.+?)(\\s)", "$1:$2");
-		//yaml = yaml.replace("!", "");
-		// System.out.println(yaml);
-		/*int i = 0;
-		String fyaml = "";
-		for (String l : yaml.split("\n")) {
-			if (l.contains("spriteDefinitions")) {
-				l = l.replace("spriteDefinitions", "spriteDefinitions" + i);
-				i++;
+			String line = null;
+			while ((line = br.readLine()) != null) {
+				byaml.append(line);
+				byaml.append("\n");
 			}
-			fyaml += l + "\n";
-		}
-		yaml = fyaml;*/
+			p.waitFor();
+			// System.out.println(byaml.toString());
+			String yaml = byaml.toString();
+			System.out.println(yaml);
+			// yaml = yaml.replace("!PPtr", "m_ptr:");
+			// yaml = yaml.replace("!!python/tuple", "m_tuple:");
+			// yaml = yaml.toString().replaceAll("!unitypack:(.+?)(\\s)", "$1:$2");
+			// yaml = yaml.replace("!", "");
+			// System.out.println(yaml);
+			/*
+			 * int i = 0; String fyaml = ""; for (String l : yaml.split("\n")) { if
+			 * (l.contains("spriteDefinitions")) { l = l.replace("spriteDefinitions",
+			 * "spriteDefinitions" + i); i++; } fyaml += l + "\n"; } yaml = fyaml;
+			 */
 
-		YamlReader yr = new YamlReader(yaml);
-		Object o = yr.read();
-		Map map = (Map) o;
-		/*ArrayList a_cont = (ArrayList) map.get("m_Container");
-		int[] id_map = new int[100];
-		int l =0;
-		for(Object tuple : a_cont)
-		{
-			ArrayList a_info  = (ArrayList)((Map)tuple).get("m_tuple");
-			//System.out.println(a_info);
-			String name = a_info.get(0).toString();
-			//System.out.println("name: " + a_info.get(0));
-			if(name.contains("data/atlas0 material.mat"))
-			{
-				id_map[Integer.parseInt(((ArrayList)((Map)a_info.get(1)).get("asset")).get(0).toString())]=l;
-				l++;
-				System.out.println("id: " + ((ArrayList)((Map)a_info.get(1)).get("asset")).get(0) + "=> " + (l-1));
-			}
-			//System.out.println("id: " + ((ArrayList)((Map)a_info.get(1)).get("asset")).get(0));
-		}*/
-		
-		ArrayList<Integer> ids = new ArrayList<Integer>();
-		double[][] s_d = new double[4][2];
-		int s_id = 0;
-		//for (int k = 0; k < i; k++) {
+			YamlReader yr = new YamlReader(yaml);
+			Object o = yr.read();
+			Map map = (Map) o;
+			/*
+			 * ArrayList a_cont = (ArrayList) map.get("m_Container"); int[] id_map = new
+			 * int[100]; int l =0; for(Object tuple : a_cont) { ArrayList a_info =
+			 * (ArrayList)((Map)tuple).get("m_tuple"); //System.out.println(a_info); String
+			 * name = a_info.get(0).toString(); //System.out.println("name: " +
+			 * a_info.get(0)); if(name.contains("data/atlas0 material.mat")) {
+			 * id_map[Integer.parseInt(((ArrayList)((Map)a_info.get(1)).get("asset")).get(0)
+			 * .toString())]=l; l++; System.out.println("id: " +
+			 * ((ArrayList)((Map)a_info.get(1)).get("asset")).get(0) + "=> " + (l-1)); }
+			 * //System.out.println("id: " +
+			 * ((ArrayList)((Map)a_info.get(1)).get("asset")).get(0)); }
+			 */
+
+			ArrayList<Integer> ids = new ArrayList<Integer>();
+			double[][] s_d = new double[4][2];
+			int s_id = 0;
+			// for (int k = 0; k < i; k++) {
 			ArrayList al = (ArrayList) map.get("spriteDefinitions"); // id4 => sprite1 => img2
-																			// id2 => sprite2 => img0
-																			// id3 => sprite0 => img1
+																		// id2 => sprite2 => img0
+																		// id3 => sprite0 => img1
 			double[][] d_uvs = new double[4][2];
 			for (Object s : al) {
 				Map m = (Map) s;
@@ -469,42 +473,42 @@ public class Render {
 				int id2 = Integer.parseInt(a_ptr.get(1).toString());
 				id = id2 > id ? id2 : id;
 				ids.add(id);
-				//System.out.println(m.get("name").toString());
-				//System.out.println(id);
+				// System.out.println(m.get("name").toString());
+				// System.out.println(id);
 				if (StringUtil.equalsIgnoreSpecial(m.get("name").toString(), card_name)) {
 					s_d = d_uvs.clone();
 					s_id = id;
 				}
 			}
-		//}
-		// if(s_id==0) {System.out.println("Error no name found");return;}
+			// }
+			// if(s_id==0) {System.out.println("Error no name found");return;}
 
-		//int atlas = id_map[s_id];
-		int atlas = 0;
-		//int atlas = toAtlasID(ids, s_id);
-		System.out.println("s_id: " + s_id);
-		System.out.println("Image: " + "atlas0" + atlas + ".png" );
-		Image all = ImageIO.read(pic.getPath().toFile());
-		img = new BufferedImage(160, 220, BufferedImage.TYPE_INT_ARGB);
-		Graphics g = img.createGraphics();
-		double[] bord = getBorderScale(all, s_d);
-		// TODO image real size is 150 x 150
-		// g.drawImage(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
-		g.drawImage(all, 0, 0, 150, 125, (int) (bord[0] * all.getWidth(null)),
-				(int) (bord[1] * all.getHeight(null))/* +50 */, (int) (bord[2] * all.getWidth(null)),
-				(int) (bord[3] * all.getHeight(null))/* +50 */, null);
-		}
-		catch(Exception e)
-		{
+			// int atlas = id_map[s_id];
+			int atlas = 0;
+			// int atlas = toAtlasID(ids, s_id);
+			System.out.println("s_id: " + s_id);
+			System.out.println("Image: " + "atlas0" + atlas + ".png");
+			Image all = ImageIO.read(pic.getPath().toFile());
+			img = new BufferedImage(160, 220, BufferedImage.TYPE_INT_ARGB);
+			Graphics g = img.createGraphics();
+			double[] bord = getBorderScale(all, s_d);
+			// TODO image real size is 150 x 150
+			// g.drawImage(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+			g.drawImage(all, 0, 0, 150, 125, (int) (bord[0] * all.getWidth(null)),
+					(int) (bord[1] * all.getHeight(null))/* +50 */, (int) (bord[2] * all.getWidth(null)),
+					(int) (bord[3] * all.getHeight(null))/* +50 */, null);
+		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		finally {
-			if(unity3d != null)unity3d.getPath().toFile().delete();
-			if(pic != null)pic.getPath().toFile().delete();
-			//deleteDirectory(f);
+		} finally {
+			if (unity3d != null)
+				unity3d.getPath().toFile().delete();
+			if (pic != null)
+				pic.getPath().toFile().delete();
+			// deleteDirectory(f);
 		}
 		return img;
 	}
+
 	public static BufferedImage getCardImageOld(int card_bundle, String picture) {
 		if (card_bundle == 0)
 			return null;
@@ -525,7 +529,7 @@ public class Render {
 			// String file = "cardpack" + card_pack + "/"+
 			// "cardpack"+card_pack+"_Unity5_4_2_WebGL.unity3d";
 
-			//String file = getUnityCardPack(card_pack, tmp_time);
+			// String file = getUnityCardPack(card_pack, tmp_time);
 			String file = "...";
 
 			/*
@@ -695,9 +699,8 @@ public class Render {
 			name = "conquest_cards" + (num - 2500) + "_Unity5_4_2_WebGL.unity3d";
 		else
 			name = "dominion_and_shard_icons_Unity5_4_2_WebGL.unity3d";
-		Wget.wGet(unity3d.getPath().toString(),
-				"http://cdn.synapse-games.com/unleashed/asset_bundles/5_4_2/" + name);
-		//return "cardpack" + num + "-" + tmp + "/" + name;
+		Wget.wGet(unity3d.getPath().toString(), "http://cdn.synapse-games.com/unleashed/asset_bundles/5_4_2/" + name);
+		// return "cardpack" + num + "-" + tmp + "/" + name;
 	}
 
 	private static double[] getBorderScale(Image all, double[][] uvs) {
@@ -730,30 +733,29 @@ public class Render {
 		}
 		return (directory.delete());
 	}
-	
+
 	public static BufferedImage scaleBilinear(BufferedImage before, double scale) {
-	    return scale(before, scale, AffineTransformOp.TYPE_BILINEAR);
+		return scale(before, scale, AffineTransformOp.TYPE_BILINEAR);
 	}
 
 	public static BufferedImage scaleBicubic(BufferedImage before, double scale) {
-	    return scale(before, scale, AffineTransformOp.TYPE_BICUBIC);
+		return scale(before, scale, AffineTransformOp.TYPE_BICUBIC);
 	}
 
 	public static BufferedImage scaleNearest(BufferedImage before, double scale) {
-	    return scale(before, scale, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
+		return scale(before, scale, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
 	}
 
 	@NotNull
-	private static 
-	BufferedImage scale(final BufferedImage before, final double scale, final int type) {
-	    int w = before.getWidth();
-	    int h = before.getHeight();
-	    int w2 = (int) (w * scale);
-	    int h2 = (int) (h * scale);
-	    BufferedImage after = new BufferedImage(w2, h2, before.getType());
-	    AffineTransform scaleInstance = AffineTransform.getScaleInstance(scale, scale);
-	    AffineTransformOp scaleOp = new AffineTransformOp(scaleInstance, type);
-	    scaleOp.filter(before, after);
-	    return after;
+	private static BufferedImage scale(final BufferedImage before, final double scale, final int type) {
+		int w = before.getWidth();
+		int h = before.getHeight();
+		int w2 = (int) (w * scale);
+		int h2 = (int) (h * scale);
+		BufferedImage after = new BufferedImage(w2, h2, before.getType());
+		AffineTransform scaleInstance = AffineTransform.getScaleInstance(scale, scale);
+		AffineTransformOp scaleOp = new AffineTransformOp(scaleInstance, type);
+		scaleOp.filter(before, after);
+		return after;
 	}
 }

@@ -8,7 +8,9 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.geom.AffineTransform;
 import java.awt.geom.Line2D;
+import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
@@ -22,6 +24,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.imageio.ImageIO;
+import javax.validation.constraints.NotNull;
 
 import com.esotericsoftware.yamlbeans.YamlReader;
 
@@ -567,5 +570,31 @@ public class Render {
 			}
 		}
 		return (directory.delete());
+	}
+	
+	public static BufferedImage scaleBilinear(BufferedImage before, double scale) {
+	    return scale(before, scale, AffineTransformOp.TYPE_BILINEAR);
+	}
+
+	public static BufferedImage scaleBicubic(BufferedImage before, double scale) {
+	    return scale(before, scale, AffineTransformOp.TYPE_BICUBIC);
+	}
+
+	public static BufferedImage scaleNearest(BufferedImage before, double scale) {
+	    return scale(before, scale, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
+	}
+
+	@NotNull
+	private static 
+	BufferedImage scale(final BufferedImage before, final double scale, final int type) {
+	    int w = before.getWidth();
+	    int h = before.getHeight();
+	    int w2 = (int) (w * scale);
+	    int h2 = (int) (h * scale);
+	    BufferedImage after = new BufferedImage(w2, h2, before.getType());
+	    AffineTransform scaleInstance = AffineTransform.getScaleInstance(scale, scale);
+	    AffineTransformOp scaleOp = new AffineTransformOp(scaleInstance, type);
+	    scaleOp.filter(before, after);
+	    return after;
 	}
 }

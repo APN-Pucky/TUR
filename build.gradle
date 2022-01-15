@@ -58,7 +58,7 @@ task fatJar(type: Jar) {
 	manifest {
         attributes 'Implementation-Title': project.name,
         	'Implementation-Version': versionDetails().lastTag,
-        	'Main-Class': 'de.neuwirth-informatik.de.Alexander.TU.TURender.Test.Main'
+        	'Main-Class': 'de.neuwirthinformatik.de.Alexander.TU.TURender.Test.Main'
     }
     baseName = project.name
     from { 

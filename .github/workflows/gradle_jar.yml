@@ -21,6 +21,8 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew fatJar
+      - name: Zip It
+        run: mv build/libs/TUR.jar build/TUR.jar && zip -r TUR.zip build start.bat in.png out.png unitypuck.py data
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1

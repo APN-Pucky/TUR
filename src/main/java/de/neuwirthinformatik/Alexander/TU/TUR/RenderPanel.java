@@ -105,7 +105,7 @@ public class RenderPanel extends JPanel{
 	CardInstance[] cis = new CardInstance[10];
 	
 	
-	XMLParser xmlp = new XMLParser(true);
+	XMLParser xmlp = new XMLParser(true,false);
 	
 	
 	

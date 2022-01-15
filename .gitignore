@@ -91,3 +91,4 @@ README.txt
 
 
 # End of https://www.gitignore.io/api/eclipse
+/.gradle/

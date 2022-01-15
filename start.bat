@@ -1,3 +1,3 @@
 @echo off
-java -jar build/TUR.jar
+java -jar build/libs/TURender.jar
 pause

@@ -1,2 +1,2 @@
 #!/bin/sh
-java -jar build/TUR.jar
+java -jar build/libs/TURender.jar

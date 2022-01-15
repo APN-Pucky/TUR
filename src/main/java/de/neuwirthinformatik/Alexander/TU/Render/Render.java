@@ -65,7 +65,7 @@ public class Render {
 		g.drawImage(render(d.getCommander()), 0, 0, null);
 		g.drawImage(render(d.getDominion()), 0, CARD_HEIGHT, null);
 		int i = 0;
-		for (int id : d.getOffenseDeck()) {
+		for (int id : d.getDefenseDeck()) {
 			if (i > 1)
 				g.drawImage(render(id), CARD_WIDTH * (1 + (i - 2) % 5), ((i - 2) / 5) * CARD_HEIGHT, null);
 			i++;

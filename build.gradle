@@ -52,6 +52,7 @@ dependencies {
 	implementation group: 'com.esotericsoftware.yamlbeans', name: 'yamlbeans', version: '1.08'
 
 	implementation 'com.github.APN-Pucky:TULib:0.0.4'
+	implementation 'com.github.APN-Pucky:GitJarUpdate:0.0.7'
 }
 
 

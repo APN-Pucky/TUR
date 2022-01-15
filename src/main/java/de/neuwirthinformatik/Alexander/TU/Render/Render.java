@@ -362,11 +362,6 @@ public class Render {
 		return new DownloadedContent(tempFile, tempFile.toString());
 	}
 
-	@Value
-	public static class DownloadedContent {
-		Path path;
-		String uri;
-	}
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static BufferedImage getCardImage(int card_bundle, String picture) {
 		if(card_bundle==0)return null;

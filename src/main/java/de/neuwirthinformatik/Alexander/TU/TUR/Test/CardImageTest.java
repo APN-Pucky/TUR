@@ -25,7 +25,7 @@ import de.neuwirthinformatik.Alexander.TU.Render.Render;
 import de.neuwirthinformatik.Alexander.TU.util.StringUtil;
 import de.neuwirthinformatik.Alexander.TU.util.Wget;
 
-public class ImageTest {
+public class CardImageTest {
 
 	public static void main(String[] args) throws Exception {
 		GlobalData.init();

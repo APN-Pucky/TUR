@@ -25,21 +25,47 @@ import javax.imageio.ImageIO;
 
 import com.esotericsoftware.yamlbeans.YamlReader;
 
-import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
-import de.neuwirthinformatik.Alexander.TU.Basic.SkillSpec;
+import de.neuwirthinformatik.Alexander.TU.TU;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card.CardInstance;
 import de.neuwirthinformatik.Alexander.TU.Basic.Card.CardType;
-import de.neuwirthinformatik.Alexander.TU.TU;
+import de.neuwirthinformatik.Alexander.TU.Basic.Deck;
+import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
+import de.neuwirthinformatik.Alexander.TU.Basic.SkillSpec;
 import de.neuwirthinformatik.Alexander.TU.util.StringUtil;
 import de.neuwirthinformatik.Alexander.TU.util.Wget;
 
 public class Render {
 	Font optimus;
 	Font arial;
+	
+	final static int CARD_WIDTH = 160;
+	final static int CARD_HEIGHT = 220;
 
 	public Render() throws FontFormatException, IOException {
 		optimus = Font.createFont(Font.TRUETYPE_FONT, TU.class.getResourceAsStream("/Optimus.otf"));
 		arial = Font.createFont(Font.TRUETYPE_FONT, TU.class.getResourceAsStream("/arialbold.ttf"));
+	}
+
+	public BufferedImage renderDeck(Deck d) {
+		//int offset_y = 10;
+		int width = CARD_WIDTH*6;
+		int height = CARD_HEIGHT*2;
+		BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+		Graphics g = img.getGraphics();
+		g.setColor(Color.white);
+		g.fillRect(0, 0, width, height);
+		
+		g.drawImage(render(d.getCommander()), 0,0, null);
+		g.drawImage(render(d.getDominion()), 0,CARD_HEIGHT, null);
+		int i = 0;
+		for (int id : d.getOffenseDeck()) {
+			if(i > 1) 
+			g.drawImage(render(id), CARD_WIDTH*(1+(i-2)%5), ((i-2)/5)*CARD_HEIGHT , null);
+			i++;
+			
+		}
+		
+		return img;
 	}
 
 	public BufferedImage renderTree(CardInstance c) {
@@ -145,12 +171,15 @@ public class Render {
 		}
 	}
 
+	public BufferedImage render(int i) {
+		return render(GlobalData.getCardInstanceById(i));
+	}
 	public BufferedImage render(CardInstance c) {
 		return render(c, new String[] { "", "", "" }, "", null);
 	}
 
 	public BufferedImage render(CardInstance c, String[] txts, String file, CardType type) {
-		BufferedImage img = new BufferedImage(160, 220, BufferedImage.TYPE_INT_ARGB);
+		BufferedImage img = new BufferedImage(CARD_WIDTH, CARD_HEIGHT, BufferedImage.TYPE_INT_ARGB);
 		Graphics g = img.createGraphics();
 		int[] style = GlobalData.style_borders[c.getFaction()][c.getRarity()];
 		int[] frame = GlobalData.frame_borders[c.getFusionLevel()];
@@ -179,8 +208,8 @@ public class Render {
 		} else {
 			draw(g, "cogs", 0, 0, 150, 125, 5, 20, 150, 125);
 		}
-		draw(g, "cardResources", style, new int[] { 0, 0, 160, 220 });
-		draw(g, "cardResources", frame, new int[] { 0, 0, 160, 220 });
+		draw(g, "cardResources", style, new int[] { 0, 0, CARD_WIDTH, CARD_HEIGHT });
+		draw(g, "cardResources", frame, new int[] { 0, 0, CARD_WIDTH, CARD_HEIGHT });
 		draw(g, "cardResources", icon, new int[] { 2, 2, 24, 24 });
 		drawLevel(g, c);
 		g.setColor(Color.WHITE);

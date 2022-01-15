@@ -1,4 +1,4 @@
-package de.neuwirthinformatik.Alexander.TU.TURender;
+package de.neuwirthinformatik.Alexander.TU.TUR;
 
 import de.neuwirthinformatik.Alexander.GitJarUpdate.Update;
 

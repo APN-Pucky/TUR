@@ -1,4 +1,4 @@
-package de.neuwirthinformatik.Alexander.TU.TURender;
+package de.neuwirthinformatik.Alexander.TU.TUR;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -48,7 +48,7 @@ import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
 import de.neuwirthinformatik.Alexander.TU.Basic.SkillSpec;
 import de.neuwirthinformatik.Alexander.TU.Basic.XMLParser;
 import de.neuwirthinformatik.Alexander.TU.Render.Render;
-import de.neuwirthinformatik.Alexander.TU.TURender.XMLView.XmlTextPane;
+import de.neuwirthinformatik.Alexander.TU.TUR.XMLView.XmlTextPane;
 import de.neuwirthinformatik.Alexander.TU.util.GUI;
 import de.neuwirthinformatik.Alexander.TU.util.Task;
 import de.neuwirthinformatik.Alexander.TU.util.Wget;

@@ -1,4 +1,4 @@
-package de.neuwirthinformatik.Alexander.TU.TURender.Test;
+package de.neuwirthinformatik.Alexander.TU.TUR.Test;
 
 import java.awt.FlowLayout;
 import java.awt.Graphics;

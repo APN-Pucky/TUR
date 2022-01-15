@@ -1,4 +1,4 @@
-package de.neuwirthinformatik.Alexander.TU.TURender;
+package de.neuwirthinformatik.Alexander.TU.TUR;
 
 // https://boplicity.nl/knowledgebase/Java/Xml+syntax+highlighting+in+Swing+JTextPane.html
 // https://github.com/kdekooter/xml-text-editor/

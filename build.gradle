@@ -10,18 +10,14 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'eclipse'
-}
-plugins {
-  id "io.freefair.lombok" version "5.0.1"
-}
-
-plugins {
+  	id "io.freefair.lombok" version "5.0.1"
     id 'com.palantir.git-version' version '0.12.3'
 }
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenLocal()
     maven { url "https://jitpack.io" }
 }
 
@@ -51,10 +47,12 @@ dependencies {
 	implementation group: 'org.jdom', name: 'jdom2', version: '2.0.6'
 	implementation group: 'com.esotericsoftware.yamlbeans', name: 'yamlbeans', version: '1.08'
 
-	implementation 'com.github.APN-Pucky:TULib:0.2.10'
-	implementation 'com.github.APN-Pucky:GitJarUpdate:0.0.7'
-}
 
+	implementation 'com.github.APN-Pucky:GitJarUpdate:0.0.7'
+	implementation 'com.github.APN-Pucky:TULib:0.2.14'
+	//compile project(":TULib")
+	
+}
 
 task fatJar(type: Jar) {
 	manifest {
@@ -69,3 +67,8 @@ task fatJar(type: Jar) {
     }
     with jar
 }
+
+version = versionDetails().lastTag
+group = 'com.github.APN-Pucky'
+
+

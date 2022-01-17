@@ -191,19 +191,6 @@ public class Render {
 	}
 
 	public BufferedImage render(CardInstance c, String[] txts, String file, CardType type) {
-		if(c == null || c.getCard()==Card.NULL)return null;
-		BufferedImage img = new BufferedImage(CARD_WIDTH, CARD_HEIGHT, BufferedImage.TYPE_INT_ARGB);
-		Graphics g = img.createGraphics();
-		int[] style = GlobalData.style_borders[c.getFaction()][c.getRarity()];
-		int[] frame = GlobalData.frame_borders[c.getFusionLevel()];
-		int[] icon = null;
-		String stype;
-		if (type == null)
-			stype = c.getUnitType().toLowerCase();
-		else
-			stype = type.toString().toLowerCase();
-		icon = GlobalData.icon_borders.get("icon_" + stype + "_common");
-		int[] costs = GlobalData.icon_borders.get("cost_container");
 		Image bi = null;
 		try {
 
@@ -216,6 +203,37 @@ public class Render {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} // TODO FINALLY RM FOLDER
+		return render(c, txts, bi, type);
+	}
+
+	public BufferedImage render(CardInstance c, String[] txts, File file, CardType type) {
+		Image bi = null;
+		try {
+			bi = ImageIO.read(file);
+			bi = bi.getScaledInstance(150, 125, Image.SCALE_SMOOTH);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return render(c, txts, bi, type);
+	}
+
+	public BufferedImage render(CardInstance c, String[] txts, Image bi, CardType type) {
+		if (c == null || c.getCard() == Card.NULL)
+			return null;
+		BufferedImage img = new BufferedImage(CARD_WIDTH, CARD_HEIGHT, BufferedImage.TYPE_INT_ARGB);
+		Graphics g = img.createGraphics();
+		int[] style = GlobalData.style_borders[c.getFaction()][c.getRarity()];
+		int[] frame = GlobalData.frame_borders[c.getFusionLevel()];
+		int[] icon = null;
+		String stype;
+		if (type == null)
+			stype = c.getUnitType().toLowerCase();
+		else
+			stype = type.toString().toLowerCase();
+		icon = GlobalData.icon_borders.get("icon_" + stype + "_common");
+		int[] costs = GlobalData.icon_borders.get("cost_container");
+		// Image bi = null;
+
 		if (bi != null) {
 			draw(g, bi, 0, 0, 150, 125, 5, 20, 150, 125);
 		} else {
@@ -360,7 +378,7 @@ public class Render {
 
 	public DownloadedContent createTempFile(String ext) throws IOException {
 		String fileName = LocalDateTime.now().toString() + '-' + UUID.randomUUID().toString() + '.' + ext;
-		Path tempFile = new File(new File(".").getCanonicalPath() +"/"+ fileName).toPath();
+		Path tempFile = new File(new File(".").getCanonicalPath() + "/" + fileName).toPath();
 		try {
 			tempFile.toFile().createNewFile();
 		} catch (IOException e) {
@@ -402,8 +420,8 @@ public class Render {
 			ProcessBuilder builder = new ProcessBuilder("python3", "unitypuck.py", "--name", card_name, "--outdir",
 					pic.getPath().getParent().toString(), "--file", pic.getPath().getFileName().toString(),
 					unity3d.getPath().toString());
-			 //builder.redirectError(ProcessBuilder.Redirect.INHERIT);
-			 //builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+			// builder.redirectError(ProcessBuilder.Redirect.INHERIT);
+			// builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
 			System.out.println("Exec unitypucky.py");
 			Process p = builder.start();
 			StringBuilder byaml = new StringBuilder();

@@ -25,7 +25,7 @@ import de.neuwirthinformatik.Alexander.TU.Render.Render;
 import de.neuwirthinformatik.Alexander.TU.util.StringUtil;
 import de.neuwirthinformatik.Alexander.TU.util.Wget;
 
-public class TreeImageTest {
+public class TreeImageTest extends ImageTest{
 
 	public static void main(String[] args) throws Exception {
 		GlobalData.init();
@@ -39,17 +39,7 @@ public class TreeImageTest {
 		
 		BufferedImage img = r.renderTree(c);
 		System.out.println(c.getCard().picture);
-		//BufferedImage img = getImage(204,"xenowavebreak_lv3"); //Obsdin id=4 img=0
-		//ImageIO.write(img,"png", new File("output.png"));
-		ImageIcon iicon = new ImageIcon(img);
-		JFrame jframe = new JFrame();
-		jframe.setLayout(new FlowLayout());
-		jframe.setSize(2000, 2000);
-		JLabel lbl = new JLabel();
-		lbl.setIcon(iicon);
-		jframe.add(lbl);
-		jframe.setVisible(true);
-		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		showImage(img);
 	}
 
 }

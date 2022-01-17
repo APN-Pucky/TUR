@@ -10,6 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'eclipse'
+    id 'maven-publish'
   	id "io.freefair.lombok" version "5.0.1"
     id 'com.palantir.git-version' version '0.12.3'
 }
@@ -72,3 +73,14 @@ version = versionDetails().lastTag
 group = 'com.github.APN-Pucky'
 
 
+publishing {
+    publications {
+        TUR(MavenPublication) {
+            from components.java
+        }
+    }
+
+    repositories {
+    	mavenLocal()
+    }
+}

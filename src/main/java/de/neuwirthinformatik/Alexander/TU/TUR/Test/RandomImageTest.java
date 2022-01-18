@@ -13,7 +13,7 @@ import de.neuwirthinformatik.Alexander.TU.Render.Render;
 public class RandomImageTest extends CardImageTest {
 	public static void main(String[] args) throws FontFormatException, IOException {
 		GlobalData.init();
-		String name = "DR_F3LL_HOLL_";
+		String name = "DR_F3LL_HOLL___";
 		int seed = name.hashCode();
 		CardInstance ci = Gen.genCardInstance(name,seed);
 		BufferedImage img = new Render().render(ci,new String[] {"","",""},"in.png",Gen.genCardType(ci.getInfo()));

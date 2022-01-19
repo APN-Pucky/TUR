@@ -1,6 +1,748 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 
+	<!-- Infested Relay Side Mission Rewards -->
+
+	<fusion_recipe>
+		<card_id>66546</card_id>
+		<resource card_id="66545" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66552</card_id>
+		<resource card_id="66551" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Hoopla Brawl Rewards -->
+
+	<fusion_recipe>
+		<card_id>66516</card_id>
+		<resource card_id="66515" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66522</card_id>
+		<resource card_id="66521" number="2"/>
+	</fusion_recipe>
+
+	<!-- Maturation Brawl Rewards -->
+
+	<fusion_recipe>
+		<card_id>66498</card_id>
+		<resource card_id="66497" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66504</card_id>
+		<resource card_id="66503" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Boneyards Guild War Rewards -->
+
+	<fusion_recipe>
+		<card_id>66480</card_id>
+		<resource card_id="66479" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66486</card_id>
+		<resource card_id="66485" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Patriotic Guild Brawl Rewards -->
+
+	<fusion_recipe>
+		<card_id>66462</card_id>
+		<resource card_id="66461" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66468</card_id>
+		<resource card_id="66467" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Dedication Guild Brawl Rewards -->
+
+	<fusion_recipe>
+		<card_id>66438</card_id>
+		<resource card_id="66437" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66444</card_id>
+		<resource card_id="66443" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Legionnaires Guild Brawl Rewards -->
+
+	<fusion_recipe>
+		<card_id>19268</card_id>
+		<resource card_id="19267" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19274</card_id>
+		<resource card_id="19273" number="2"/>
+	</fusion_recipe>
+
+	<!-- Gravity Box -->
+
+	<fusion_recipe>
+		<card_id>66054</card_id>
+		<resource card_id="66053" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66060</card_id>
+		<resource card_id="66059" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66072</card_id>
+		<resource card_id="66071" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66078</card_id>
+		<resource card_id="66077" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66090</card_id>
+		<resource card_id="66089" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66096</card_id>
+		<resource card_id="66095" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66108</card_id>
+		<resource card_id="66107" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66114</card_id>
+		<resource card_id="66113" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66126</card_id>
+		<resource card_id="66125" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66132</card_id>
+		<resource card_id="66131" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66144</card_id>
+		<resource card_id="66143" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66150</card_id>
+		<resource card_id="66149" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66162</card_id>
+		<resource card_id="66161" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66168</card_id>
+		<resource card_id="66167" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66186</card_id>
+		<resource card_id="66185" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66192</card_id>
+		<resource card_id="66191" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66210</card_id>
+		<resource card_id="66209" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66216</card_id>
+		<resource card_id="66215" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66228</card_id>
+		<resource card_id="66227" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66234</card_id>
+		<resource card_id="66233" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66246</card_id>
+		<resource card_id="66245" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66252</card_id>
+		<resource card_id="66251" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19232</card_id>
+		<resource card_id="19231" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19238</card_id>
+		<resource card_id="19237" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66270</card_id>
+		<resource card_id="66269" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66276</card_id>
+		<resource card_id="66275" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66300</card_id>
+		<resource card_id="66299" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66306</card_id>
+		<resource card_id="66305" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66324</card_id>
+		<resource card_id="66323" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66330</card_id>
+		<resource card_id="66329" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66354</card_id>
+		<resource card_id="66353" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66360</card_id>
+		<resource card_id="66359" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66378</card_id>
+		<resource card_id="66377" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66384</card_id>
+		<resource card_id="66383" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66408</card_id>
+		<resource card_id="66407" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66414</card_id>
+		<resource card_id="66413" number="2"/>
+	</fusion_recipe>
+
+	<!-- Equilibrium War Rewards -->
+
+	<fusion_recipe>
+		<card_id>66036</card_id>
+		<resource card_id="66035" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66042</card_id>
+		<resource card_id="66041" number="2"/>
+	</fusion_recipe>
+
+	<!-- Forthcoming War Rewards -->
+
+	<fusion_recipe>
+		<card_id>66018</card_id>
+		<resource card_id="66017" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66024</card_id>
+		<resource card_id="66023" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Supremacy Raid Rewards -->
+
+	<fusion_recipe>
+		<card_id>66000</card_id>
+		<resource card_id="65999" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>66006</card_id>
+		<resource card_id="66005" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Platoon War Rewards -->
+
+	<fusion_recipe>
+		<card_id>65982</card_id>
+		<resource card_id="65981" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65988</card_id>
+		<resource card_id="65987" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Borra Factory Side Mission Rewards -->
+
+	<fusion_recipe>
+		<card_id>65958</card_id>
+		<resource card_id="65957" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65964</card_id>
+		<resource card_id="65963" number="2"/>
+	</fusion_recipe>
+
+	<!-- Absorption War Rewards -->
+
+	<fusion_recipe>
+		<card_id>65940</card_id>
+		<resource card_id="65939" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65946</card_id>
+		<resource card_id="65945" number="2"/>
+	</fusion_recipe>
+
+	<!-- Intrigue Brawl Rewards -->
+
+	<fusion_recipe>
+		<card_id>65922</card_id>
+		<resource card_id="65921" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65928</card_id>
+		<resource card_id="65927" number="2"/>
+	</fusion_recipe>
+
+	<!-- Morphosis Guild Brawl Rewards -->
+
+	<fusion_recipe>
+		<card_id>65886</card_id>
+		<resource card_id="65885" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65892</card_id>
+		<resource card_id="65891" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65904</card_id>
+		<resource card_id="65903" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65910</card_id>
+		<resource card_id="65909" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Return of Razogoth Retro Raid Reward -->
+
+	<fusion_recipe>
+		<card_id>65868</card_id>
+		<resource card_id="65867" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65874</card_id>
+		<resource card_id="65873" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Bloodstained War Reward -->
+
+	<fusion_recipe>
+		<card_id>19190</card_id>
+		<resource card_id="19189" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19196</card_id>
+		<resource card_id="19195" number="2"/>
+	</fusion_recipe>
+
+	<!-- Protoplasm Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>65850</card_id>
+		<resource card_id="65849" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65856</card_id>
+		<resource card_id="65855" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65826</card_id>
+		<resource card_id="65825" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65832</card_id>
+		<resource card_id="65831" number="2"/>
+	</fusion_recipe>
+
+	<!-- Talos Raid Reward -->
+
+	<fusion_recipe>
+		<card_id>65784</card_id>
+		<resource card_id="65783" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65790</card_id>
+		<resource card_id="65789" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65802</card_id>
+		<resource card_id="65801" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65808</card_id>
+		<resource card_id="65807" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Aggregation Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>65766</card_id>
+		<resource card_id="65765" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65772</card_id>
+		<resource card_id="65771" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Virulency Guild Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>65748</card_id>
+		<resource card_id="65747" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65754</card_id>
+		<resource card_id="65753" number="2"/>
+	</fusion_recipe>
+
+	<!-- Devotional Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>65712</card_id>
+		<resource card_id="65711" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65718</card_id>
+		<resource card_id="65717" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65730</card_id>
+		<resource card_id="65729" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65736</card_id>
+		<resource card_id="65735" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Lernaean Hydra Raid Reward -->
+
+	<fusion_recipe>
+		<card_id>19166</card_id>
+		<resource card_id="19165" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19172</card_id>
+		<resource card_id="19171" number="2"/>
+	</fusion_recipe>
+	
+	<!-- \o/ -->
+
+	<fusion_recipe>
+		<card_id>65694</card_id>
+		<resource card_id="38388" number="2"/>
+		<resource card_id="17240" number="1"/>
+	</fusion_recipe>
+	
+	<!-- Brood Mother Raid Reward -->
+
+	<fusion_recipe>
+		<card_id>65682</card_id>
+		<resource card_id="65681" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65688</card_id>
+		<resource card_id="65687" number="2"/>
+	</fusion_recipe>
+
+	<!-- 2020 Mutant Rewards -->
+
+	<fusion_recipe>
+		<card_id>65382</card_id>
+		<resource card_id="65381" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65388</card_id>
+		<resource card_id="65387" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65406</card_id>
+		<resource card_id="65405" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65412</card_id>
+		<resource card_id="65411" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65424</card_id>
+		<resource card_id="65423" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65430</card_id>
+		<resource card_id="65429" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65448</card_id>
+		<resource card_id="65447" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65454</card_id>
+		<resource card_id="65453" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65466</card_id>
+		<resource card_id="65465" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65472</card_id>
+		<resource card_id="65471" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65484</card_id>
+		<resource card_id="65483" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65490</card_id>
+		<resource card_id="65489" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65502</card_id>
+		<resource card_id="65501" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65508</card_id>
+		<resource card_id="65507" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65538</card_id>
+		<resource card_id="65537" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65544</card_id>
+		<resource card_id="65543" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19120</card_id>
+		<resource card_id="19119" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19126</card_id>
+		<resource card_id="19125" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65556</card_id>
+		<resource card_id="65555" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65562</card_id>
+		<resource card_id="65561" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19138</card_id>
+		<resource card_id="19137" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19144</card_id>
+		<resource card_id="19143" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65580</card_id>
+		<resource card_id="65579" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65586</card_id>
+		<resource card_id="65585" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65598</card_id>
+		<resource card_id="65597" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65604</card_id>
+		<resource card_id="65603" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65616</card_id>
+		<resource card_id="65615" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65622</card_id>
+		<resource card_id="65621" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65640</card_id>
+		<resource card_id="65639" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65646</card_id>
+		<resource card_id="65645" number="2"/>
+	</fusion_recipe>
+
+	<!-- 2020 Mutant Commanders -->
+
+	<fusion_recipe>
+		<card_id>26314</card_id>
+		<resource card_id="49970" number="1"/>
+		<resource card_id="26313" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26320</card_id>
+		<resource card_id="31184" number="1"/>
+		<resource card_id="26319" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26326</card_id>
+		<resource card_id="42745" number="1"/>
+		<resource card_id="26325" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26338</card_id>
+		<resource card_id="49970" number="1"/>
+		<resource card_id="26337" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26344</card_id>
+		<resource card_id="31184" number="1"/>
+		<resource card_id="26343" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26350</card_id>
+		<resource card_id="42745" number="1"/>
+		<resource card_id="26349" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26362</card_id>
+		<resource card_id="49970" number="1"/>
+		<resource card_id="26361" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26368</card_id>
+		<resource card_id="31184" number="1"/>
+		<resource card_id="26367" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26374</card_id>
+		<resource card_id="42745" number="1"/>
+		<resource card_id="26373" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26386</card_id>
+		<resource card_id="49970" number="1"/>
+		<resource card_id="26385" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26392</card_id>
+		<resource card_id="31184" number="1"/>
+		<resource card_id="26391" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26398</card_id>
+		<resource card_id="42745" number="1"/>
+		<resource card_id="26397" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26410</card_id>
+		<resource card_id="49970" number="1"/>
+		<resource card_id="26409" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26416</card_id>
+		<resource card_id="31184" number="1"/>
+		<resource card_id="26415" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26422</card_id>
+		<resource card_id="42745" number="1"/>
+		<resource card_id="26421" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26434</card_id>
+		<resource card_id="49970" number="1"/>
+		<resource card_id="26433" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26440</card_id>
+		<resource card_id="31184" number="1"/>
+		<resource card_id="26439" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>26446</card_id>
+		<resource card_id="42745" number="1"/>
+		<resource card_id="26445" number="1"/>
+	</fusion_recipe>
+
+	<!-- Improvement Brawl Reward -->
+
+	<fusion_recipe>
+		<card_id>65664</card_id>
+		<resource card_id="65663" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65670</card_id>
+		<resource card_id="65669" number="2"/>
+	</fusion_recipe>
+	
+	<!-- Concussion War Reward -->
+
+	<fusion_recipe>
+		<card_id>65172</card_id>
+		<resource card_id="65171" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65178</card_id>
+		<resource card_id="65177" number="2"/>
+	</fusion_recipe>
+
+	<!-- March 2020 Vindicator Fusions -->
+
+	<fusion_recipe>
+		<card_id>19024</card_id>
+		<resource card_id="37831" number="1"/>
+		<resource card_id="31" number="1"/>
+		<resource card_id="223" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19030</card_id>
+		<resource card_id="19029" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65112</card_id>
+		<resource card_id="37849" number="1"/>
+		<resource card_id="64" number="1"/>
+		<resource card_id="6768" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65118</card_id>
+		<resource card_id="65117" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65130</card_id>
+		<resource card_id="37867" number="1"/>
+		<resource card_id="97" number="1"/>
+		<resource card_id="6786" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65136</card_id>
+		<resource card_id="65135" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19036</card_id>
+		<resource card_id="37885" number="1"/>
+		<resource card_id="130" number="1"/>
+		<resource card_id="2109" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>19042</card_id>
+		<resource card_id="19041" number="2"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65148</card_id>
+		<resource card_id="37903" number="1"/>
+		<resource card_id="163" number="1"/>
+		<resource card_id="491" number="1"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>65154</card_id>
+		<resource card_id="65153" number="2"/>
+	</fusion_recipe>
+
 	<!-- Munitions Brawl Reward -->
 
 	<fusion_recipe>

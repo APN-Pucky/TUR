@@ -50,7 +50,7 @@ dependencies {
 
 
 	implementation 'com.github.APN-Pucky:GitJarUpdate:0.0.7'
-	implementation 'com.github.APN-Pucky:TULib:0.2.17'
+	implementation 'com.github.APN-Pucky:TULib:0.2.22'
 	//compile project(":TULib")
 	
 }

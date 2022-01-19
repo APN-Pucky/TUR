@@ -11,13 +11,16 @@ import de.neuwirthinformatik.Alexander.TU.Basic.Gen;
 import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
 import de.neuwirthinformatik.Alexander.TU.Render.Render;
 
-public class RandomCardTest extends CardImageTest {
+public class RandomDeckTest extends CardImageTest {
 	public static void main(String[] args) throws FontFormatException, IOException {
 		GlobalData.init();
 		String name = "DR_F3LL";
 		int seed = name.hashCode();
-		CardInstance ci = Gen.genCardInstance(name,seed,(c) -> c.getCost()==0);
-		BufferedImage img = new Render().render(ci,new String[] {"","",""},"in.png",ci.getCardType());
+		CardInstance com = Gen.genCardInstance(name,seed,true);
+		CardInstance dom = Gen.genCardInstance(name,seed,(c) -> c.getCardType()==CardType.DOMINION);
+		CardInstance ass = Gen.genCardInstance(name,seed,(c) -> c.getCardType()==CardType.ASSAULT);
+
+		BufferedImage img = new Render().renderDeck(new CardInstance[] {com,dom,ass,ass,ass,ass,ass,ass,ass,ass,ass,ass},"in.png");
 		if(img == null)
 			System.out.println("null img");
 		else

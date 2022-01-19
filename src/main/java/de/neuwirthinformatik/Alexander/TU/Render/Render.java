@@ -53,6 +53,46 @@ public class Render {
 		arial = Font.createFont(Font.TRUETYPE_FONT, TU.class.getResourceAsStream("/arialbold.ttf"));
 	}
 
+	public BufferedImage renderDeck(CardInstance[] deck,File s) {
+		// int offset_y = 10;
+		int width = CARD_WIDTH * 6;
+		int height = CARD_HEIGHT * 2;
+		BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+		Graphics g = img.getGraphics();
+		g.setColor(Color.white);
+		g.fillRect(0, 0, width, height);
+
+		g.drawImage(render(deck[0],new String[] {"","",""},s,deck[0].getCardType()), 0, 0, null);
+		g.drawImage(render(deck[1],new String[] {"","",""},s,deck[1].getCardType()), 0, CARD_HEIGHT, null);
+		int i = 0;
+		for (int iid =0; iid < deck.length;iid++) {
+			if (i > 1)
+				g.drawImage(render(deck[iid],new String[] {"","",""},s,deck[iid].getCardType()), CARD_WIDTH * (1 + (i - 2) % 5), ((i - 2) / 5) * CARD_HEIGHT, null);
+			i++;
+		}
+
+		return img;
+	}
+	public BufferedImage renderDeck(CardInstance[] deck,String s) {
+		// int offset_y = 10;
+		int width = CARD_WIDTH * 6;
+		int height = CARD_HEIGHT * 2;
+		BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+		Graphics g = img.getGraphics();
+		g.setColor(Color.white);
+		g.fillRect(0, 0, width, height);
+
+		g.drawImage(render(deck[0],new String[] {"","",""},s,deck[0].getCardType()), 0, 0, null);
+		g.drawImage(render(deck[1],new String[] {"","",""},s,deck[1].getCardType()), 0, CARD_HEIGHT, null);
+		int i = 0;
+		for (int iid =0; iid < deck.length;iid++) {
+			if (i > 1)
+				g.drawImage(render(deck[iid],new String[] {"","",""},s,deck[iid].getCardType()), CARD_WIDTH * (1 + (i - 2) % 5), ((i - 2) / 5) * CARD_HEIGHT, null);
+			i++;
+		}
+
+		return img;
+	}
 	public BufferedImage renderDeck(Deck d) {
 		// int offset_y = 10;
 		int width = CARD_WIDTH * 6;
@@ -69,7 +109,6 @@ public class Render {
 			if (i > 1)
 				g.drawImage(render(id), CARD_WIDTH * (1 + (i - 2) % 5), ((i - 2) / 5) * CARD_HEIGHT, null);
 			i++;
-
 		}
 
 		return img;

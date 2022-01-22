@@ -8,6 +8,7 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.Rectangle;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Line2D;
 import java.awt.image.AffineTransformOp;
@@ -38,6 +39,7 @@ import de.neuwirthinformatik.Alexander.TU.Basic.Card.CardType;
 import de.neuwirthinformatik.Alexander.TU.Basic.Deck;
 import de.neuwirthinformatik.Alexander.TU.Basic.GlobalData;
 import de.neuwirthinformatik.Alexander.TU.Basic.SkillSpec;
+import de.neuwirthinformatik.Alexander.TU.TUO.TUO.Result;
 import de.neuwirthinformatik.Alexander.TU.util.StringUtil;
 import de.neuwirthinformatik.Alexander.TU.util.Wget;
 
@@ -51,6 +53,57 @@ public class Render {
 	public Render() throws FontFormatException, IOException {
 		optimus = Font.createFont(Font.TRUETYPE_FONT, TU.class.getResourceAsStream("/Optimus.otf"));
 		arial = Font.createFont(Font.TRUETYPE_FONT, TU.class.getResourceAsStream("/arialbold.ttf"));
+	}
+	
+	public BufferedImage renderScore(Result r, CardInstance y_com,CardInstance y_dom,CardInstance y_ass, CardInstance e_com,CardInstance e_dom,CardInstance e_ass,File y_s,File e_s) {
+
+		// int offset_y = 10;
+		int width = CARD_WIDTH * 2;
+		int height = CARD_HEIGHT * 2;
+		BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+		Graphics g = img.getGraphics();
+		g.setColor(Color.white);
+		g.fillRect(0, 0, width, height);
+
+		g.drawImage(render(y_ass, new String[] { "", "", "" }, y_s, y_ass.getCardType()), 0, 0, null);
+		g.drawImage(render(e_ass, new String[] { "", "", "" }, e_s, e_ass.getCardType()), 0, CARD_HEIGHT, null);
+
+		if(r.WINS > r.LOSSES) {
+			g.setColor(Color.GREEN);
+		}
+		else if (r.LOSSES > r.WINS){
+			g.setColor(Color.RED);
+		}
+		else {
+			g.setColor(Color.BLACK);
+		}
+		drawCenteredString(g,""+(int) Math.round(r.WINS) + "%", new Rectangle(CARD_WIDTH,0,CARD_WIDTH,CARD_HEIGHT),new Font("Serif", Font.BOLD, 50));
+
+		if(r.WINS > r.LOSSES) {
+			g.setColor(Color.RED);
+		}
+		else if (r.LOSSES > r.WINS){
+			g.setColor(Color.GREEN);
+		}
+		else {
+			g.setColor(Color.BLACK);
+		}
+		drawCenteredString(g,""+(int) Math.round(r.LOSSES) + "%",new Rectangle(CARD_WIDTH,CARD_HEIGHT,CARD_WIDTH,CARD_HEIGHT),new Font("Serif", Font.BOLD, 50));
+
+		return img;
+
+	}
+	public void drawCenteredString(Graphics g, String text, Rectangle rect, Font font) {
+	    // Get the FontMetrics
+	    FontMetrics metrics = g.getFontMetrics(font);
+	    // Determine the X coordinate for the text
+	    int x = rect.x + (rect.width - metrics.stringWidth(text)) / 2;
+	    // Determine the Y coordinate for the text (note we add the ascent, as in java 2d 0 is top of the screen)
+	    int y = rect.y + ((rect.height - metrics.getHeight()) / 2) + metrics.getAscent();
+	    // Set the font
+	    g.setFont(font);
+	    // Draw the String
+	    g.drawString(text, x, y);
 	}
 
 	public BufferedImage renderDeck(CardInstance com, CardInstance dom, CardInstance ass, File s) {
@@ -68,8 +121,7 @@ public class Render {
 		BufferedImage cimg = render(ass, new String[] { "", "", "" }, s, ass.getCardType());
 		for (int iid = 0; iid < 12; iid++) {
 			if (i > 1)
-				g.drawImage(cimg,
-						CARD_WIDTH * (1 + (i - 2) % 5), ((i - 2) / 5) * CARD_HEIGHT, null);
+				g.drawImage(cimg, CARD_WIDTH * (1 + (i - 2) % 5), ((i - 2) / 5) * CARD_HEIGHT, null);
 			i++;
 		}
 
@@ -98,7 +150,10 @@ public class Render {
 		return img;
 	}
 
+	@Deprecated
 	public BufferedImage renderDeck(CardInstance[] deck, String s) {
+		return renderDeck(deck,new File(s));
+		/*
 		// int offset_y = 10;
 		int width = CARD_WIDTH * 6;
 		int height = CARD_HEIGHT * 2;
@@ -118,6 +173,7 @@ public class Render {
 		}
 
 		return img;
+		*/
 	}
 
 	public BufferedImage renderDeck(Deck d) {
@@ -257,26 +313,23 @@ public class Render {
 	}
 
 	public BufferedImage render(CardInstance c, String[] txts, String file, CardType type) {
-		Image bi = null;
-		try {
-
-			if (file == null || "".equals(file)) {
-				bi = getCardImage(c.getCard().getAssetBundle(), c.getCard().getPicture());
-			} else {
-				bi = ImageIO.read(new File(file));
-				bi = bi.getScaledInstance(150, 125, Image.SCALE_SMOOTH);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		} // TODO FINALLY RM FOLDER
-		return render(c, txts, bi, type);
+		if(file == null || "".equals(file)) {
+			return render(c,  txts, (File)null,  type);
+		}
+		else {
+			return render(c,  txts,new File(file) ,  type);
+		}
 	}
 
 	public BufferedImage render(CardInstance c, String[] txts, File file, CardType type) {
 		Image bi = null;
 		try {
-			bi = ImageIO.read(file);
-			bi = bi.getScaledInstance(150, 125, Image.SCALE_SMOOTH);
+			if (file == null) {
+				bi = getCardImage(c.getCard().getAssetBundle(), c.getCard().getPicture());
+			} else {
+				bi = ImageIO.read(file);
+				bi = bi.getScaledInstance(150, 125, Image.SCALE_SMOOTH);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

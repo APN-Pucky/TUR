@@ -2,7 +2,7 @@
 
 [![](https://jitpack.io/v/APN-Pucky/TUR.svg)](https://jitpack.io/#APN-Pucky/TUR)
 
-![](https://raw.githubusercontent.com/APN-Pucky/TUR/master/img/TUR.png)
+![](https://raw.githubusercontent.com/APN-Pucky/TUR/master/img/2021-03-08%2008_30_00-TUR.png)
 
 ### Install
 

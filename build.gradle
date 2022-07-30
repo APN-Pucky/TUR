@@ -38,6 +38,8 @@ dependencies {
     
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.11.0.rc1'
     implementation group: 'commons-io', name: 'commons-io', version: '2.5'
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+
     
 	implementation group: 'com.github.weisj', name: 'darklaf-core', version: '2.7.2'
 	implementation group: 'org.jdom', name: 'jdom2', version: '2.0.6'

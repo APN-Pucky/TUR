@@ -42,7 +42,7 @@ dependencies {
     //implementation group: 'org.bitbucket.cowwoc', name: 'diff-match-patch', version: '1.2'
     implementation group: 'com.formdev', name: 'flatlaf', version: '0.45'
     //implementation group: 'com.fifesoft', name: 'rsyntaxtextarea', version: '3.1.1'
-	implementation group: 'com.github.weisj', name: 'darklaf-core', version: '2.7.2'
+	implementation group: 'com.github.weisj', name: 'darklaf-core', version: '3.0.0'
 	//implementation group: 'com.jidesoft', name: 'jide-oss', version: '3.6.18'
 	implementation group: 'com.github.iconloader', name: 'icon-loader', version: '0.0.3'
 	implementation group: 'org.jdom', name: 'jdom2', version: '2.0.6'

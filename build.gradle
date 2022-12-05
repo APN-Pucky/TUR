@@ -11,7 +11,7 @@ plugins {
     id 'java-library'
     id 'eclipse'
     id 'maven-publish'
-  	id "io.freefair.lombok" version "5.0.1"
+  	id "io.freefair.lombok" version "6.6"
     id 'com.palantir.git-version' version '0.12.3'
 }
 repositories {
